@@ -8,10 +8,10 @@ interface Props {
 
 const Navibar: React.FC<Props> = ({ location, title }: Props) => {
   return (
-    <nav className="navbar navbar-expand navbar-dark flex-column flex-md-row bg-primary">
-      <div className="container">
+    <div className="container">
+      <nav className="navbar  navbar-light">
         <Link className="text-center" to="/">
-          <h1 className="navbar-brand mb-0">{title}</h1>
+          <h1 className="navbar-brand">{title}</h1>
         </Link>
         <div className="navbar-nav-scroll">
           <ul className="navbar-nav bd-navbar-nav flex-row">
@@ -26,9 +26,8 @@ const Navibar: React.FC<Props> = ({ location, title }: Props) => {
             </li>
           </ul>
         </div>
-        <div className="navbar-nav flex-row ml-md-auto d-none d-md-flex" />
-      </div>
-    </nav>
+      </nav>
+    </div>
   )
 }
 

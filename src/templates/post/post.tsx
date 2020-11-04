@@ -8,7 +8,7 @@ import { PostByPathQuery } from '../../../types/graphql-types'
 import './style.scss'
 
 const getDescription = (content: string): string => {
-  const body = content.split(" ",20)
+  const body = content.split(" ",60)
   var description = ""
   let i =0
   for(;i<body.length;i++)
@@ -41,13 +41,9 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
       <div className="container">
         <div className="info">
           <Link style={{ boxShadow: 'none' }} to={path}>
-            <h1>{frontmatter?.title}</h1>
+            <h1><u>{frontmatter?.title}</u></h1>
             <time dateTime={frontmatter?.date}>{frontmatter?.date}</time>
           </Link>
-          <Badge label={frontmatter?.category || ''} primary={true} />
-          {(frontmatter?.tags || []).map((tag, index) => (
-            <Badge label={tag as string} primary={false} key={index} />
-          ))}
         </div>
         <div
           className="content"

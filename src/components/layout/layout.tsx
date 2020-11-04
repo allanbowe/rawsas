@@ -4,6 +4,7 @@ import emergence from 'emergence.js'
 import Navibar from '../navibar/navibar'
 import Footer from '../footer/footer'
 import { siteMetadata } from '../../../gatsby-config'
+import '../../scss/gatstrap.scss'
 /*
 import 'modern-normalize/modern-normalize.css'
 import 'prismjs/themes/prism.css'

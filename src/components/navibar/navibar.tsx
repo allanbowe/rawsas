@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import './style.scss'
 
 interface Props {
   title: string
@@ -8,25 +9,18 @@ interface Props {
 
 const Navibar: React.FC<Props> = ({ location, title }: Props) => {
   return (
-    <div className="container">
-      <nav className="navbar  navbar-light">
-        <Link className="text-center" to="/">
-          <h1 className="navbar-brand">{title}</h1>
+    <div className="container sticky ">
+      <div className="row d-flex justify-content-center">
+        <Link  to="/">
+          <h1 className="display-4 font-weight-bold textWithShadow ">{title}</h1>
         </Link>
-        <div className="navbar-nav-scroll">
-          <ul className="navbar-nav bd-navbar-nav flex-row">
-            <li
-              className={
-                location.pathname === '/' ? 'nav-item active' : 'nav-item'
-              }
-            >
-              <Link to="/" className="nav-link">
-                Home
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      </div>
+      <div className="row">
+        <Link to="/" className="nav-link">
+          Home
+        </Link>  
+      </div>
+      <hr/>
     </div>
   )
 }

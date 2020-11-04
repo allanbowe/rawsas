@@ -25,8 +25,9 @@ const Layout: React.FC<Props> = ({ children, location }: Props) => {
   return (
     <div className="container">
       <Navibar title={siteMetadata.title} location={location} />
-      <hr/>
-      {children}
+      <div style={{ marginTop: "120px"}}>
+        {children}
+      </div>
       <Footer title={siteMetadata.title} author={siteMetadata.author} />
     </div>
   )

@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react'
-import emergence from 'emergence.js'
+import React, { useEffect } from "react"
+import emergence from "emergence.js"
 
-import Navibar from '../navibar/navibar'
-import Footer from '../footer/footer'
-import { siteMetadata } from '../../../gatsby-config'
-import '../../scss/gatstrap.scss'
+import Navibar from "../navibar/navibar"
+import Footer from "../footer/footer"
+import { siteMetadata } from "../../../gatsby-config"
+import "../../scss/gatstrap.scss"
+import "./styles.scss"
 /*
 import 'modern-normalize/modern-normalize.css'
 import 'prismjs/themes/prism.css'
@@ -24,11 +25,18 @@ const Layout: React.FC<Props> = ({ children, location }: Props) => {
 
   return (
     <div className="container">
-      <Navibar title={siteMetadata.title} location={location} />
-      <div style={{ marginTop: "120px"}}>
-        {children}
+      <div className="row">
+        <Navibar title={siteMetadata.title} location={location} />
+
+        <div style={{ marginTop: "140px" }}>
+          <div className="row">
+            <div className="col-md-9 vertical">{children}</div>
+            <div className="col-md-3"></div>
+          </div>
+        </div>
+
+        <Footer title={siteMetadata.title} author={siteMetadata.author} />
       </div>
-      <Footer title={siteMetadata.title} author={siteMetadata.author} />
     </div>
   )
 }

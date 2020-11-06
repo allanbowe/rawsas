@@ -42,6 +42,7 @@ export const pageQuery = graphql`
       }
     }
     remark: allMarkdownRemark(
+      limit: 5
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       posts: edges {

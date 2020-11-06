@@ -5,27 +5,27 @@ module.exports = {
     node: true,
   },
   extends: [
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "prettier/@typescript-eslint",
-    "prettier/react",
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'prettier/@typescript-eslint',
+    'prettier/react',
   ],
-  plugins: ["@typescript-eslint", "react", "react-hooks", "prettier"],
+  plugins: ['@typescript-eslint', 'react', 'react-hooks', 'prettier'],
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: "module",
+    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
   },
   rules: {
-    "prettier/prettier": "error",
+    'prettier/prettier': 'error',
   },
   settings: {
     react: {
-      version: "16.13.0",
+      version: '16.13.0',
     },
   },
 }

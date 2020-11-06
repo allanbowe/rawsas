@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable @typescript-eslint/no-var-requires */
-const path = require("path")
-const PostTemplate = path.resolve("./src/templates/template.tsx")
-const PostListTemplate = path.resolve("./src/templates/post-list-template.tsx")
+const path = require('path')
+const PostTemplate = path.resolve('./src/templates/template.tsx')
+const PostListTemplate = path.resolve('./src/templates/post-list-template.tsx')
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -86,9 +86,9 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
-        components: path.resolve(__dirname, "src/components"),
-        templates: path.resolve(__dirname, "src/templates"),
-        scss: path.resolve(__dirname, "src/scss"),
+        components: path.resolve(__dirname, 'src/components'),
+        templates: path.resolve(__dirname, 'src/templates'),
+        scss: path.resolve(__dirname, 'src/scss'),
       },
     },
   })

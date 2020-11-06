@@ -3,57 +3,57 @@ module.exports = {
   siteMetadata: {
     title: `Raw SAS`,
     description: `some Raw SAS description`,
-    siteUrl: "https://tetrahex-rawsas.netlify.app/",
+    siteUrl: 'https://tetrahex-rawsas.netlify.app/',
   },
-  pathPrefix: "/",
+  pathPrefix: '/',
   plugins: [
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/posts/`,
-        name: "posts",
+        name: 'posts',
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/images/`,
-        name: "images",
+        name: 'images',
       },
     },
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-embed-video",
+            resolve: 'gatsby-remark-embed-video',
             options: {
               width: 750,
               related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
             },
           },
           {
-            resolve: "gatsby-remark-images",
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 750,
               linkImagesToOriginal: false,
-              wrapperStyle: "margin-bottom: 1.0725rem;",
+              wrapperStyle: 'margin-bottom: 1.0725rem;',
             },
           },
           {
-            resolve: "gatsby-remark-responsive-iframe",
+            resolve: 'gatsby-remark-responsive-iframe',
             options: {
-              wrapperStyle: "margin-bottom: 1.0725rem",
+              wrapperStyle: 'margin-bottom: 1.0725rem',
             },
           },
-          "gatsby-remark-prismjs",
-          "gatsby-remark-copy-linked-files",
-          "gatsby-remark-smartypants",
+          'gatsby-remark-prismjs',
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-smartypants',
         ],
       },
     },
     {
-      resolve: "gatsby-plugin-netlify",
+      resolve: 'gatsby-plugin-netlify',
       options: {
         mergeSecurityHeaders: true,
         mergeLinkHeaders: true,
@@ -61,7 +61,7 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-graphql-codegen",
+      resolve: 'gatsby-plugin-graphql-codegen',
       options: {
         fileName: `types/graphql-types.d.ts`,
       },
@@ -81,12 +81,12 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    "gatsby-plugin-catch-links",
-    "gatsby-plugin-offline",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sass",
-    "gatsby-plugin-sharp",
-    "gatsby-plugin-sitemap",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-catch-links',
+    'gatsby-plugin-offline',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-sitemap',
+    'gatsby-transformer-sharp',
   ],
 }

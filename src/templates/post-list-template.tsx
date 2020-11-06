@@ -1,12 +1,12 @@
-import { graphql } from "gatsby"
-import { Link } from "gatsby"
+import { graphql } from 'gatsby'
+import { Link } from 'gatsby'
 
-import React from "react"
+import React from 'react'
 
-import { IndexQuery, PostByPathQuery } from "../../types/graphql-types"
-import Post from "../templates/post/post"
-import Meta from "../components/meta/meta"
-import Layout from "../components/layout/layout"
+import { IndexQuery, PostByPathQuery } from '../../types/graphql-types'
+import Post from '../templates/post/post'
+import Meta from '../components/meta/meta'
+import Layout from '../components/layout/layout'
 
 interface Props {
   data: IndexQuery
@@ -22,13 +22,12 @@ const BlogIndex: React.FC<Props> = ({ data, location, pageContext }: Props) => {
   })
   const posts = data.remark.posts
   const meta = data.site?.meta
-  console.log(pageContext)
 
   const newerPath =
     pageContext.currentPage == 1
       ? null
       : pageContext.currentPage == 2
-      ? "/"
+      ? '/'
       : `/page/${pageContext.currentPage - 1}`
   const olderPath =
     pageContext.currentPage == pageContext.numPages

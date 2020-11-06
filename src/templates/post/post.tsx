@@ -1,21 +1,21 @@
-import { Link } from "gatsby"
-import Img, { FluidObject } from "gatsby-image"
-import React from "react"
+import { Link } from 'gatsby'
+import Img, { FluidObject } from 'gatsby-image'
+import React from 'react'
 
-import Badge from "../../components/badge/badge"
-import { PostByPathQuery } from "../../../types/graphql-types"
+import Badge from '../../components/badge/badge'
+import { PostByPathQuery } from '../../../types/graphql-types'
 
-import "./style.scss"
+import './style.scss'
 
 const getDescription = (content: string): string => {
-  const body = content.split(" ", 60)
-  var description = ""
+  const body = content.split(' ', 60)
+  var description = ''
   let i = 0
   for (; i < body.length; i++) {
     if (i == 0) description = body[i]
-    else description = description + " " + body[i]
+    else description = description + ' ' + body[i]
   }
-  description = description + " ..."
+  description = description + ' ...'
   return description
 }
 
@@ -28,10 +28,10 @@ interface Props {
 
 const Post: React.FC<Props> = ({ data, options }: Props) => {
   const frontmatter = data.post?.frontmatter
-  const path = frontmatter?.path || ""
+  const path = frontmatter?.path || ''
   const image = frontmatter?.image || null
   const { isIndex } = options
-  const html = data.post?.html || ""
+  const html = data.post?.html || ''
 
   return (
     <div className="article" key={path}>
@@ -46,7 +46,7 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
             title="Posts by Allan"
             rel="author"
           >
-            {"Allan"}
+            {'Allan'}
           </a>
         </span>
         |<span className="published">{frontmatter?.date}</span>|

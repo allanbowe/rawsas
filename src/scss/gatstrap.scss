@@ -1,4 +1,4 @@
-@import "./colors.scss";
+@import './colors.scss';
 
 // Reassign color vars to semantic color scheme
 $theme-colors: (
@@ -14,9 +14,9 @@ $theme-colors: (
 
 // Fonts
 //
-@import "./fonts.scss";
+@import './fonts.scss';
 
-@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
 
 html,
 body {

@@ -1,5 +1,5 @@
-@import "scss/colors.scss";
-@import "scss/fonts.scss";
+@import 'scss/colors.scss';
+@import 'scss/fonts.scss';
 
 .article {
   .heading {
@@ -51,7 +51,7 @@
     }
   }
   &::after {
-    content: "";
+    content: '';
     margin-bottom: 50px;
     width: 100%;
     background-color: gainsboro;

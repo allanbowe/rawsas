@@ -1,5 +1,5 @@
-const path = require('path')
-const PostTemplate = path.resolve('./src/templates/template.tsx')
+const path = require("path")
+const PostTemplate = path.resolve("./src/templates/template.tsx")
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -9,7 +9,10 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allFile(filter: { extension: { regex: "/md|tsx/" } }, limit: 1000) {
+            allFile(
+              filter: { extension: { regex: "/md|tsx|html/" } }
+              limit: 1000
+            ) {
               edges {
                 node {
                   id
@@ -18,7 +21,6 @@ exports.createPages = ({ graphql, actions }) => {
                   remark: childMarkdownRemark {
                     id
                     frontmatter {
-                      layout
                       path
                     }
                   }
@@ -54,7 +56,7 @@ exports.createPages = ({ graphql, actions }) => {
         //     path: name,
         //     component: PageTemplate,
         //   })
-        // })    
+        // })
       })
     )
   })
@@ -64,9 +66,9 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
-        components: path.resolve(__dirname, 'src/components'),
-        templates: path.resolve(__dirname, 'src/templates'),
-        scss: path.resolve(__dirname, 'src/scss'),
+        components: path.resolve(__dirname, "src/components"),
+        templates: path.resolve(__dirname, "src/templates"),
+        scss: path.resolve(__dirname, "src/scss"),
       },
     },
   })

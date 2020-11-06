@@ -1,9 +1,7 @@
 ---
 title: Markdown 📝
-date: '2015-05-28T22:40:32.169Z'
-layout: post
-path: '/markdown/'
-category: Typography
+date: "2015-05-28T22:40:32.169Z"
+path: "/markdown/"
 tags:
   - Markdown
   - Emoji
@@ -34,5 +32,5 @@ Unicode is supported 😄
 
 ```js
 // javascript
-console.log('Hello World!!')
+console.log("Hello World!!")
 ```

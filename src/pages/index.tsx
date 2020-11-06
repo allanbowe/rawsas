@@ -1,12 +1,10 @@
-import { graphql } from 'gatsby'
-import React from 'react'
+import { graphql } from "gatsby"
+import React from "react"
 
-import { IndexQueryQuery, PostByPathQuery } from '../../types/graphql-types'
-import Post from '../templates/post/post'
-import Meta from '../components/meta/meta'
-import Layout from '../components/layout/layout'
-
-
+import { IndexQueryQuery, PostByPathQuery } from "../../types/graphql-types"
+import Post from "../templates/post/post"
+import Meta from "../components/meta/meta"
+import Layout from "../components/layout/layout"
 
 interface Props {
   data: IndexQueryQuery
@@ -50,20 +48,10 @@ export const pageQuery = graphql`
         post: node {
           html
           frontmatter {
-            layout
             title
             path
-            category
             tags
-            description
             date(formatString: "YYYY/MM/DD")
-            image {
-              childImageSharp {
-                fluid(maxWidth: 500) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
         }
       }

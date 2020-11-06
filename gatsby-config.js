@@ -3,52 +3,48 @@ module.exports = {
     title: `Raw Sas`,
     description: `This is my coding blog where I write about my coding journey.`,
   },
-  pathPrefix: '/',
+  pathPrefix: "/",
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    'gatsby-plugin-sass',
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/content/posts/`,
-        name: 'posts',
+        name: "posts",
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/content/images/`,
-        name: 'images',
+        name: "images",
       },
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          // {
-          //   resolve: 'gatsby-remark-images',
-          //   options: {
-          //     maxWidth: 750,
-          //     linkImagesToOriginal: false,
-          //     wrapperStyle: 'margin-bottom: 1.0725rem;',
-          //   },
-          // },
-          // {
-          //   resolve: 'gatsby-remark-responsive-iframe',
-          //   options: {
-          //     wrapperStyle: 'margin-bottom: 1.0725rem',
-          //   },
-          // },
-          'gatsby-remark-prismjs',
-          'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false,
+              wrapperStyle: "margin-bottom: 1.0725rem;",
+            },
+          },
+          {
+            resolve: "gatsby-remark-responsive-iframe",
+            options: {
+              wrapperStyle: "margin-bottom: 1.0725rem",
+            },
+          },
+          "gatsby-remark-prismjs",
+          "gatsby-remark-copy-linked-files",
+          "gatsby-remark-smartypants",
         ],
       },
     },
     {
-      resolve: 'gatsby-plugin-netlify',
+      resolve: "gatsby-plugin-netlify",
       options: {
         mergeSecurityHeaders: true,
         mergeLinkHeaders: true,
@@ -56,7 +52,7 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-graphql-codegen',
+      resolve: "gatsby-plugin-graphql-codegen",
       options: {
         fileName: `types/graphql-types.d.ts`,
       },
@@ -76,6 +72,12 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-
+    "gatsby-plugin-catch-links",
+    "gatsby-plugin-offline",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-sitemap",
+    "gatsby-transformer-sharp",
   ],
 }

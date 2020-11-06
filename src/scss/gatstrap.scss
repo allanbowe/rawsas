@@ -2,14 +2,14 @@
 
 // Reassign color vars to semantic color scheme
 $theme-colors: (
-	primary: $black,
-	secondary: $gray-600,
-	success: $green,
-	info: $cyan,
-	warning: $yellow,
-	danger: $red,
-	light: $gray-100,
-	dark: $gray-800,
+  primary: $black,
+  secondary: $gray-600,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800,
 ) !default;
 
 // Fonts
@@ -20,26 +20,26 @@ $theme-colors: (
 
 html,
 body {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 * {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {
-	font-size: 16px;
-	line-height: 1.5;
-	margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 img {
-	margin-bottom: 15px;
-	max-width: 100%;
+  margin-bottom: 15px;
+  max-width: 100%;
 }
 
 img:hover {
-	animation: pulse 0.5s;
+  animation: pulse 0.5s;
 }

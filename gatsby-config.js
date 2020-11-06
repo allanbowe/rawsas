@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/camelcase */
 module.exports = {
   siteMetadata: {
     title: `Raw Sas`,
     description: `some Raw SAS description`,
+    siteUrl: "https://tetrahex-rawsas.netlify.app/",
   },
   pathPrefix: "/",
   plugins: [

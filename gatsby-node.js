@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require("path")
 const PostTemplate = path.resolve("./src/templates/template.tsx")
 

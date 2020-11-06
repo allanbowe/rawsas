@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Raw Sas`,
-    description: `This is my coding blog where I write about my coding journey.`,
+    description: `some Raw SAS description`,
   },
   pathPrefix: "/",
   plugins: [

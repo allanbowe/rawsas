@@ -1,11 +1,11 @@
-import { graphql } from "gatsby"
-import React from "react"
+import { graphql } from 'gatsby'
+import React from 'react'
 
-import Post from "./post/post"
-import Meta from "../components/meta/meta"
-import Layout from "../components/layout/layout"
-import Page from "./page/page"
-import { PostByPathQuery } from "../../types/graphql-types"
+import Post from './post/post'
+import Meta from '../components/meta/meta'
+import Layout from '../components/layout/layout'
+import Page from './page/page'
+import { PostByPathQuery } from '../../types/graphql-types'
 
 interface Props {
   data: PostByPathQuery
@@ -19,12 +19,12 @@ const Template: React.FC<Props> = ({ data, location }: Props) => {
       archives[d.node.frontmatter.date] = 0
     archives[d.node.frontmatter.date]++
   })
-  const isPage = data.post?.frontmatter?.layout != "page"
+  const isPage = data.post?.frontmatter?.layout != 'page'
   return (
     <div>
       <Layout location={location} archives={archives}>
         <Meta
-          title={data.post?.frontmatter?.title || ""}
+          title={data.post?.frontmatter?.title || ''}
           site={data.site?.meta}
         />
         {isPage ? (

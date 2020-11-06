@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState } from 'react'
 import {
   Collapse,
   Navbar,
@@ -12,11 +12,11 @@ import {
   DropdownMenu,
   DropdownItem,
   NavbarText,
-} from "reactstrap"
+} from 'reactstrap'
 
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
 
-import "./style.scss"
+import './style.scss'
 
 interface Props {
   title: string

@@ -1,18 +1,18 @@
-import React from "react"
+import React from 'react'
 
-import { PostByPathQuery } from "../../../types/graphql-types"
+import { PostByPathQuery } from '../../../types/graphql-types'
 
 interface Props {
-	data: PostByPathQuery
-	location: Location
+  data: PostByPathQuery
+  location: Location
 }
 
 const Page: React.FC<Props> = ({ data }: Props) => {
-	return data.post?.html ? (
-		<div dangerouslySetInnerHTML={{ __html: data.post.html }} />
-	) : (
-		<></>
-	)
+  return data.post?.html ? (
+    <div dangerouslySetInnerHTML={{ __html: data.post.html }} />
+  ) : (
+    <></>
+  )
 }
 
 export default Page

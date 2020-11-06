@@ -1,7 +1,7 @@
-import { graphql } from "gatsby"
-import React from "react"
-import { ArchiveCountQuery } from "../../types/graphql-types"
-import "./style.scss"
+import { graphql } from 'gatsby'
+import React from 'react'
+import { ArchiveCountQuery } from '../../types/graphql-types'
+import './style.scss'
 
 interface Props {
   data: ArchiveCountQuery

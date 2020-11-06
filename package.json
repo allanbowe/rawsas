@@ -53,7 +53,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.+(js|jsx|json|css|scss)\" --ignore-path .gitignore",
+    "format": "prettier --write \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore",
     "lint": "eslint --fix --ext .js,.jsx --ignore-path .gitignore ."
   }
 }

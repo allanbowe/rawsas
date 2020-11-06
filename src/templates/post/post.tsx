@@ -1,8 +1,8 @@
 import { Link } from 'gatsby'
 import Img, { FluidObject } from 'gatsby-image'
 import React from 'react'
+import kebabCase from 'lodash/kebabCase'
 
-import Badge from '../../components/badge/badge'
 import { PostByPathQuery } from '../../../types/graphql-types'
 
 import './style.scss'
@@ -50,9 +50,20 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
           </a>
         </span>
         |<span className="published">{frontmatter?.date}</span>|
-        <a href="https://www.rawsas.com/category/viya/" rel="category tag">
-          Viya
-        </a>
+        <span>
+          {(frontmatter?.tags || []).map((tag, index) => (
+            <span>
+              {index > 0 && ', '}
+              <Link
+                to={`/category/${kebabCase(tag)}/`}
+                key={index}
+                rel="category tag"
+              >
+                {tag}
+              </Link>
+            </span>
+          ))}
+        </span>
       </p>
       <div
         className="content"

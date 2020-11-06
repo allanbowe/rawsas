@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 interface Props {
   headComponents: React.ReactNode[]
@@ -25,7 +25,7 @@ const HTML: React.FC<Props> = ({
         />
         <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
       </head>
-      <body style={{ backgroundColor: "#1e73be" }}>
+      <body style={{ backgroundColor: '#1e73be' }}>
         <div id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
         {postBodyComponents}
       </body>

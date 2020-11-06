@@ -11,9 +11,7 @@ const Footer: React.FC<Props> = ({ author, title }: Props) => (
   <div className="footer">
     <div className="container">
       <hr className="border-primary" />
-      <p>
-        {title}
-      </p>
+      <p>{title}</p>
     </div>
   </div>
 )

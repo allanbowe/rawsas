@@ -8,6 +8,8 @@ tags:
 
 <!-- wp:paragraph -->
 <p>Whilst creating a new macro for the macrocore library (<a href="https://github.com/macropeople/macrocore/blob/master/meta/mm_adduser2group.sas">mm_adduser2group</a>) I received in my log:  ERROR: Expected a comment or processing instruction.  </p>
+<!-- <p>Whilst creating a new macro for the macrocore library (<a href="https://github.com/macropeople/macrocore/blob/master/meta/mm_adduser2group.sas">mm_adduser2group</a>) I received in my log:  ERROR: Expected a comment or processing instruction.  </p> -->
+<!-- <p>Whilst creating a new macro for the macrocore library (<a href="https://github.com/macropeople/macrocore/blob/master/meta/mm_adduser2group.sas">mm_adduser2group</a>) I received in my log:  ERROR: Expected a comment or processing instruction.  </p> -->
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":442} -->
@@ -26,8 +28,4 @@ tags:
 <p>Code now fixed, and the SAS community has a new way to add users to groups metadata:</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:core-embed/vimeo {"url":"https://vimeo.com/334175929","type":"video","providerNameSlug":"vimeo","className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed-vimeo wp-block-embed is-type-video is-provider-vimeo wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://vimeo.com/334175929
-</div></figure>
-<!-- /wp:core-embed/vimeo -->
+`vimeo: https://vimeo.com/334175929`

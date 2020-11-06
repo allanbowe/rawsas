@@ -42,11 +42,7 @@ tags:
 <p>But what about the data logic?  All the SLISTS, SCL programs, subroutines and methods?  The good news is that <strong>much of this can be re-used</strong>.  The fact is that SCL is based on, and works very similarly to, good old base SAS.  This led to the development of the SCL Transcoding Kit, a framework / approach that lets you migrate SCL entries directly over to SAS (eg to run in a Stored Process or Job Execution Service), without the need for an AF License.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:core-embed/vimeo {"url":"https://vimeo.com/367240430","type":"video","providerNameSlug":"vimeo","className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed-vimeo wp-block-embed is-type-video is-provider-vimeo wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://vimeo.com/367240430
-</div></figure>
-<!-- /wp:core-embed/vimeo -->
+`vimeo: https://vimeo.com/367240430`
 
 <!-- wp:paragraph -->
 <p>The full list of supported functions includes:</p>

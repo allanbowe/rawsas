@@ -11,7 +11,7 @@ const Archives: React.FC<Props> = ({ data }: Props) => {
   let list = []
   for (const year in data) {
     list.unshift(
-      <a href={`/${year}`}>
+      <a key={year} href={`/${year}`}>
         {year} ({data[year]})
       </a>
     )

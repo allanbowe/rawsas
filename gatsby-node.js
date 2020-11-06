@@ -2,6 +2,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require("path")
 const PostTemplate = path.resolve("./src/templates/template.tsx")
+const PostListTemplate = path.resolve("./src/templates/post-list-template.tsx")
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -46,6 +47,23 @@ exports.createPages = ({ graphql, actions }) => {
           createPage({
             path,
             component: PostTemplate,
+          })
+        })
+
+        // Create blog-list pages
+        const postsPerPage = 2
+        const numPages = Math.ceil(items.length / postsPerPage)
+        console.log({ length: numPages })
+        Array.from({ length: numPages }).forEach((_, i) => {
+          createPage({
+            path: i === 0 ? `/` : `/page/${i + 1}`,
+            component: PostListTemplate,
+            context: {
+              limit: postsPerPage,
+              skip: i * postsPerPage,
+              numPages,
+              currentPage: i + 1,
+            },
           })
         })
 

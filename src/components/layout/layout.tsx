@@ -21,7 +21,7 @@ const Layout: React.FC<Props> = ({ children, location, archives }: Props) => {
           className="col-md-9"
           style={{ paddingTop: "40px", borderRight: "1px solid lightgray" }}
         >
-          {children}
+          <div className="main-content">{children}</div>
         </div>
         <div className="col-md-3" style={{ paddingTop: "40px" }}>
           <Archives data={archives} />

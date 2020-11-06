@@ -2,10 +2,6 @@
 @import "scss/fonts.scss";
 
 .article {
-  padding: 0 40px;
-  @media (max-width: 991px) {
-    padding: 0 20px;
-  }
   .heading {
     font-weight: bold;
     font-style: normal;

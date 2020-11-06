@@ -38,9 +38,9 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
       <h2 className="heading">
         <Link to={path}>{frontmatter?.title}</Link>
       </h2>
-      <p class="post-meta">
+      <p className="post-meta">
         by
-        <span class="author vcard">
+        <span className="author">
           <a
             href="https://www.rawsas.com/author/allan-admin/"
             title="Posts by Allan"
@@ -49,7 +49,7 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
             {"Allan"}
           </a>
         </span>
-        |<span class="published">{frontmatter?.date}</span>|
+        |<span className="published">{frontmatter?.date}</span>|
         <a href="https://www.rawsas.com/category/viya/" rel="category tag">
           Viya
         </a>

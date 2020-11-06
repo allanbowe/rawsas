@@ -1,7 +1,7 @@
 ---
-title: 'SAS As A Service - an easy way to get SAS into Excel, Power BI, and '000s of other tools / languages'
-date: '2016-11-18 09:30:00'
-path: '/sas-as-a-service-an-easy-way-to-get-sas-into-excel-power-bi-and-000s-of-other-tools-languages/'
+title: "SAS As A Service - an easy way to get SAS into Excel, Power BI "
+date: "2016-11-18 09:30:00"
+path: "/sas-as-a-service-an-easy-way-to-get-sas-into-excel-power-bi-and-000s-of-other-tools-languages/"
 tags:
   - Movable Type
 ---
@@ -17,6 +17,7 @@ A technique that has been available to us for at least 15 years¹?
 For those of us who work with <a href="https://rawsas.blogspot.co.uk/2015/12/building-web-apps-with-sas.html" target="_blank" rel="noopener">SAS Web Applications</a>, the idea of streaming data via a URL is not unusual.  It's a great approach as it ensures we can get the latest version of data, using the latest version of the code, with the permission set granted to that user at that point in time.
 
 Extending this concept to Excel is as easy as 1,2,3:
+
 <h3>1 - Set up the Stored Process</h3>
 The code below should be registered as a stored process using SAS Management Console with STREAMing output:
 <blockquote style="line-height: normal; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;"><span style="background: white; color: green; font-family: 'courier new';">/* STP URL Parameters */</span>

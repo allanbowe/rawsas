@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/camelcase */
 module.exports = {
   siteMetadata: {
-    title: `Raw Sas`,
+    title: `Raw SAS`,
     description: `some Raw SAS description`,
     siteUrl: "https://tetrahex-rawsas.netlify.app/",
   },
@@ -25,6 +25,13 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
+          {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+              width: 750,
+              related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
+            },
+          },
           {
             resolve: "gatsby-remark-images",
             options: {

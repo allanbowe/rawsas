@@ -29,31 +29,12 @@ const Navibar: React.FC<Props> = ({ location, title }: Props) => {
   const toggle = () => setIsOpen(!isOpen)
 
   return (
-    <div className="container sticky ">
-      <div className="row d-flex justify-content-center">
-        <Link to="/">
-          <h1 className="display-4 font-weight-bold textWithShadow ">
-            {title}
-          </h1>
+    <div className="top-section">
+      <div className="text-center">
+        <Link to="/" className="site-name display-4 font-weight-bold">
+          {title}
         </Link>
       </div>
-
-      {/*
-      <div className="row d-flex justify-content-center">
-        <Link to="https://sasensei.com/" className="nav-link">
-          Sasensei
-        </Link>
-        <Link to="https://datacontroller.io/" className="nav-link">
-          Data Controller
-        </Link>
-        <Link to="https://www.sasusergroups.org/" className="nav-link">
-          Sas User Groups
-        </Link>
-        <Link to="https://sasapps.io/" className="nav-link">
-          SAS Apps
-        </Link>
-      </div>
-      */}
 
       <Navbar light expand="md">
         <NavbarToggler onClick={toggle} />
@@ -82,8 +63,6 @@ const Navibar: React.FC<Props> = ({ location, title }: Props) => {
           </Nav>
         </Collapse>
       </Navbar>
-
-      <hr />
     </div>
   )
 }

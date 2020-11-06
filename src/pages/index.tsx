@@ -1,22 +1,28 @@
 import { graphql } from "gatsby"
 import React from "react"
 
-import { IndexQueryQuery, PostByPathQuery } from "../../types/graphql-types"
+import { IndexQuery, PostByPathQuery } from "../../types/graphql-types"
 import Post from "../templates/post/post"
 import Meta from "../components/meta/meta"
 import Layout from "../components/layout/layout"
 
 interface Props {
-  data: IndexQueryQuery
+  data: IndexQuery
   location: Location
 }
 
 const BlogIndex: React.FC<Props> = ({ data, location }: Props) => {
+  let archives = {}
+  data.dateCounts.edges.forEach(d => {
+    if (archives[d.node.frontmatter.date] == null)
+      archives[d.node.frontmatter.date] = 0
+    archives[d.node.frontmatter.date]++
+  })
   const posts = data.remark.posts
   const meta = data.site?.meta
 
   return (
-    <Layout location={location}>
+    <Layout location={location} archives={archives}>
       <Meta site={meta} />
       {posts.map((post, i) => (
         <Post
@@ -42,7 +48,7 @@ export const pageQuery = graphql`
       }
     }
     remark: allMarkdownRemark(
-      limit: 5
+      limit: 4
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       posts: edges {
@@ -52,7 +58,19 @@ export const pageQuery = graphql`
             title
             path
             tags
-            date(formatString: "YYYY/MM/DD")
+            date(formatString: "MMM DD, YYYY")
+          }
+        }
+      }
+    }
+    dateCounts: allMarkdownRemark(
+      limit: 1000
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            date(formatString: "YYYY")
           }
         }
       }

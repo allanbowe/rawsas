@@ -4,9 +4,6 @@ const path = require('path')
 const _ = require('lodash')
 const PostTemplate = path.resolve('./src/templates/template.tsx')
 const PostListTemplate = path.resolve('./src/templates/post-list-template.tsx')
-const PostYearListTemplate = path.resolve(
-  './src/templates/post-year-list-template.tsx'
-)
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -37,6 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
             tagsGroup: allMarkdownRemark(limit: 1000) {
               group(field: frontmatter___tags) {
                 fieldValue
+                totalCount
               }
             }
             dateCounts: allMarkdownRemark(
@@ -89,37 +87,58 @@ exports.createPages = ({ graphql, actions }) => {
             path: i === 0 ? `/` : `/page/${i + 1}`,
             component: PostListTemplate,
             context: {
+              page: 'index',
               archives,
+              filter: {},
               limit: postsPerPage,
               skip: i * postsPerPage,
-              numPages,
+              numPages: numPages,
               currentPage: i + 1,
             },
           })
         })
 
-        let years = new Set()
-        data.dateCounts.edges.forEach(d => years.add(d.node.frontmatter.date))
-        years.forEach(year => {
-          createPage({
-            path: `/${year}/`,
-            component: PostYearListTemplate,
-            context: {
-              archives,
-              filter: { frontmatter: { date: { gte: year, lt: year + 1 } } },
-            },
+        for (year in archives) {
+          const count = archives[year]
+          const numPagesOfYear = Math.ceil(count / postsPerPage)
+          Array.from({ length: numPagesOfYear }).forEach((_, i) => {
+            createPage({
+              path: i === 0 ? `/${year}/` : `/${year}/page/${i + 1}`,
+              component: PostListTemplate,
+              context: {
+                page: 'year',
+                archives,
+                filter: { frontmatter: { date: { gte: year, lt: year + 1 } } },
+                limit: postsPerPage,
+                skip: i * postsPerPage,
+                numPages: numPagesOfYear,
+                currentPage: i + 1,
+                year: year,
+              },
+            })
           })
-        })
+        }
 
         const tags = data.tagsGroup.group
         tags.forEach(tag => {
-          createPage({
-            path: `/category/${_.kebabCase(tag.fieldValue)}/`,
-            component: PostYearListTemplate,
-            context: {
-              archives,
-              filter: { frontmatter: { tags: { in: [tag.fieldValue] } } },
-            },
+          const count = tag.totalCount
+          const numPagesOfTag = Math.ceil(count / postsPerPage)
+          Array.from({ length: numPagesOfTag }).forEach((__, i) => {
+            const tagPath = `/category/${_.kebabCase(tag.fieldValue)}/`
+            createPage({
+              path: i === 0 ? tagPath : `${tagPath}page/${i + 1}`,
+              component: PostListTemplate,
+              context: {
+                page: 'category',
+                archives,
+                filter: { frontmatter: { tags: { in: [tag.fieldValue] } } },
+                limit: postsPerPage,
+                skip: i * postsPerPage,
+                numPages: numPagesOfTag,
+                currentPage: i + 1,
+                tag: tag.fieldValue,
+              },
+            })
           })
         })
       })

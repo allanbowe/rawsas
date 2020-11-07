@@ -1,15 +1,14 @@
-import { graphql } from 'gatsby'
-import { Link } from 'gatsby'
-
+import { graphql, Link } from 'gatsby'
 import React from 'react'
 
-import { IndexQuery, PostByPathQuery } from '../../types/graphql-types'
+import { BlogListQuery, PostByPathQuery } from '../../types/graphql-types'
 import Post from '../templates/post/post'
 import Meta from '../components/meta/meta'
 import Layout from '../components/layout/layout'
+const _ = require('lodash')
 
 interface Props {
-  data: IndexQuery
+  data: BlogListQuery
   location: Location
 }
 
@@ -17,16 +16,29 @@ const BlogIndex: React.FC<Props> = ({ data, location, pageContext }: Props) => {
   const posts = data.remark.posts
   const meta = data.site?.meta
 
+  const iniPath =
+    pageContext.page == 'index'
+      ? `/`
+      : pageContext.page == 'year'
+      ? `/${pageContext.year}/`
+      : pageContext.page == 'category'
+      ? `/category/${_.kebabCase(pageContext.tag)}/`
+      : null
+
   const newerPath =
-    pageContext.currentPage == 1
+    iniPath == null
+      ? null
+      : pageContext.currentPage == 1
       ? null
       : pageContext.currentPage == 2
-      ? '/'
-      : `/page/${pageContext.currentPage - 1}`
+      ? iniPath
+      : `${iniPath}page/${pageContext.currentPage - 1}`
   const olderPath =
-    pageContext.currentPage == pageContext.numPages
+    iniPath == null
       ? null
-      : `/page/${pageContext.currentPage + 1}`
+      : pageContext.currentPage == pageContext.numPages
+      ? null
+      : `${iniPath}page/${pageContext.currentPage + 1}`
 
   return (
     <Layout location={location} archives={pageContext.archives}>
@@ -57,7 +69,11 @@ const BlogIndex: React.FC<Props> = ({ data, location, pageContext }: Props) => {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query IndexQuery($skip: Int!, $limit: Int!) {
+  query BlogListQuery(
+    $filter: MarkdownRemarkFilterInput!
+    $skip: Int!
+    $limit: Int!
+  ) {
     site {
       meta: siteMetadata {
         title
@@ -65,9 +81,10 @@ export const pageQuery = graphql`
       }
     }
     remark: allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      filter: $filter
       limit: $limit
       skip: $skip
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       posts: edges {
         post: node {

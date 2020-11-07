@@ -41,11 +41,7 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
       <p className="post-meta">
         by
         <span className="author">
-          <a
-            href="https://www.rawsas.com/author/allan-admin/"
-            title="Posts by Allan"
-            rel="author"
-          >
+          <a title="Posts by Allan" rel="author">
             {'Allan'}
           </a>
         </span>

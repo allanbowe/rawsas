@@ -12,17 +12,11 @@ interface Props {
   location: Location
 }
 
-const Template: React.FC<Props> = ({ data, location }: Props) => {
-  let archives = {}
-  data.dateCounts.edges.forEach(d => {
-    if (archives[d.node.frontmatter.date] == null)
-      archives[d.node.frontmatter.date] = 0
-    archives[d.node.frontmatter.date]++
-  })
+const Template: React.FC<Props> = ({ data, location, pageContext }: Props) => {
   const isPage = data.post?.frontmatter?.layout != 'page'
   return (
     <div>
-      <Layout location={location} archives={archives}>
+      <Layout location={location} archives={pageContext.archives}>
         <Meta
           title={data.post?.frontmatter?.title || ''}
           site={data.site?.meta}
@@ -60,18 +54,6 @@ export const pageQuery = graphql`
         path
         tags
         date(formatString: "YYYY/MM/DD")
-      }
-    }
-    dateCounts: allMarkdownRemark(
-      limit: 1000
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            date(formatString: "YYYY")
-          }
-        }
       }
     }
   }

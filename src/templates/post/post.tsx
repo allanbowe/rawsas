@@ -52,13 +52,9 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
         |<span className="published">{frontmatter?.date}</span>|
         <span>
           {(frontmatter?.tags || []).map((tag, index) => (
-            <span>
+            <span key={index}>
               {index > 0 && ', '}
-              <Link
-                to={`/category/${kebabCase(tag)}/`}
-                key={index}
-                rel="category tag"
-              >
+              <Link to={`/category/${kebabCase(tag)}/`} rel="category tag">
                 {tag}
               </Link>
             </span>

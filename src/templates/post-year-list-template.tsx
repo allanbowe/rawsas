@@ -1,32 +1,19 @@
-import { graphql } from 'gatsby'
-import { Link } from 'gatsby'
-
+import { graphql, Link } from 'gatsby'
 import React from 'react'
 
-import { IndexQuery, PostByPathQuery } from '../../types/graphql-types'
+import { IndexYearQuery, PostByPathQuery } from '../../types/graphql-types'
 import Post from '../templates/post/post'
 import Meta from '../components/meta/meta'
 import Layout from '../components/layout/layout'
 
 interface Props {
-  data: IndexQuery
+  data: IndexYearQuery
   location: Location
 }
 
 const BlogIndex: React.FC<Props> = ({ data, location, pageContext }: Props) => {
   const posts = data.remark.posts
   const meta = data.site?.meta
-
-  const newerPath =
-    pageContext.currentPage == 1
-      ? null
-      : pageContext.currentPage == 2
-      ? '/'
-      : `/page/${pageContext.currentPage - 1}`
-  const olderPath =
-    pageContext.currentPage == pageContext.numPages
-      ? null
-      : `/page/${pageContext.currentPage + 1}`
 
   return (
     <Layout location={location} archives={pageContext.archives}>
@@ -40,16 +27,6 @@ const BlogIndex: React.FC<Props> = ({ data, location, pageContext }: Props) => {
           key={i}
         />
       ))}
-      {olderPath && (
-        <Link to={olderPath} className="float-left">
-          « Older Entries
-        </Link>
-      )}
-      {newerPath && (
-        <Link to={newerPath} className="float-right">
-          Next Entries »
-        </Link>
-      )}
     </Layout>
   )
 }
@@ -57,7 +34,7 @@ const BlogIndex: React.FC<Props> = ({ data, location, pageContext }: Props) => {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query IndexQuery($skip: Int!, $limit: Int!) {
+  query IndexYearQuery($filter: MarkdownRemarkFilterInput!) {
     site {
       meta: siteMetadata {
         title
@@ -65,9 +42,8 @@ export const pageQuery = graphql`
       }
     }
     remark: allMarkdownRemark(
+      filter: $filter
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: $limit
-      skip: $skip
     ) {
       posts: edges {
         post: node {

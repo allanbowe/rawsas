@@ -3,7 +3,7 @@ title: 'Stackoverflow hits 10,000 SAS questions!'
 date: '2018-07-20 14:05:57'
 path: '/stackoverflow-hits-10000-sas-questions/'
 tags:
-  - Movable Type
+  - SQL
 ---
 
 If you have a question about SAS - one that fits the definition of a <a href="https://stackoverflow.com/help/how-to-ask">good question</a> - stackoverflow (SO) is a fantastic place to ask!  There is an active community, that cares about giving the best answers to your programming questions, often within minutes.   The <a href="https://stackoverflow.com/questions/107414/whats-your-best-trick-to-break-out-of-an-unbalanced-quote-condition-in-base-sas">first SAS post</a> was made by <a href="https://stackoverflow.com/users/18968/martin-b%C3%B8gelund">Martin Bøgelund</a> back in 2008 - and the 10,000th post was made just yesterday (19Jul2018).<a href="https://stackoverflow.com/questions/107414/whats-your-best-trick-to-break-out-of-an-unbalanced-quote-condition-in-base-sas"><img class="aligncenter size-full wp-image-384" src="../images/Screen-Shot-2018-07-20-at-14.52.53.png" alt="" width="1364" height="326" /></a>Users on SO gain reputation by asking great questions, but also by providing great answers.  This reputation score translates into a <a href="https://stackoverflow.com/tags/sas/topusers">leaderboard</a>, and the top contributors are currently:

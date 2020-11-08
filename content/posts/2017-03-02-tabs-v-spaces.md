@@ -3,7 +3,8 @@ title: 'Tabs v Spaces - which is more popular in SAS?'
 date: '2017-03-02 20:52:00'
 path: '/tabs-v-spaces/'
 tags:
-  - Movable Type
+  - Programming
+  - sas
 ---
 
 Tabs or Spaces?  Does it even matter, so long as you / your team are consistent?  For many SAS developers the standard place to write code is the Program Editor - for which the default setting is to use tabs, else 4 spaces.
@@ -17,6 +18,7 @@ My preference is 2 spaces, but what do you think is the most commonly used appro
 <img class="size-medium wp-image-79 aligncenter" src="../images/Screen-2BShot-2B2017-03-02-2Bat-2B20.43.56-273x300.png" alt="" width="273" height="300" />
 
 So - which do you think was most popular?  The choices are:
+
 <div style="clear: both; text-align: center;"></div>
 <ul>
  	<li>8 spaces</li>

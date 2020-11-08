@@ -3,7 +3,14 @@ title: 'Create / Compile / Run SCL in Enterprise Guide'
 date: '2017-05-19 12:51:00'
 path: '/create-compile-run-scl-in-enterprise-guide/'
 tags:
-  - Movable Type
+  - batch scl EG
+  - catalog
+  - display
+  - EG
+  - Enterprise Guide
+  - proc display
+  - programmatically creating SCL
+  - SCL
 ---
 
 The <b>conundrum</b> - I needed to run SCL on a windows machine without Base SAS (only EG) connecting to a Linux backend.
@@ -13,6 +20,7 @@ The <b>obstacle</b> - it is not possible to programmatically create an SCL catal
 The <b>solution</b> - read on!
 
 Thankfully I did have access to a windows machine with Base SAS.  Taking inspiration from this <a href="https://groups.google.com/forum/#!topic/comp.soft-sys.sas/6szbPqepPi4" target="_blank" rel="noopener">post</a> (thanks Robin) the steps were as below.  If you do not need to switch environments / operating systems, you can skip steps 2 and 3.
+
 <h2>1 - Create an SCL Entry</h2>
 Unfortunately, it is absolutely necessary to create an SCL file manually.  The good news is that you can do this just once, and write an entry that will simply <span style="font-family: 'courier new' , 'courier' , monospace; font-size: x-small;">%include </span>any future SCL you send to it.  To create this file and corresponding catalog at the same time, use the build command:
 <div style="clear: both; text-align: center;"><a style="margin-left: 1em; margin-right: 1em;" href="../images/Capture.png"><img class="alignnone" src="../images/Capture_1.png" alt="" width="214" height="75" border="0" /></a></div>

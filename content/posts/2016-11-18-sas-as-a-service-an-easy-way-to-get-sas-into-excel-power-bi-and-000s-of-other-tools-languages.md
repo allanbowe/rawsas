@@ -1,9 +1,9 @@
 ---
-title: "SAS As A Service - an easy way to get SAS into Excel, Power BI "
-date: "2016-11-18 09:30:00"
-path: "/sas-as-a-service-an-easy-way-to-get-sas-into-excel-power-bi-and-000s-of-other-tools-languages/"
+title: 'SAS As A Service - an easy way to get SAS into Excel, Power BI '
+date: '2016-11-18 09:30:00'
+path: '/sas-as-a-service-an-easy-way-to-get-sas-into-excel-power-bi-and-000s-of-other-tools-languages/'
 tags:
-  - Movable Type
+  - SQL
 ---
 
 When we think about using SAS with Excel, one begins to groan at the myriad of options - DDE, SAS Addin, various Excel-ish library engines, IOM in VBA, etc etc etc.

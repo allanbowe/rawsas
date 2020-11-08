@@ -3,7 +3,7 @@ title: 'Building Web Apps with SAS'
 date: '2015-12-30 19:38:00'
 path: '/building-web-apps-with-sas/'
 tags:
-  - Movable Type
+  - sas web app
 ---
 
 Surprisingly little attention is given to the (huge) potential of the SAS platform for building web apps.  On the assumption this is due to sheer ignorance, the aim of this post is to share some of my experience, and give budding SAS web-developers a kick start in the right direction.
@@ -11,6 +11,7 @@ Surprisingly little attention is given to the (huge) potential of the SAS platfo
 But first, what kind of things can you build?  Well, anything really, by combining HTML / CSS / Javascript and using SAS as a server side language (via the Stored Process Server) you have an immensely powerful / scalable application development capability.
 
 For instance, to reference some examples of web apps I've built over the years:
+
 <ul>
  	<li>Drilldown Reports - <i>Click a number, see the numbers &amp; formula used to create that number, all the way back to source system.</i></li>
  	<li>Build &amp; Test harness - <i>Allowed selection of a development branch from remote GIT repo, checked out all macros / metadata, imported / deployed the jobs, ran entire solution plus tests, scanned logs for warnings / errors, worked for multiple users.</i></li>

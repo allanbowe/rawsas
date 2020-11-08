@@ -3,7 +3,9 @@ title: 'SAS Global Forum 2018'
 date: '2018-04-15 10:32:44'
 path: '/sas-global-forum-2018/'
 tags:
-  - Movable Type
+  - Boemska
+  - sasensei
+  - SGF
 ---
 
 The 42nd annual SAS Global Forum took place this year in mile "high" Denver! This pilgrimage is a firm part of the calendar for SAS professionals around the world.
@@ -26,6 +28,7 @@ One thing I love about SGF are the random encounters - for instance, bumping int
 <iframe class="aligncenter" src="//players.brightcove.net/1872491364001/9829d1d0-bfdd-4b86-8efa-43bb454fc746_default/index.html?videoId=5766305652001" width="400"  frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 My presentation was entitled "Find Your SAS Sensei" and I was fortunate enough to have several celebrity speakers - <a href="https://www.linkedin.com/in/christopher-blake-1a377424/" target="_blank" rel="noopener">Chris Blake</a>, <a href="https://www.linkedin.com/in/howellandrew/" target="_blank" rel="noopener">Andrew Howell</a>, <a href="https://stackoverflow.com/users/1623007/joe" target="_blank" rel="noopener">Joe Matise</a> and <a href="https://communities.sas.com/t5/user/viewprofilepage/user-id/4" target="_blank" rel="noopener">Chris Hemedinger</a>! My slides are below, and the paper is <a href="https://www.rawsas.com/wp-content/uploads/2018/04/SGF2018_Find_Your_SAS_Sensei.pdf">here</a>.
+
 <iframe class="aligncenter" src="//slides.com/allanbowe/find-your-sas-sensei/embed" width="400" height="300" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
 
 The kickback party was an awesome event, lots of VR, fun things to do, and great displays in the mile high stadium!

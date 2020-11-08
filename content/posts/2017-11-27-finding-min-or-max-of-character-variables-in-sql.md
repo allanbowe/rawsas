@@ -3,10 +3,11 @@ title: 'Find MIN / MAX of character variables in sql'
 date: '2017-11-27 00:09:56'
 path: '/finding-min-or-max-of-character-variables-in-sql/'
 tags:
-  - Movable Type
+  - SQL
 ---
 
 It is perfectly valid to use <span style="font-family: 'courier new' , 'courier' , monospace;">min()</span> as a <a href="http://support.sas.com/kb/25/279.html" target="_blank" rel="noopener">summary function</a> on character values in <span style="font-family: 'courier new' , 'courier' , monospace;">proc sql</span>, eg as follows:
+
 <blockquote style="line-height: normal; margin-bottom: 0cm; mso-layout-grid-align: none; text-autospace: none;"><b><span style="background: white; color: navy; font-family: 'courier new';">proc</span></b> <b><span style="background: white; color: navy; font-family: 'courier new';">sql</span></b><span style="background: white; font-family: 'courier new';">;
 </span><span style="background: white; color: blue; font-family: 'courier new';">create</span> <span style="background: white; color: blue; font-family: 'courier new';">table</span><span style="background: white; font-family: 'courier new';"> test </span><span style="background: white; color: blue; font-family: 'courier new';">as</span><span style="background: white; font-family: 'courier new';">
 </span><span style="background: white; color: blue; font-family: 'courier new';">  select</span><span style="background: white; font-family: 'courier new';"> min(name) </span><span style="background: white; color: blue; font-family: 'courier new';">as</span><span style="background: white; font-family: 'courier new';"> minval

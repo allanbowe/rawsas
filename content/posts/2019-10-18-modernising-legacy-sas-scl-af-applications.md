@@ -3,7 +3,7 @@ title: 'Modernising Legacy SAS SCL / AF Applications'
 date: '2019-10-18 13:08:07'
 path: '/modernising-legacy-sas-scl-af-applications/'
 tags:
-  - Movable Type
+  - SQL
 ---
 
 <!-- wp:paragraph -->

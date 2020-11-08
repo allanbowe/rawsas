@@ -3,24 +3,25 @@ title: 'Converting SAS date to Javascript datetime (in Javascript)'
 date: '2016-05-04 17:38:00'
 path: '/converting-sas-date-to-javascript-date-in-javascript/'
 tags:
-  - Movable Type
+  - SQL
 ---
 
 Converting a SAS date or datetime to javascript isn't hard, but still - it should be easy to google for!
 
 <span style="font-family: 'courier new' , 'courier' , monospace;">  var dtSAS=20563;</span>
-<span style="font-family: 'courier new' , 'courier' , monospace;">  var dtJS=new Date(+new Date(1960,0,1) + dtSAS * 86400000);</span>
+<span style="font-family: 'courier new' , 'courier' , monospace;">  var dtJS=new Date(+new Date(1960,0,1) + dtSAS \* 86400000);</span>
 <span style="font-family: 'courier new' , 'courier' , monospace;">  alert(dtJS.toUTCString());</span>
 
 Right, that should get rid of 95% of readers, for the rest of you, a quick explanation.
 
-First, it's important to note that SAS dates are stored as number of <i>days </i>since Jan 1st, 1960 - whereas Javascript "dates" are actually the number of <i>milliseconds </i>since Jan 1st 1970.  This explains the <span style="font-family: 'courier new' , 'courier' , monospace; font-size: xx-small;">86400000 </span>value (24 days * 60 minutes * 60 seconds * 1000 milliseconds), and why the embedded <span style="font-family: 'courier new' , 'courier' , monospace; font-size: xx-small;">Date() </span>object is set to 1960.
+First, it's important to note that SAS dates are stored as number of <i>days </i>since Jan 1st, 1960 - whereas Javascript "dates" are actually the number of <i>milliseconds </i>since Jan 1st 1970.  This explains the <span style="font-family: 'courier new' , 'courier' , monospace; font-size: xx-small;">86400000 </span>value (24 days _ 60 minutes _ 60 seconds \* 1000 milliseconds), and why the embedded <span style="font-family: 'courier new' , 'courier' , monospace; font-size: xx-small;">Date() </span>object is set to 1960.
 
 Next, there's the "+" sign before that nested Date object.  That tells Javascript to return a numeric value (<span style="font-family: 'courier new' , 'courier' , monospace; font-size: xx-small;">-315619200000</span>) instead of a formatted value (<span style="font-family: 'courier new' , 'courier' , monospace; font-size: xx-small;">Fri Jan 01 1960 00:00:00 GMT+0000 (GMT Standard Time)</span>).
 
 Finally, the .toUTCString() method avoids contention with local time conventions (eg the extra 1 hour in BST).
 
 To make this even easier to deal with, I've knocked together a simple Javascript function - see <a href="https://jsfiddle.net/rawsas/bzskug3d/" target="_blank" rel="noopener">fiddle</a>.
+
 <div style="clear: both; text-align: center;"></div>
 <span style="color: #006600; font-family: 'courier new' , 'courier' , monospace; font-size: 13.464px; line-height: 14.8104px; white-space: nowrap;">// valid in ECMASCRIPT 2016</span>
 <span style="color: #000066; font-family: 'courier new' , 'courier' , monospace; font-size: 13.464px; font-weight: bold; line-height: 14.8104px; white-space: nowrap;">function</span><span style="background-color: #f0f0f0; font-family: 'courier new' , 'courier' , monospace; font-size: 13.464px; line-height: 14.8104px; white-space: nowrap;"> dtSAStoJS</span><span style="color: #009900; font-family: 'courier new' , 'courier' , monospace; font-size: 13.464px; line-height: 14.8104px; white-space: nowrap;">(</span><span style="background-color: #f0f0f0; font-family: 'courier new' , 'courier' , monospace; font-size: 13.464px; line-height: 14.8104px; white-space: nowrap;">dtSAS</span><span style="color: #339933; font-family: 'courier new' , 'courier' , monospace; font-size: 13.464px; line-height: 14.8104px; white-space: nowrap;">,</span><span style="background-color: #f0f0f0; font-family: 'courier new' , 'courier' , monospace; font-size: 13.464px; line-height: 14.8104px; white-space: nowrap;">dtType</span><span style="color: #339933; font-family: 'courier new' , 'courier' , monospace; font-size: 13.464px; line-height: 14.8104px; white-space: nowrap;">=</span><span style="color: #3366cc; font-family: 'courier new' , 'courier' , monospace; font-size: 13.464px; line-height: 14.8104px; white-space: nowrap;">'DATE'</span><span style="color: #009900; font-family: 'courier new' , 'courier' , monospace; font-size: 13.464px; line-height: 14.8104px; white-space: nowrap;">)</span><span style="color: #009900; font-family: 'courier new' , 'courier' , monospace; font-size: 13.464px; line-height: 14.8104px; white-space: nowrap;">{</span>

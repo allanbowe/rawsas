@@ -1,9 +1,9 @@
 ---
-title: "Importing flow: ERROR - An error occurred trying to connect the responsible parties for the imported objects."
-date: "2016-11-18 12:23:00"
-path: "/importing-flow-error-an-error-occurred-trying-to-connect-the-responsible-parties-for-the-imported-objects-reason-cant-find-resource-for-bundle-java-util-propertyresourcebundle-key-responsiblep/"
+title: 'Importing flow: ERROR - An error occurred trying to connect the responsible parties for the imported objects.'
+date: '2016-11-18 12:23:00'
+path: '/importing-flow-error-an-error-occurred-trying-to-connect-the-responsible-parties-for-the-imported-objects-reason-cant-find-resource-for-bundle-java-util-propertyresourcebundle-key-responsiblep/'
 tags:
-  - Movable Type
+  - SQL
 ---
 
 If you are getting the following message when importing a package containing a FLOW:

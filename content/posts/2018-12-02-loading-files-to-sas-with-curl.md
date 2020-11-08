@@ -3,12 +3,20 @@ title: 'Loading files to SAS with CURL'
 date: '2018-12-02 16:26:51'
 path: '/loading-files-to-sas-with-curl/'
 tags:
-  - Movable Type
+  - sas
+  - SAS Stored Process Web Application
+  - sas web app
+  - SAS Web Applications
+  - SAS Web Apps
+  - Stored Process Web Applications
+  - Stored Processes
+  - Web Applications
 ---
 
 A useful feature of SAS Stored Processes is the ability to load multiple files in a single request. This could be a bunch of CSVs for processing, or even a `.sas` program that you want to `%include` along with some associated data (deliberate SAS injection). This is particularly useful when you are running a build process, eg for a web application, and you need to send across some SAS programs that should be compiled into Stored Processes and re-downloaded as a distributable SPK. If you send your executable .sas program as the first file, to a 'master' STP that has just one line of code (`%inc &amp;_webin_fileref1/source2;`), then this becomes the only entry point you need when running from a non-SAS environment!
 
 Anyway, here is the sample code:
+
 <pre>curl -v -L -b cookiefile -c cookiefile \
     -H "Content-Type: multipart/form-data" \
     -F "myprogram=@./runme.sas" \
@@ -16,7 +24,9 @@ Anyway, here is the sample code:
     -F "somefile2=@./processmeaswell.csv" \
     "$SERVER?_program=$STP&amp;_username=$USER&amp;_password=$PASS"
     --output "/tmp/out.txt"</pre>
+
 Things to note:
+
 <h3>curl options</h3>
 <ul>
  	<li>-v = verbose</li>
@@ -36,6 +46,7 @@ Things to note:
 <strong>SAS Considerations</strong>
 
 The following automatically assigned macro variables will be helpful when accessing the files you have uploaded:
+
 <ul>
  	<li>_WEBIN_FILE_COUNT - contains a count of the number of files that were uploaded</li>
  	<li>_WEBIN_FILEREF - a unique fileref that can be used to access the file</li>

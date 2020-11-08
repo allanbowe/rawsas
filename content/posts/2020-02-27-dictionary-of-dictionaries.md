@@ -3,7 +3,7 @@ title: 'Dictionary of Dictionaries'
 date: '2020-02-27 11:18:29'
 path: '/dictionary-of-dictionaries/'
 tags:
-  - Movable Type
+  - SQL
 ---
 
 <!-- wp:paragraph -->

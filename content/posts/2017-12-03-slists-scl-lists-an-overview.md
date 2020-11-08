@@ -3,7 +3,8 @@ title: 'SAS SCL Lists (slists) - an Overview'
 date: '2017-12-03 20:58:29'
 path: '/slists-scl-lists-an-overview/'
 tags:
-  - Movable Type
+  - AF
+  - SCL
 ---
 
 <!-- wp:heading -->
@@ -67,7 +68,9 @@ tags:
 <!-- /wp:paragraph -->
 
 <!-- wp:shortcode -->
+
 [video width="1868" height="1080" webm="https://www.rawsas.com/wp-content/uploads/2017/12/Dec-3-2017-8_29-PM.webm"][/video]
+
 <!-- /wp:shortcode -->
 
 <!-- wp:paragraph -->

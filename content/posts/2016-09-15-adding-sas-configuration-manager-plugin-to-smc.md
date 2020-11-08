@@ -3,7 +3,13 @@ title: 'Adding SAS Configuration Manager plugin to SMC'
 date: '2016-09-15 18:14:00'
 path: '/adding-sas-configuration-manager-plugin-to-smc/'
 tags:
-  - Movable Type
+  - Administration
+  - Configuration Manager
+  - Management Console
+  - missing
+  - plugin
+  - sas
+  - SMC
 ---
 
 The SAS Configuration Manager plug-in is great for tweaking settings of the SAS Web Applications without poking around in xml and config files.  However, you may find it missing from the usual place under the Application Management folder in SAS Management Console.
@@ -13,6 +19,7 @@ If this is the case, first of all check that you are in the administrators group
 <img class="size-medium wp-image-104 aligncenter" src="../images/Capture-2-300x249.png" alt="" width="300" height="249" />
 
 If it is not there, the chances are that it is not installed.  To install it, you need access to the SAS Software Depot - simply run the Deployment Wizard, selecting either:
+
 <ul>
  	<li>SAS Web Infrastructure Client (9.2)</li>
  	<li>SAS Configuration Manager (9.3)</li>

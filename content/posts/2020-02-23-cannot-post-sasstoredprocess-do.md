@@ -3,7 +3,7 @@ title: 'Cannot POST /SASStoredProcess/do/'
 date: '2020-02-23 23:20:26'
 path: '/cannot-post-sasstoredprocess-do/'
 tags:
-  - Movable Type
+  - SQL
 ---
 
 <!-- wp:paragraph -->

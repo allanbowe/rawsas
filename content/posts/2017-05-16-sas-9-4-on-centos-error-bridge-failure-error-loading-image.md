@@ -3,7 +3,8 @@ title: 'SAS 9.4 on CENTOS - ERROR:  BRIDGE FAILURE - ERROR LOADING IMAGE'
 date: '2017-05-16 09:07:00'
 path: '/sas-9-4-on-centos-error-bridge-failure-error-loading-image/'
 tags:
-  - Movable Type
+  - Administration
+  - sas
 ---
 
 The following came up when trying to launch sas on a recent Centos 7.3 install:
@@ -25,6 +26,7 @@ The following came up when trying to launch sas on a recent Centos 7.3 install:
 <span style="font-family: Courier New, Courier, monospace; font-size: x-small;">
 </span><span style="font-family: Courier New, Courier, monospace; font-size: x-small;">ERROR: Could not load /sas94/SASFoundation/9.4/dbcs/sasexe/sasmotif (38 images loaded)</span>
 <span style="font-family: Courier New, Courier, monospace; font-size: x-small;">ERROR: libpng12.so.0: cannot open shared object file: No such file or directory</span>
+
 <div></div>
 <div>The clue was in the log, and the following command fixed it:</div>
 <div></div>

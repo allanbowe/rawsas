@@ -3,10 +3,12 @@ title: 'SAS/Share ERROR: Invalid object specifi...'
 date: '2016-09-20 15:12:00'
 path: '/sasshare-error-invalid-object-specifi/'
 tags:
-  - Movable Type
+  - 'ERROR: Invalid object specifi...'
+  - 'Invalid object specifi...'
 ---
 
 Had an interesting error message today (SAS 9.3, Windows 2012R2), which appeared to be truncated:
+
 <div><span style="color: red;">ERROR: Attempt to connect to server "dev01.domain.com".__8551 rejected by server.</span></div>
 <div><span style="color: red;">ERROR: Invalid object specifi...</span></div>
 <div><span style="color: red;">ERROR: Error in the LIBNAME statement.</span></div>

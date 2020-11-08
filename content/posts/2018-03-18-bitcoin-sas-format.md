@@ -3,7 +3,9 @@ title: '₿ Bitcoin SAS Format - $bitcoin.'
 date: '2018-03-18 22:10:12'
 path: '/bitcoin-sas-format/'
 tags:
-  - Movable Type
+  - bitcoin
+  - Formats
+  - SAS Programming
 ---
 
 <!-- For Bitcoin denominated reports, a Bitcoin SAS Format will align the decimal place and display the appropriate currency symbol.  Unicode <a href="http://www.unicode.org/versions/Unicode10.0.0/">released</a> the dedicated Bitcoin symbol ( <strong>&#8383;</strong> - u20BF) in June 2017. -->

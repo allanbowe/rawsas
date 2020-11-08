@@ -3,10 +3,11 @@ title: 'The Sasensei Bitcoin Challenge'
 date: '2018-04-28 14:52:05'
 path: '/the-sasensei-bitcoin-challenge/'
 tags:
-  - Movable Type
+  - bitcoin
+  - sasensei
 ---
 
-To celebrate the recent launch of the Sasensei final level (Custom Quiz Builder) we're running a promotion in April, May and June this year. The prize - $100 in Bitcoin - is given to the player who submits the best question of the month. Note that "best" is not related to difficulty - but rather it means that it has been voted up (by the community) and is interesting, well written, fun, and/or educational!
+To celebrate the recent launch of the Sasensei final level (Custom Quiz Builder) we're running a promotion in April, May and June this year. The prize - \$100 in Bitcoin - is given to the player who submits the best question of the month. Note that "best" is not related to difficulty - but rather it means that it has been voted up (by the community) and is interesting, well written, fun, and/or educational!
 
 Think you have what it takes? You need to be Green Belt (100 rep and above) in order to unlock 'submit' capability.
 

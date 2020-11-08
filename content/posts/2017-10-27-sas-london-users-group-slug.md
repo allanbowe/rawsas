@@ -3,10 +3,11 @@ title: 'About the SAS London Users Group (SLUG)'
 date: '2017-10-27 22:17:51'
 path: '/sas-london-users-group-slug/'
 tags:
-  - Movable Type
+  - communities
 ---
 
 The SAS London Users Group (SLUG) is a London-based user led community dedicated to realising the value of SAS software.  Sounds great.  But what does this actually mean?
+
 <h4>London Based</h4>
 Whilst our meetups take place in London, users are welcomed from across the UK and the rest of the world.  SLUG vs SUKUG - easy winner!  The venue may change - for latest details, check out our <a href="https://www.meetup.com/preview/SAS-London-Users-Group">website</a>.
 <h4>User Led</h4>
@@ -17,6 +18,7 @@ The world of SAS has many strong online communities (SAS-L, Stackoverflow, SAS C
 The success of a SAS platform depends primarily on the knowledge and experience of Users - be they Administrators, Developers, Analysts or Data Managers.  SAS is incredibly flexible, and a support network can be a lifeline for 'how best to achieve this' type questions.
 
 Your involvement in the SAS London User Group will enable you to:
+
 <ul>
  	<li>Foster connections and collaborate with other SAS professionals.</li>
  	<li>Increase your understanding of SAS products and services.</li>

@@ -3,7 +3,10 @@ title: 'Look out - Locale Gotcha'
 date: '2016-12-12 09:06:00'
 path: '/look-out-locale-gotcha/'
 tags:
-  - Movable Type
+  - sas
+  - SAS Stored Process Web Application
+  - Stored Process Web Applications
+  - Web Applications
 ---
 
 As gotcha's go, this was a good one!
@@ -12,17 +15,19 @@ We had a report being generated with dates that were inconsistent with the sourc
 
 The <span style="font-family: 'courier new' , 'courier' , monospace;">ANYDTDTE</span>. informat is driven by the locale setting but as per the chain of sasv9.cfg files we had <span style="font-family: Courier New, Courier, monospace;">-LOCALE en_GB</span><span style="font-family: courier new, courier, monospace;"> </span><span style="font-family: inherit;">defined for</span> both servers.  So I checked the logs, and found something interesting..
 
-One of our STP applications can be triggered from either Excel or a browser.  I could see that the same user had triggered two requests, less than a minute apart, one from excel and one from a browser (as evidenced by the value of the _HTUA variable)
+One of our STP applications can be triggered from either Excel or a browser.  I could see that the same user had triggered two requests, less than a minute apart, one from excel and one from a browser (as evidenced by the value of the \_HTUA variable)
 
-Yet one session had <span style="font-family: 'courier new' , 'courier' , monospace;">_USERLOCALE=en_US</span> and the other had <span style="font-family: 'courier new' , 'courier' , monospace;">_USERLOCALE=en_GB</span>!!
+Yet one session had <span style="font-family: 'courier new' , 'courier' , monospace;">\_USERLOCALE=en_US</span> and the other had <span style="font-family: 'courier new' , 'courier' , monospace;">\_USERLOCALE=en_GB</span>!!
 
 As it turns out, the locale for a Stored Process session <i>can change according to the context of the client</i> - as described in this <a href="http://support.sas.com/kb/45/414.html" target="_blank" rel="noopener">usage note</a>.
 
 So the fix is simply to add the following code (as per your desired locale):
+
 <blockquote><span style="font-family: 'courier new' , 'courier' , monospace;">options locale=en_gb;</span></blockquote>
 But where?
 
 I tried fixing this via the autoexec, but this had no effect (likely because the server is running before the request arrives) so instead I added it to the stp init program - which worked a treat.
 <img class="size-medium wp-image-81 aligncenter" src="https://www.rawsas.com/wp-content/uploads/2016/12/Capture-300x79.png" alt="" width="300" height="79" />
 <b>I recommend adding this to your init program</b>, unless you really do want your outputs to change according to the locale setting of the client application!
+
 <div style="clear: both; text-align: center;"></div>

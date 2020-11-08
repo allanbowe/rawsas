@@ -3,12 +3,13 @@ title: 'proc metalib - ERROR: Invalid use of sign notation'
 date: '2016-09-22 09:10:00'
 path: '/proc-metalib-error-invalid-use-of-sign-notation/'
 tags:
-  - Movable Type
+  - 'ERROR: Invalid use of sign notation.'
 ---
 
 So today I dropped a column in a SQL Server table (using SSMS) and duly checked out the SAS metadata in DI Studio in order to 'Update Metadata'.
 
 It failed with a strange message:
+
 <div><span style="background: white; color: red; font-family: 'courier new';">ERROR: Invalid use of sign notation.</span></div>
 Curious, I extracted the code and ran it in Enterprise Guide (the repository ID would ensure it ran against my checkout).  Same result, so following the advice in<a href="http://support.sas.com/kb/40/429.html" target="_blank" rel="noopener"> usage note 40429</a> I ran with maximum logging (for 9.3) as follows:
 <div><span style="background: white; color: blue; font-family: 'courier new';">options</span><span style="background: white; font-family: 'courier new';"> sastrace=</span><span style="background: white; color: purple; font-family: 'courier new';">',,,d'</span><span style="background: white; font-family: 'courier new';">sastraceloc=saslog nostsuffix;</span></div>

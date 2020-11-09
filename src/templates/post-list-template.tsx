@@ -22,7 +22,7 @@ interface Props {
 
 const BlogIndex: React.FC<Props> = ({ data, location, pageContext }: Props) => {
   const posts = data.remark.posts
-  const meta = data.site?.meta
+  const meta = { ...data.site?.meta, location }
 
   const iniPath =
     pageContext.page == 'index'
@@ -49,7 +49,7 @@ const BlogIndex: React.FC<Props> = ({ data, location, pageContext }: Props) => {
       : `${iniPath}page/${pageContext.currentPage + 1}`
 
   return (
-    <Layout location={location} archives={pageContext.archives}>
+    <Layout archives={pageContext.archives}>
       <Meta site={meta} />
       {posts.map((post, i) => (
         <Post

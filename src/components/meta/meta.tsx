@@ -33,6 +33,7 @@ const Meta: React.FC<Props> = ({
   const siteTitle = site?.title || ''
   const siteUrl = site?.siteUrl || ''
   const author = site?.author || ''
+  const location = site?.location | author | {}
   const siteDescription =
     customDescription == '' ? site?.description || '' : customDescription
   const pageTitle = title ? title : siteTitle

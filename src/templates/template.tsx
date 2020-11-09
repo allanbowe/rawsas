@@ -21,14 +21,12 @@ interface Props {
 }
 
 const Template: React.FC<Props> = ({ data, location, pageContext }: Props) => {
+  const meta = { ...data.site?.meta, location }
   const isPage = data.post?.frontmatter?.layout != 'page'
   return (
     <div>
-      <Layout location={location} archives={pageContext.archives}>
-        <Meta
-          title={data.post?.frontmatter?.title || ''}
-          site={data.site?.meta}
-        />
+      <Layout archives={pageContext.archives}>
+        <Meta title={data.post?.frontmatter?.title || ''} site={meta} />
         {isPage ? (
           <Post
             data={data}

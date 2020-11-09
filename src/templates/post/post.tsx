@@ -6,16 +6,16 @@ import { PostByPathQuery } from '../../../types/graphql-types'
 
 import './style.scss'
 
-const getDescription = (content: string): string => {
-  const body = content.split(' ', 60)
-  let description = ''
-  let i = 0
-  for (; i < body.length; i++) {
-    if (i == 0) description = body[i]
-    else description = description + ' ' + body[i]
+const extractContent = (s: string): string => {
+  if (typeof document !== `undefined`) {
+    const span = document.createElement('span')
+    span.innerHTML = s
+    return span.textContent || span.innerText
   }
-  description = description + ' ...'
-  return description
+  return s
+}
+const getDescription = (content: string): string => {
+  return extractContent(content).substr(0, 250) + '...'
 }
 
 interface Props {

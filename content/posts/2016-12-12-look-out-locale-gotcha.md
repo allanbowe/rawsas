@@ -27,7 +27,7 @@ So the fix is simply to add the following code (as per your desired locale):
 But where?
 
 I tried fixing this via the autoexec, but this had no effect (likely because the server is running before the request arrives) so instead I added it to the stp init program - which worked a treat.
-<img class="size-medium wp-image-81 aligncenter" src="https://www.rawsas.com/wp-content/uploads/2016/12/Capture-300x79.png" alt="" width="300" height="79" />
+<img class="size-medium wp-image-81 aligncenter" src="../images/Capture-300x79.png" alt="" width="300" height="79" />
 <b>I recommend adding this to your init program</b>, unless you really do want your outputs to change according to the locale setting of the client application!
 
 <div style="clear: both; text-align: center;"></div>

@@ -35,6 +35,7 @@
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.21.5",
     "eslint-plugin-react-hooks": "4.2.0",
+    "gh-pages": "^3.1.0",
     "node-sass": "4.14.1",
     "prettier": "2.1.2",
     "prismjs": "1.22.0",
@@ -53,6 +54,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "lint": "eslint --ext .js,.jsx,.tsx --ignore-path .gitignore . && prettier --check \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore",
     "lint:fix": "eslint --fix --ext .js,.jsx,.tsx --ignore-path .gitignore . && prettier --check \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore"
   }

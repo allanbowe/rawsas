@@ -11,7 +11,7 @@ module.exports = {
     linkedin: '',
     adsense: '',
   },
-  pathPrefix: '/tetrahex-rawsas',
+  pathPrefix: '/rawsas',
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
@@ -89,7 +89,7 @@ module.exports = {
         siteUrl: 'https://rawsas.com/',
         author: 'Allan Bowe',
         homepage_url: 'https:/rawsas.com/',
-        start_url: '/tetrahex-rawsas',
+        start_url: '/',
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,

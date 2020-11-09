@@ -1,8 +1,7 @@
 name: Gatsby Publish
 
 on:
-  push:
-    branches: master
+  pull_request:
 
 jobs:
   build:
@@ -21,3 +20,4 @@ jobs:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
+          skip_publish: true

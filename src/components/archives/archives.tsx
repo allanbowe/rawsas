@@ -1,14 +1,12 @@
-import { graphql } from 'gatsby'
 import React from 'react'
-import { ArchiveCountQuery } from '../../types/graphql-types'
 import './style.scss'
 
 interface Props {
-  data: ArchiveCountQuery
+  data: { [key: string]: string }
 }
 
 const Archives: React.FC<Props> = ({ data }: Props) => {
-  let list = []
+  const list = []
   for (const year in data) {
     list.unshift(
       <a key={year} href={`/${year}`}>

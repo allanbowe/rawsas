@@ -1,15 +1,23 @@
 import { graphql, Link } from 'gatsby'
 import React from 'react'
+import kebabCase from 'lodash/kebabCase'
 
 import { BlogListQuery, PostByPathQuery } from '../../types/graphql-types'
 import Post from '../templates/post/post'
 import Meta from '../components/meta/meta'
 import Layout from '../components/layout/layout'
-const _ = require('lodash')
 
 interface Props {
   data: BlogListQuery
   location: Location
+  pageContext: {
+    page: string
+    archives: { [key: string]: string }
+    numPages: number
+    currentPage: number
+    year?: string
+    tag?: string
+  }
 }
 
 const BlogIndex: React.FC<Props> = ({ data, location, pageContext }: Props) => {
@@ -22,7 +30,7 @@ const BlogIndex: React.FC<Props> = ({ data, location, pageContext }: Props) => {
       : pageContext.page == 'year'
       ? `/${pageContext.year}/`
       : pageContext.page == 'category'
-      ? `/category/${_.kebabCase(pageContext.tag)}/`
+      ? `/category/${kebabCase(pageContext.tag)}/`
       : null
 
   const newerPath =

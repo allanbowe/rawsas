@@ -10,6 +10,14 @@ import { PostByPathQuery } from '../../types/graphql-types'
 interface Props {
   data: PostByPathQuery
   location: Location
+  pageContext: {
+    page: string
+    archives: { [key: string]: string }
+    numPages: number
+    currentPage: number
+    year?: string
+    tag?: string
+  }
 }
 
 const Template: React.FC<Props> = ({ data, location, pageContext }: Props) => {

@@ -1,5 +1,4 @@
 import { Link } from 'gatsby'
-import Img, { FluidObject } from 'gatsby-image'
 import React from 'react'
 import kebabCase from 'lodash/kebabCase'
 
@@ -9,7 +8,7 @@ import './style.scss'
 
 const getDescription = (content: string): string => {
   const body = content.split(' ', 60)
-  var description = ''
+  let description = ''
   let i = 0
   for (; i < body.length; i++) {
     if (i == 0) description = body[i]
@@ -29,7 +28,6 @@ interface Props {
 const Post: React.FC<Props> = ({ data, options }: Props) => {
   const frontmatter = data.post?.frontmatter
   const path = frontmatter?.path || ''
-  const image = frontmatter?.image || null
   const { isIndex } = options
   const html = data.post?.html || ''
 

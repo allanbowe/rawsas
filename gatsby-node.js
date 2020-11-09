@@ -57,7 +57,7 @@ exports.createPages = ({ graphql, actions }) => {
           reject(errors)
         }
         // side bar data for each page
-        let archives = {}
+        const archives = {}
         data.dateCounts.edges.forEach(d => {
           if (archives[d.node.frontmatter.date] == null)
             archives[d.node.frontmatter.date] = 0

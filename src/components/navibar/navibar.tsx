@@ -3,15 +3,9 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
 } from 'reactstrap'
 
 import { Link } from 'gatsby'
@@ -21,13 +15,13 @@ import './style.scss'
 const Navibar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const toggle = () => setIsOpen(!isOpen)
+  const toggle = (): void => setIsOpen(!isOpen)
 
   return (
     <div className="top-section">
       <div className="text-center">
         <Link to="/" className="site-name display-4 font-weight-bold">
-          Raw SAS
+          Raw Sas
         </Link>
       </div>
 

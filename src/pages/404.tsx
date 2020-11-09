@@ -1,10 +1,12 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
+import { NotFoundQuery } from '../../types/graphql-types'
 import Meta from '../components/meta/meta'
 import Layout from '../components/layout/layout'
 
 interface Props {
+  data: NotFoundQuery
   location: Location
 }
 
@@ -22,7 +24,7 @@ const NotFound: React.FC<Props> = ({ data, location }: Props) => {
 export default NotFound
 
 export const pageQuery = graphql`
-  query {
+  query NotFoundQuery {
     site {
       siteMetadata {
         title

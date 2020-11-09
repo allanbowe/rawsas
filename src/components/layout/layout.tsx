@@ -1,21 +1,20 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import Archives from '../archives/archives'
 import Navibar from '../navibar/navibar'
 import Footer from '../footer/footer'
-import { siteMetadata } from '../../../gatsby-config'
 import '../../scss/gatstrap.scss'
 import './styles.scss'
 
 interface Props {
   children?: React.ReactNode
-  location: Location
+  archives: { [key: string]: string }
 }
 
-const Layout: React.FC<Props> = ({ children, location, archives }: Props) => {
+const Layout: React.FC<Props> = ({ children, archives }: Props) => {
   return (
     <div className="container" style={{ backgroundColor: 'white' }}>
-      <Navibar title={siteMetadata.title} location={location} />
+      <Navibar />
       <div className="row">
         <div
           className="col-md-9"
@@ -27,7 +26,7 @@ const Layout: React.FC<Props> = ({ children, location, archives }: Props) => {
           <Archives data={archives} />
         </div>
       </div>
-      <Footer title={siteMetadata.title} author={siteMetadata.author} />
+      <Footer />
     </div>
   )
 }

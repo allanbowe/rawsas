@@ -11,7 +11,7 @@ interface Props {
 }
 
 const NotFound: React.FC<Props> = ({ data, location }: Props) => {
-  const meta = data.site?.meta
+  const meta = { ...data.site?.meta, location }
   return (
     <Layout location={location}>
       <Meta site={meta} title="404: Not Found" />

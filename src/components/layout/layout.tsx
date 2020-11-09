@@ -26,8 +26,8 @@ const Layout: React.FC<Props> = ({ children, location, archives }: Props) => {
         <div className="col-md-3" style={{ paddingTop: '40px' }}>
           <Archives data={archives} />
         </div>
-        <Footer title={siteMetadata.title} author={siteMetadata.author} />
       </div>
+      <Footer title={siteMetadata.title} author={siteMetadata.author} />
     </div>
   )
 }

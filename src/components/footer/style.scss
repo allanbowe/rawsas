@@ -1,7 +1,9 @@
 .footer {
-  hr {
-    border-color: red;
-    border-width: 3px;
-    max-width: 50px;
+  background: #333;
+  color: gray;
+  padding: 15px 30px;
+  margin-top: 15px;
+  p {
+    margin: 0;
   }
 }

@@ -32,7 +32,7 @@ const Navibar: React.FC<Props> = ({ location, title }: Props) => {
     <div className="top-section">
       <div className="text-center">
         <Link to="/" className="site-name display-4 font-weight-bold">
-          {title}
+          Raw SAS
         </Link>
       </div>
 

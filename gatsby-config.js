@@ -89,7 +89,7 @@ module.exports = {
         siteUrl: 'https://rawsas.com/',
         author: 'Allan Bowe',
         homepage_url: 'https:/rawsas.com/',
-        start_url: '/',
+        start_url: '/tetrahex-rawsas',
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,

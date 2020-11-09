@@ -7,18 +7,39 @@ interface Props {
   site:
     | Pick<
         SiteMetadata,
-        'title' | 'description' | 'author' | 'twitter' | 'adsense' | 'siteUrl'
+        | 'title'
+        | 'description'
+        | 'siteUrl'
+        | 'author'
+        | 'twitter'
+        | 'facebook'
+        | 'youtube'
+        | 'linkedin'
+        | 'adsense'
+        | 'siteUrl'
+        | 'location'
       >
     | null
     | undefined
   title?: string
+  customDescription?: string
 }
 
-const Meta: React.FC<Props> = ({ site, title }: Props) => {
+const Meta: React.FC<Props> = ({
+  site,
+  title,
+  customDescription = '',
+}: Props) => {
   const siteTitle = site?.title || ''
   const siteUrl = site?.siteUrl || ''
-  const siteDescription = site?.description || ''
-  const pageTitle = title ? `${title} | ${siteTitle}` : siteTitle
+  const author = site?.author || ''
+  const siteDescription =
+    customDescription == '' ? site?.description || '' : customDescription
+  const pageTitle = title ? title : siteTitle
+  const image = {
+    og: `${siteUrl}/img/icon.png`,
+    twitter: `${siteUrl}/img/icon.png`,
+  }
   return (
     <Helmet
       title={pageTitle}
@@ -26,21 +47,52 @@ const Meta: React.FC<Props> = ({ site, title }: Props) => {
         { name: 'twitter:card', content: 'summary' },
         {
           name: 'twitter:site',
-          content: `@${site?.twitter}`,
+          content: `${site?.twitter}`,
+        },
+        {
+          name: 'twitter:image',
+          content: image.twitter,
+        },
+        {
+          name: 'twitter:title',
+          content: pageTitle,
+        },
+        {
+          name: 'twitter:description',
+          content: siteDescription,
+        },
+        {
+          name: 'facebook:site',
+          content: `${site?.facebook}`,
+        },
+        {
+          name: 'youtube:site',
+          content: `${site?.youtube}`,
+        },
+        {
+          name: 'linkedin:site',
+          content: `${site?.linkedin}`,
         },
         { property: 'og:title', content: pageTitle },
         { property: 'og:type', content: 'website' },
         {
+          name: 'description',
           property: 'og:description',
           content: siteDescription,
         },
         {
           property: 'og:url',
-          content: `${siteUrl}/profile`,
+          content: `${siteUrl}${location.pathname}${location.hash}`,
         },
         {
+          name: 'image',
           property: 'og:image',
-          content: `${siteUrl}/img/profile.jpg`,
+          content: image.og,
+        },
+        {
+          name: 'author',
+          property: 'author',
+          content: author,
         },
       ]}
     />

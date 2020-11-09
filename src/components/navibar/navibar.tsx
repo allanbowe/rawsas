@@ -18,12 +18,7 @@ import { Link } from 'gatsby'
 
 import './style.scss'
 
-interface Props {
-  title: string
-  location: Location
-}
-
-const Navibar: React.FC<Props> = ({ location, title }: Props) => {
+const Navibar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => setIsOpen(!isOpen)

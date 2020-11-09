@@ -3,7 +3,13 @@ module.exports = {
   siteMetadata: {
     title: `Raw SAS - SAS Tips n Tricks`,
     description: `Tips n Tricks and other SAS Titbits from around 10 years of SAS projects and tinkering about with SAS`,
-    siteUrl: 'https://tetrahex-rawsas.netlify.app/',
+    siteUrl: 'https://rawsas.com/',
+    author: 'Allan Bowe',
+    twitter: '',
+    facebook: '',
+    youtube: '',
+    linkedin: '',
+    adsense: '',
   },
   pathPrefix: '/',
   plugins: [
@@ -76,19 +82,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Raw SAS',
-        short_name: 'Raw SAS - SAS Tips n Tricks',
-        description: '',
-        homepage_url: 'https://tetrahex-rawsas.netlify.app/',
+        name: 'Raw SAS - SAS Tips n Tricks',
+        short_name: 'Raw SAS',
+        description:
+          'Tips n Tricks and other SAS Titbits from around 10 years of SAS projects and tinkering about with SAS',
+        siteUrl: 'https://rawsas.com/',
+        author: 'Allan Bowe',
+        homepage_url: 'https:/rawsas.com/',
         start_url: '/',
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png`,
-        icon_options: {
-          purpose: `maskable`,
-        },
-        cache_busting_mode: 'none',
+        icon: `src/images/icon.png`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

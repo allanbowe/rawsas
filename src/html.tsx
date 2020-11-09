@@ -18,12 +18,6 @@ const HTML: React.FC<Props> = ({
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {headComponents}
-        <link
-          href="/img/apple-touch-icon.png"
-          rel="apple-touch-icon"
-          sizes="180x180"
-        />
-        <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
       </head>
       <body style={{ backgroundColor: '#1e73be' }}>
         <div id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />

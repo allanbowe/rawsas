@@ -1,6 +1,6 @@
 {
   "name": "Raw-SAS",
-  "description": "some Raw SAS description",
+  "description": "Tips n Tricks and other SAS Titbits from around 10 years of SAS projects and tinkering about with SAS",
   "version": "0.1.0",
   "author": "",
   "dependencies": {

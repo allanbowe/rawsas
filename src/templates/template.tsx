@@ -53,7 +53,7 @@ export const pageQuery = graphql`
         title
         path
         tags
-        date(formatString: "YYYY/MM/DD")
+        date(formatString: "MMM DD, YYYY")
       }
     }
   }

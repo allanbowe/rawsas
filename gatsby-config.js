@@ -2,7 +2,7 @@
 module.exports = {
   siteMetadata: {
     title: `Raw SAS - SAS Tips n Tricks`,
-    description: `some Raw SAS description`,
+    description: `Tips n Tricks and other SAS Titbits from around 10 years of SAS projects and tinkering about with SAS`,
     siteUrl: 'https://tetrahex-rawsas.netlify.app/',
   },
   pathPrefix: '/',

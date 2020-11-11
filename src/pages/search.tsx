@@ -1,6 +1,5 @@
-import { graphql, Link } from 'gatsby'
-import React, { useState } from 'react'
-import { useFlexSearch } from 'react-use-flexsearch'
+import { graphql } from 'gatsby'
+import React from 'react'
 import { useStaticQuery } from 'gatsby'
 import { useLunr } from 'react-lunr'
 
@@ -39,16 +38,13 @@ const SearchPage: React.FC<Props> = ({ location, pageContext }: Props) => {
   const index = queryData.localSearchPosts.index
   const store = queryData.localSearchPosts.store
 
-  let params = new URLSearchParams(location.search.substring(1))
-  let query = params.get('s')
+  const params = new URLSearchParams(location.search.substring(1))
+  const query = params.get('s')
 
-  let posts = []
-  let postsJSX = []
+  const posts = useLunr(query, index, store)
+  const postsJSX = []
 
   if (query) {
-    posts = useLunr(query, index, store)
-    //setPosts(results)
-    // console.log(JSON.parse(posts[0].post))
     console.log(posts)
     posts.forEach((post, i) => {
       const p = {
@@ -79,10 +75,12 @@ const SearchPage: React.FC<Props> = ({ location, pageContext }: Props) => {
   return (
     <Layout archives={pageContext.archives}>
       <Meta site={meta} />
-      {query && (
+      {query ? (
         <h1>
-          {posts.length} results found related to "{query}"
+          {postsJSX.length} results found related to &quot;{query}&quot;
         </h1>
+      ) : (
+        <h1>No Query Entered</h1>
       )}
       {postsJSX}
     </Layout>

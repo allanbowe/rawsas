@@ -13,7 +13,11 @@ const Sponsors = () => {
   return (
     <div>
       <h4>Sponsors</h4>
-      <a href="https://datacontroller.io/" target="_blank" rel="noopener">
+      <a
+        href="https://datacontroller.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img
           className="center"
           src={DC}
@@ -22,7 +26,7 @@ const Sponsors = () => {
         />
       </a>
 
-      <a href="https://sasensei.com" target="_blank" rel="noopener">
+      <a href="https://sasensei.com" target="_blank" rel="noopener noreferrer">
         <img
           className="center"
           src={Sasensei}
@@ -31,7 +35,11 @@ const Sponsors = () => {
         />
       </a>
 
-      <a href="https://www.meetup.com/SUGUKI/" target="_blank" rel="noopener">
+      <a
+        href="https://www.meetup.com/SUGUKI/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img
           className="center"
           src={Sugukiglassesorangenobg}
@@ -40,7 +48,7 @@ const Sponsors = () => {
         />
       </a>
 
-      <a href="https://sas9api.io/" target="_blank" rel="noopener">
+      <a href="https://sas9api.io/" target="_blank" rel="noopener noreferrer">
         <img
           className="center"
           src={SasApi}
@@ -49,11 +57,11 @@ const Sponsors = () => {
         />
       </a>
 
-      <a href="https://sasapps.io" target="_blank" rel="noopener">
+      <a href="https://sasapps.io" target="_blank" rel="noopener noreferrer">
         <img src={SasApp} alt="SAS Apps" title="SAS Apps" />
       </a>
 
-      <a href="https://sasjs.io" target="_blank" rel="noopener">
+      <a href="https://sasjs.io" target="_blank" rel="noopener noreferrer">
         <img
           className="center"
           src={BuildApps}

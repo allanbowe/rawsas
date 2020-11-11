@@ -3,6 +3,7 @@ import React from 'react'
 import Archives from '../archives/archives'
 import Navibar from '../navibar/navibar'
 import Footer from '../footer/footer'
+import Sponsors from '../sponsors/sponsors'
 import '../../scss/gatstrap.scss'
 import './styles.scss'
 
@@ -24,6 +25,7 @@ const Layout: React.FC<Props> = ({ children, archives }: Props) => {
         </div>
         <div className="col-md-3" style={{ paddingTop: '40px' }}>
           <Archives data={archives} />
+          <Sponsors />
         </div>
       </div>
       <Footer />

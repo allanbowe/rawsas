@@ -37,3 +37,9 @@ img {
 img:hover {
   animation: pulse 0.5s;
 }
+table tbody tr,
+table thead tr th,
+table thead {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}

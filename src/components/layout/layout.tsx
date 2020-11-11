@@ -10,12 +10,13 @@ import './styles.scss'
 interface Props {
   children?: React.ReactNode
   archives: { [key: string]: string }
+  location: Location
 }
 
-const Layout: React.FC<Props> = ({ children, archives }: Props) => {
+const Layout: React.FC<Props> = ({ children, archives, location }: Props) => {
   return (
     <div className="container" style={{ backgroundColor: 'white' }}>
-      <Navibar />
+      <Navibar location={location} />
       <div className="row">
         <div
           className="col-md-9"

@@ -70,7 +70,7 @@ const SearchPage: React.FC<Props> = ({ location, pageContext }: Props) => {
   }
 
   return (
-    <Layout archives={pageContext.archives}>
+    <Layout archives={pageContext.archives} location={location}>
       <Meta site={meta} />
       {query ? (
         <h1>

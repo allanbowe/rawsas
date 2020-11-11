@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {
   Collapse,
   Navbar,
@@ -17,11 +17,20 @@ import Media from 'react-media'
 
 import './style.scss'
 
-const Navibar: React.FC = () => {
-  const params = new URLSearchParams(location.search.substring(1))
+interface Props {
+  location: Location
+}
+const Navibar: React.FC<Props> = ({ location }: Props) => {
+  const params = location
+    ? new URLSearchParams(location.search.substring(1))
+    : null
+  const queryUrl = params ? params.get('s') : ''
   const [isOpen, setIsOpen] = useState(false)
-  const [query, setQuery] = useState(params.get('s') || '')
-  const [isSearchOpen, setIsSearchOpen] = useState(!!params.get('s'))
+  const [query, setQuery] = useState(queryUrl)
+  useEffect(() => {
+    setQuery(queryUrl)
+  }, [queryUrl])
+  const [isSearchOpen, setIsSearchOpen] = useState(!!queryUrl)
   const toggle = (): void => setIsOpen(!isOpen)
   const toggleSearch = (): void => {
     document.getElementsByClassName('nav-links')[0].classList.toggle('hide')

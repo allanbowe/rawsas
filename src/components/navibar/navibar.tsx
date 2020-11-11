@@ -18,13 +18,18 @@ import Media from 'react-media'
 import './style.scss'
 
 const Navibar: React.FC = () => {
+  const params = new URLSearchParams(location.search.substring(1))
   const [isOpen, setIsOpen] = useState(false)
-  const [query, setQuery] = useState('')
-  const [isSearchOpen, setIsSearchOpen] = useState(false)
+  const [query, setQuery] = useState(params.get('s') || '')
+  const [isSearchOpen, setIsSearchOpen] = useState(!!params.get('s'))
   const toggle = (): void => setIsOpen(!isOpen)
-  const toggleSearch = (): void => setIsSearchOpen(!isSearchOpen)
+  const toggleSearch = (): void => {
+    document.getElementsByClassName('nav-links')[0].classList.toggle('hide')
+    if (!isSearchOpen) document.getElementById('q').focus()
+    setIsSearchOpen(!isSearchOpen)
+  }
 
-  const handleSubmit = event => {
+  const handleSubmit = (event): void => {
     event.preventDefault()
     navigate('/search?s=' + query)
   }
@@ -38,11 +43,10 @@ const Navibar: React.FC = () => {
       </div>
 
       <Media queries={{ medium: { maxWidth: 768 } }}>
-        {matches =>
+        {(matches): JSX.Element =>
           matches.medium ? (
             <Navbar light expand="md">
               <NavbarToggler onClick={toggle} />
-
               <Collapse isOpen={isOpen} navbar>
                 <Nav className="mx-auto" navbar>
                   <NavItem>
@@ -70,44 +74,41 @@ const Navibar: React.FC = () => {
           ) : (
             <Navbar light expand="md">
               <Nav className="mx-auto" navbar>
-                {!isSearchOpen ? (
-                  <>
-                    <NavItem>
-                      <NavLink href="https://sasensei.com/">Sasensei</NavLink>
-                    </NavItem>
+                <div className={`nav-links ${isSearchOpen ? 'hide' : ''}`}>
+                  <NavItem>
+                    <NavLink href="https://sasensei.com/">Sasensei</NavLink>
+                  </NavItem>
 
-                    <NavItem>
-                      <NavLink href="https://datacontroller.io/">
-                        Data Controller
-                      </NavLink>
-                    </NavItem>
+                  <NavItem>
+                    <NavLink href="https://datacontroller.io/">
+                      Data Controller
+                    </NavLink>
+                  </NavItem>
 
-                    <NavItem>
-                      <NavLink href="https://www.sasusergroups.org/">
-                        Sas User Groups
-                      </NavLink>
-                    </NavItem>
+                  <NavItem>
+                    <NavLink href="https://www.sasusergroups.org/">
+                      Sas User Groups
+                    </NavLink>
+                  </NavItem>
 
-                    <NavItem>
-                      <NavLink href="https://sasapps.io/">SAS Apps</NavLink>
-                    </NavItem>
-                  </>
-                ) : (
-                  <form onSubmit={handleSubmit}>
-                    <input
-                      className="form-control border-0"
-                      id="q"
-                      name="s"
-                      placeholder="search..."
-                      type="text"
-                      value={query}
-                      onChange={e => setQuery(e.target.value)}
-                    />
-                  </form>
-                )}
+                  <NavItem>
+                    <NavLink href="https://sasapps.io/">SAS Apps</NavLink>
+                  </NavItem>
+                </div>
+                <form onSubmit={handleSubmit} className="nav-search">
+                  <input
+                    className="form-control border-0"
+                    id="q"
+                    name="s"
+                    placeholder="search..."
+                    type="text"
+                    value={query}
+                    onChange={(e): void => setQuery(e.target.value)}
+                  />
+                </form>
 
                 <NavItem>
-                  <NavLink>
+                  <NavLink className="nav-icon">
                     <span onClick={toggleSearch}>
                       {isSearchOpen ? (
                         <FontAwesomeIcon icon={faTimes} flip="horizontal" />

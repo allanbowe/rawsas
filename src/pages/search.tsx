@@ -33,8 +33,6 @@ const SearchPage: React.FC<Props> = ({ location, pageContext }: Props) => {
 
   const meta = { ...queryData.site?.meta, location }
 
-  //  const [posts, setPosts] = useState([])
-
   const index = queryData.localSearchPosts.index
   const store = queryData.localSearchPosts.store
 
@@ -45,7 +43,6 @@ const SearchPage: React.FC<Props> = ({ location, pageContext }: Props) => {
   const postsJSX = []
 
   if (query) {
-    console.log(posts)
     posts.forEach((post, i) => {
       const p = {
         post: {

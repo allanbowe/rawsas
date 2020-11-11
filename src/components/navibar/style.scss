@@ -16,3 +16,31 @@
   margin: 0 -15px;
   box-shadow: 0 1px 5px 0px #888888;
 }
+
+.mx-auto {
+  position: relative;
+  .nav-links {
+    display: flex;
+    height: 40px;
+    overflow: hidden;
+    z-index: 10;
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+    &.hide {
+      height: 0;
+    }
+  }
+  .nav-search {
+    position: absolute;
+    z-index: 5;
+    width: calc(100% - 80px);
+    left: 50px;
+    input:focus {
+      box-shadow: none;
+    }
+  }
+  .nav-icon {
+    width: 30px;
+    cursor: pointer;
+  }
+}

@@ -9,66 +9,47 @@ import BuildApps from '../../images/buildapps240x400.png'
 
 import './styles.scss'
 
-const Sponsors = () => {
+const Sponsors: React.FC = () => {
+  const sponsors = [
+    {
+      title: 'Data Controller',
+      href: 'https://datacontroller.io/',
+      img: DC,
+    },
+    {
+      title: 'Think you know SAS?  Take the Sasensei Challenge!',
+      href: 'https://sasensei.com',
+      img: Sasensei,
+    },
+    {
+      title: 'SAS User Group UK &amp; Ireland',
+      href: 'https://www.meetup.com/SUGUKI/',
+      img: Sugukiglassesorangenobg,
+    },
+    {
+      title: 'SAS 9 REST API',
+      href: 'https://sas9api.io/',
+      img: SasApi,
+    },
+    {
+      title: 'SAS Apps',
+      href: 'https://sasapps.io',
+      img: SasApp,
+    },
+    {
+      title: 'Build HTML5 SAS Apps',
+      href: 'https://sasjs.io"',
+      img: BuildApps,
+    },
+  ]
   return (
-    <div>
+    <div className="sponsors">
       <h4>Sponsors</h4>
-      <a
-        href="https://datacontroller.io/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          className="center"
-          src={DC}
-          alt="advertisement"
-          title="Data Controller"
-        />
-      </a>
-
-      <a href="https://sasensei.com" target="_blank" rel="noopener noreferrer">
-        <img
-          className="center"
-          src={Sasensei}
-          alt="Think you know SAS?  Take the Sasensei Challenge!"
-          title="Think you know SAS?  Take the Sasensei Challenge!"
-        />
-      </a>
-
-      <a
-        href="https://www.meetup.com/SUGUKI/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          className="center"
-          src={Sugukiglassesorangenobg}
-          alt="advertisement"
-          title="SAS User Group UK &amp; Ireland"
-        />
-      </a>
-
-      <a href="https://sas9api.io/" target="_blank" rel="noopener noreferrer">
-        <img
-          className="center"
-          src={SasApi}
-          alt="SAS 9 REST API"
-          title="SAS 9 REST API"
-        />
-      </a>
-
-      <a href="https://sasapps.io" target="_blank" rel="noopener noreferrer">
-        <img src={SasApp} alt="SAS Apps" title="SAS Apps" />
-      </a>
-
-      <a href="https://sasjs.io" target="_blank" rel="noopener noreferrer">
-        <img
-          className="center"
-          src={BuildApps}
-          alt="Build HTML5 SAS Apps "
-          title="Build HTML5 SAS Apps "
-        />
-      </a>
+      {sponsors.map((sp, i) => (
+        <a key={i} href={sp.href} target="_blank" rel="noopener noreferrer">
+          <img src={sp.img} alt={sp.title} title={sp.title} />
+        </a>
+      ))}
     </div>
   )
 }

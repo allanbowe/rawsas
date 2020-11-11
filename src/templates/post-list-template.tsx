@@ -48,7 +48,6 @@ const BlogIndex: React.FC<Props> = ({ data, location, pageContext }: Props) => {
       ? null
       : `${iniPath}page/${pageContext.currentPage + 1}`
 
-  console.log(posts)
   return (
     <Layout archives={pageContext.archives}>
       <Meta site={meta} />

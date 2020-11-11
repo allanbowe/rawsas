@@ -5,6 +5,8 @@ const _ = require('lodash')
 const PostTemplate = path.resolve('./src/templates/template.tsx')
 const PostListTemplate = path.resolve('./src/templates/post-list-template.tsx')
 
+const archives = {}
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
@@ -57,7 +59,6 @@ exports.createPages = ({ graphql, actions }) => {
           reject(errors)
         }
         // side bar data for each page
-        const archives = {}
         data.dateCounts.edges.forEach(d => {
           if (archives[d.node.frontmatter.date] == null)
             archives[d.node.frontmatter.date] = 0
@@ -144,6 +145,23 @@ exports.createPages = ({ graphql, actions }) => {
       })
     )
   })
+}
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage, deletePage } = actions
+
+  console.log(page.path)
+  if (page.path == '/search/') {
+    deletePage(page)
+    // You can access the variable "house" in your page queries now
+    createPage({
+      ...page,
+      context: {
+        ...page.context,
+        archives,
+      },
+    })
+  }
 }
 
 exports.onCreateWebpackConfig = ({ actions }) => {

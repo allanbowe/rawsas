@@ -8,14 +8,22 @@ import {
   NavLink,
 } from 'reactstrap'
 
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 import './style.scss'
 
 const Navibar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [query, setQuery] = useState('')
 
   const toggle = (): void => setIsOpen(!isOpen)
+
+  const handleSubmit = event => {
+    event.preventDefault()
+    navigate('/search?s=' + query)
+  }
 
   return (
     <div className="top-section">
@@ -49,9 +57,29 @@ const Navibar: React.FC = () => {
             <NavItem>
               <NavLink href="https://sasapps.io/">SAS Apps</NavLink>
             </NavItem>
+
+            <NavItem>
+              <NavLink>
+                <FontAwesomeIcon icon={faSearch} flip="horizontal" />
+              </NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
+
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <input
+            className="form-control"
+            id="q"
+            name="s"
+            placeholder="search"
+            type="text"
+            value={query}
+            onChange={e => setQuery(e.target.value)}
+          />
+        </div>
+      </form>
     </div>
   )
 }

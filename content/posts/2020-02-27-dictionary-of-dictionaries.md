@@ -15,7 +15,8 @@ tags:
 <!-- /wp:paragraph -->
 
 <!-- wp:table {"className":"is-style-stripes"} -->
-<table class="wp-block-table is-style-stripes"><tbody><tr><td>
+<div class="table table-striped">
+<table ><tbody><tr><td>
 <strong>memname</strong>
 </td><td>
 <strong>memlabel</strong>
@@ -148,6 +149,7 @@ XATTRS
 </td><td>
 Extended Attributes
 </td></tr></tbody></table>
+</div>
 <!-- /wp:table -->
 
 <!-- wp:paragraph -->
@@ -155,7 +157,8 @@ Extended Attributes
 <!-- /wp:paragraph -->
 
 <!-- wp:table -->
-<table class="wp-block-table"><tbody><tr><td>
+<div class="table">
+<table><tbody><tr><td>
 <strong>memname</strong>
 </td><td>
 <strong>name</strong>
@@ -2554,4 +2557,5 @@ CURRIFRAC
 </td><td>
 Number of Digits for International Fraction
 </td></tr></tbody></table>
+</div>
 <!-- /wp:table -->

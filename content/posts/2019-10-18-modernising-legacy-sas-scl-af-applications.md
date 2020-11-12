@@ -65,5 +65,5 @@ tags:
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
-<ul><li>Linkedin Article: <a href="https://www.linkedin.com/pulse/easy-af-scl-modernisation-html5-sas-allan-bowe/">https://www.linkedin.com/pulse/easy-af-scl-modernisation-html5-sas-allan-bowe/</a></li><li>Slides: <a href="https://slides.com/allanbowe/sasaf">https://slides.com/allanbowe/sasaf</a></li><li>SAS UK Forum <a href="https://drive.google.com/file/d/1RMLxFccaXYh35IGnbcFjISFmZUIdetUO/view">presentation</a></li><li>Info on SLISTS:  <a href="https://www.rawsas.com/slists-scl-lists-an-overview">https://www.rawsas.com/slists-scl-lists-an-overview</a> </li></ul>
+<ul><li>Linkedin Article: <a href="https://www.linkedin.com/pulse/easy-af-scl-modernisation-html5-sas-allan-bowe/">https://www.linkedin.com/pulse/easy-af-scl-modernisation-html5-sas-allan-bowe/</a></li><li>Slides: <a href="https://slides.com/allanbowe/sasaf">https://slides.com/allanbowe/sasaf</a></li><li>SAS UK Forum <a href="https://drive.google.com/file/d/1RMLxFccaXYh35IGnbcFjISFmZUIdetUO/view">presentation</a></li><li>Info on SLISTS:  <a href="/slists-scl-lists-an-overview">slists scl lists an overview</a> </li></ul>
 <!-- /wp:list -->

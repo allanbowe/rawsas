@@ -16,7 +16,7 @@ The issue occurred when trying to connect to a SAS/Share library using the follo
 <div><span style="background: white; color: blue; font-family: 'courier new';">LIBNAME</span><span style="background: white; font-family: 'courier new';"> MYLIBREF REMOTE  </span><span style="background: white; color: blue; font-family: 'courier new';">HOSTNAME</span><span style="background: white; font-family: 'courier new';">=</span><span style="background: white; color: purple; font-family: 'courier new';">"dev01.domain.com"</span><span style="background: white; font-family: 'courier new';">  </span><span style="background: white; color: blue; font-family: 'courier new';">Server</span><span style="background: white; font-family: 'courier new';">=__8551 </span><span style="background: white; color: blue; font-family: 'courier new';">slibref</span><span style="background: white; font-family: 'courier new';">=MYLIBREF;</span></div>
 The fix was simple - simply log into the application server, open Services, and restart the "SAS Share Server" service.
 <div style="clear: both; text-align: center;"></div>
-<img class="size-medium wp-image-102 aligncenter" src="../images/Capture-1-300x111.png" alt="" width="300" height="111" />
+<img class="size-medium wp-image-102 aligncenter" src="../images/Capture1.png" alt="" width="300" height="111" />
 
 This left the customer happy, but I'm still curious about what caused the elipsis (...)
 

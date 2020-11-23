@@ -2,6 +2,7 @@
 title: 'Using CURL with SAS Stored Processes'
 date: '2018-08-08 13:02:47'
 path: '/using-curl-with-sas-stored-processes/'
+previewImg: '../images/frontmatter4.png'
 tags:
   - Administration
   - sas

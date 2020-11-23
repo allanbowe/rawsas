@@ -2,6 +2,7 @@
 title: 'ssh: connect to host bitbucket.org port 22: Bad file number'
 date: '2014-04-29 17:46:00'
 path: '/ssh-connect-to-host-bitbucket-org-port-22-bad-file-number/'
+previewImg: ''
 tags:
   - 'ssh: connect to host bitbucket.org port 22: Bad file number'
 ---

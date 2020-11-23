@@ -2,6 +2,7 @@
 title: 'Improve performance of DI Studio client'
 date: '2014-12-16 17:11:00'
 path: '/improve-performance-of-di-studio-client/'
+previewImg: ''
 tags:
   - SQL
 ---

@@ -2,6 +2,7 @@
 title: 'VBA and SAS IOM - applying formats'
 date: '2014-12-29 15:37:00'
 path: '/vba-and-sas-iom-applying-formats/'
+previewImg: ''
 tags:
   - SQL
 ---

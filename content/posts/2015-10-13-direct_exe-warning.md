@@ -2,6 +2,7 @@
 title: 'DIRECT_EXE warning'
 date: '2015-10-13 13:22:00'
 path: '/direct_exe-warning/'
+previewImg: ''
 tags:
   - SQL
 ---

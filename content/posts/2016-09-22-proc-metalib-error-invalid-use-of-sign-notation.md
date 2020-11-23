@@ -2,6 +2,7 @@
 title: 'proc metalib - ERROR: Invalid use of sign notation'
 date: '2016-09-22 09:10:00'
 path: '/proc-metalib-error-invalid-use-of-sign-notation/'
+previewImg: '../images/frontmatter20.png'
 tags:
   - 'ERROR: Invalid use of sign notation.'
 ---

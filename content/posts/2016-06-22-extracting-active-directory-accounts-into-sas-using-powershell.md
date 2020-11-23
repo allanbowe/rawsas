@@ -2,6 +2,7 @@
 title: 'Extracting Active Directory accounts into SAS using Powershell'
 date: '2016-06-22 16:37:00'
 path: '/extracting-active-directory-accounts-into-sas-using-powershell/'
+previewImg: ''
 tags:
   - sas powershell ad-users windows domain accounts
 ---

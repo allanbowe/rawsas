@@ -2,6 +2,7 @@
 title: 'SAS SCL Lists (slists) - an Overview'
 date: '2017-12-03 20:58:29'
 path: '/slists-scl-lists-an-overview/'
+previewImg: ''
 tags:
   - AF
   - SCL

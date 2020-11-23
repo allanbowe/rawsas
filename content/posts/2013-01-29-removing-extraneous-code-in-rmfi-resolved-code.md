@@ -2,6 +2,7 @@
 title: 'Removing extraneous code in RMFI resolved code'
 date: '2013-01-29 10:55:00'
 path: '/removing-extraneous-code-in-rmfi-resolved-code/'
+previewImg: ''
 tags:
   - resolved code reducer
 ---

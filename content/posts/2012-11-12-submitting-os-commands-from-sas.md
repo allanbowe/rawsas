@@ -2,6 +2,7 @@
 title: 'Submitting OS commands from SAS'
 date: '2012-11-12 22:27:00'
 path: '/submitting-os-commands-from-sas/'
+previewImg: ''
 tags:
   - os command
   - x command

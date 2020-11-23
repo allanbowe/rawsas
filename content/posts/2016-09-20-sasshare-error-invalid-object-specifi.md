@@ -2,6 +2,7 @@
 title: 'SAS/Share ERROR: Invalid object specifi...'
 date: '2016-09-20 15:12:00'
 path: '/sasshare-error-invalid-object-specifi/'
+previewImg: '../images/frontmatter21.png'
 tags:
   - 'ERROR: Invalid object specifi...'
   - 'Invalid object specifi...'

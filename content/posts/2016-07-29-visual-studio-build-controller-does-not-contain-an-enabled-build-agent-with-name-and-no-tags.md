@@ -2,6 +2,7 @@
 title: 'Visual Studio Build Controller does not contain an enabled build agent with name * and no tags.'
 date: '2016-07-29 10:35:00'
 path: '/visual-studio-build-controller-does-not-contain-an-enabled-build-agent-with-name-and-no-tags/'
+previewImg: ''
 tags:
   - SQL
 ---

@@ -2,6 +2,7 @@
 title: 'Retrieve Libref from Metadata libname'
 date: '2013-06-12 11:17:00'
 path: '/retrieve-libref-from-metadata-libname/'
+previewImg: ''
 tags:
   - SQL
 ---

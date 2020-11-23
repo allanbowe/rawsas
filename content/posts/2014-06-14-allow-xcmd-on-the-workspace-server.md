@@ -2,6 +2,7 @@
 title: 'Allow XCMD on the workspace server'
 date: '2014-06-14 19:55:00'
 path: '/allow-xcmd-on-the-workspace-server/'
+previewImg: ''
 tags:
   - allow xcmd allowing xcmd x command workspace server
 ---

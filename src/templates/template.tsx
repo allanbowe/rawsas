@@ -77,6 +77,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         path
+        previewImg
         tags
         date(formatString: "MMM DD, YYYY")
       }

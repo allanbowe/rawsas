@@ -2,6 +2,7 @@
 title: 'Error trying to establish connection: Unable to Initialize: Invalid authorization specification'
 date: '2016-01-23 13:11:00'
 path: '/error-trying-to-establish-connection-unable-to-initialize-invalid-authorization-specification/'
+previewImg: ''
 tags:
   - SQL
 ---

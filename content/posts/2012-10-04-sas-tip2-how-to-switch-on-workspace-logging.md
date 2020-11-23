@@ -2,6 +2,7 @@
 title: 'SAS Tip#2 - How to switch on Workspace Logging'
 date: '2012-10-04 12:29:00'
 path: '/sas-tip2-how-to-switch-on-workspace-logging/'
+previewImg: ''
 tags:
   - workspace logging
 ---

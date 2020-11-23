@@ -2,6 +2,7 @@
 title: 'Quick code for getting macro names from windows library'
 date: '2012-11-08 20:04:00'
 path: '/quick-code-for-getting-macro-names-from-windows-library/'
+previewImg: ''
 tags:
   - SQL
 ---

@@ -2,7 +2,7 @@
 title: 'Adding SAS Configuration Manager plugin to SMC'
 date: '2016-09-15 18:14:00'
 path: '/adding-sas-configuration-manager-plugin-to-smc/'
-previewImg: '../images/frontmatter22.png'
+previewImg: 'frontmatter22.png'
 tags:
   - Administration
   - Configuration Manager

@@ -2,7 +2,7 @@
 title: 'Create / Compile / Run SCL in Enterprise Guide'
 date: '2017-05-19 12:51:00'
 path: '/create-compile-run-scl-in-enterprise-guide/'
-previewImg: '../images/frontmatter12.png'
+previewImg: 'frontmatter12.png'
 tags:
   - batch scl EG
   - catalog

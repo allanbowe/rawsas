@@ -2,7 +2,7 @@
 title: 'Split Character Data With Private Use Delimiters'
 date: '2017-10-10 19:47:26'
 path: '/split-strings-with-custom-delimiter/'
-previewImg: '../images/frontmatter9.png'
+previewImg: 'frontmatter9.png'
 tags:
   - Programming
   - Stored Process Web Applications

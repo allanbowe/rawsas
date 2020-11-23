@@ -2,7 +2,7 @@
 title: 'SAS As A Service - an easy way to get SAS into Excel, Power BI '
 date: '2016-11-18 09:30:00'
 path: '/sas-as-a-service-an-easy-way-to-get-sas-into-excel-power-bi-and-000s-of-other-tools-languages/'
-previewImg: '../images/frontmatter18.png'
+previewImg: 'frontmatter18.png'
 tags:
   - SQL
 ---

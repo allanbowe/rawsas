@@ -2,7 +2,7 @@
 title: 'Tabs v Spaces - which is more popular in SAS?'
 date: '2017-03-02 20:52:00'
 path: '/tabs-v-spaces/'
-previewImg: '../images/frontmatter15.png'
+previewImg: 'frontmatter15.png'
 tags:
   - Programming
   - sas

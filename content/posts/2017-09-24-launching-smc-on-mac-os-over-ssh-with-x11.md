@@ -2,7 +2,7 @@
 title: 'Launching SMC on Mac OS over SSH with X11'
 date: '2017-09-24 16:02:00'
 path: '/launching-smc-on-mac-os-over-ssh-with-x11/'
-previewImg: '../images/frontmatter11.png'
+previewImg: 'frontmatter11.png'
 tags:
   - SQL
 ---

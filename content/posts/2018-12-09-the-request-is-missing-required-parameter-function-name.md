@@ -2,7 +2,7 @@
 title: 'ERROR: The request ? is missing required parameter Function Name.'
 date: '2018-12-09 14:20:05'
 path: '/the-request-is-missing-required-parameter-function-name/'
-previewImg: '../images/frontmatter1.png'
+previewImg: 'frontmatter1.png'
 tags:
   - SQL
 ---

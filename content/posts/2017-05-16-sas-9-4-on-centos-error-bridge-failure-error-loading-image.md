@@ -2,7 +2,7 @@
 title: 'SAS 9.4 on CENTOS - ERROR:  BRIDGE FAILURE - ERROR LOADING IMAGE'
 date: '2017-05-16 09:07:00'
 path: '/sas-9-4-on-centos-error-bridge-failure-error-loading-image/'
-previewImg: '../images/frontmatter13.png'
+previewImg: 'frontmatter13.png'
 tags:
   - Administration
   - sas

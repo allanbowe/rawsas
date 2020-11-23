@@ -2,7 +2,7 @@
 title: 'Loading files to SAS with CURL'
 date: '2018-12-02 16:26:51'
 path: '/loading-files-to-sas-with-curl/'
-previewImg: '../images/frontmatter3.png'
+previewImg: 'frontmatter3.png'
 tags:
   - sas
   - SAS Stored Process Web Application

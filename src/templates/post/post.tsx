@@ -30,11 +30,25 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
   const path = frontmatter?.path || ''
   const { isIndex } = options
   const html = data.post?.html || ''
+  const previewImg = frontmatter?.previewImg || ''
+  const prefix = '../../../content/images/'
+
+  const imgPath = prefix + previewImg
+
 
   return (
     <div className="article" key={path}>
+
+      {
+        ( isIndex && previewImg ) ? 
+          (
+            <Link to={path}> <img  src = {imgPath} /></Link>
+          )
+          :null
+      }
+
       <h2 className="heading">
-        <Link to={path}>{frontmatter?.title}</Link>
+        <Link to={path} style={{ color: "black"}}>{frontmatter?.title}</Link>
       </h2>
       <p className="post-meta">
         by
@@ -53,8 +67,17 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
               </Link>
             </span>
           ))}
-        </span>
+        </span> 
       </p>
+      <span>
+          {
+            ( !isIndex && previewImg ) ? 
+              (
+                <img  src = {imgPath} />
+              )
+              :null
+          }
+      </span>
       <div
         className="content"
         dangerouslySetInnerHTML={{

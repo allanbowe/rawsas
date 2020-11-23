@@ -696,6 +696,7 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___title'
   | 'childMarkdownRemark___frontmatter___date'
   | 'childMarkdownRemark___frontmatter___path'
+  | 'childMarkdownRemark___frontmatter___previewImg'
   | 'childMarkdownRemark___frontmatter___tags'
   | 'childMarkdownRemark___excerpt'
   | 'childMarkdownRemark___rawMarkdownBody'
@@ -1630,6 +1631,7 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___title'
   | 'frontmatter___date'
   | 'frontmatter___path'
+  | 'frontmatter___previewImg'
   | 'frontmatter___tags'
   | 'excerpt'
   | 'rawMarkdownBody'
@@ -1754,6 +1756,7 @@ export type MarkdownRemarkFrontmatter = {
   title?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['Date']>;
   path?: Maybe<Scalars['String']>;
+  previewImg?: Maybe<Scalars['String']>;
   tags?: Maybe<Array<Maybe<Scalars['String']>>>;
 };
 
@@ -1769,6 +1772,7 @@ export type MarkdownRemarkFrontmatterFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   date?: Maybe<DateQueryOperatorInput>;
   path?: Maybe<StringQueryOperatorInput>;
+  previewImg?: Maybe<StringQueryOperatorInput>;
   tags?: Maybe<StringQueryOperatorInput>;
 };
 
@@ -2655,9 +2659,9 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___index'
   | 'pluginCreator___pluginOptions___width'
   | 'pluginCreator___pluginOptions___related'
+  | 'pluginCreator___pluginOptions___wrapperStyle'
   | 'pluginCreator___pluginOptions___maxWidth'
   | 'pluginCreator___pluginOptions___linkImagesToOriginal'
-  | 'pluginCreator___pluginOptions___wrapperStyle'
   | 'pluginCreator___pluginOptions___pathPrefix'
   | 'pluginCreator___pluginOptions___backgroundColor'
   | 'pluginCreator___pluginOptions___showCaptions'
@@ -2979,9 +2983,9 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___plugins___version'
   | 'pluginOptions___plugins___pluginOptions___width'
   | 'pluginOptions___plugins___pluginOptions___related'
+  | 'pluginOptions___plugins___pluginOptions___wrapperStyle'
   | 'pluginOptions___plugins___pluginOptions___maxWidth'
   | 'pluginOptions___plugins___pluginOptions___linkImagesToOriginal'
-  | 'pluginOptions___plugins___pluginOptions___wrapperStyle'
   | 'pluginOptions___plugins___pluginOptions___pathPrefix'
   | 'pluginOptions___plugins___pluginOptions___backgroundColor'
   | 'pluginOptions___plugins___pluginOptions___showCaptions'
@@ -3002,9 +3006,9 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___index'
   | 'pluginOptions___width'
   | 'pluginOptions___related'
+  | 'pluginOptions___wrapperStyle'
   | 'pluginOptions___maxWidth'
   | 'pluginOptions___linkImagesToOriginal'
-  | 'pluginOptions___wrapperStyle'
   | 'pluginOptions___pathPrefix'
   | 'pluginOptions___backgroundColor'
   | 'pluginOptions___showCaptions'
@@ -3168,9 +3172,9 @@ export type SitePluginPluginOptions = {
   index?: Maybe<Array<Maybe<Scalars['String']>>>;
   width?: Maybe<Scalars['Int']>;
   related?: Maybe<Scalars['Boolean']>;
+  wrapperStyle?: Maybe<Scalars['String']>;
   maxWidth?: Maybe<Scalars['Int']>;
   linkImagesToOriginal?: Maybe<Scalars['Boolean']>;
-  wrapperStyle?: Maybe<Scalars['String']>;
   pathPrefix?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   showCaptions?: Maybe<Scalars['Boolean']>;
@@ -3225,9 +3229,9 @@ export type SitePluginPluginOptionsFilterInput = {
   index?: Maybe<StringQueryOperatorInput>;
   width?: Maybe<IntQueryOperatorInput>;
   related?: Maybe<BooleanQueryOperatorInput>;
+  wrapperStyle?: Maybe<StringQueryOperatorInput>;
   maxWidth?: Maybe<IntQueryOperatorInput>;
   linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>;
-  wrapperStyle?: Maybe<StringQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
   backgroundColor?: Maybe<StringQueryOperatorInput>;
   showCaptions?: Maybe<BooleanQueryOperatorInput>;
@@ -3299,9 +3303,9 @@ export type SitePluginPluginOptionsPluginsFilterListInput = {
 export type SitePluginPluginOptionsPluginsPluginOptions = {
   width?: Maybe<Scalars['Int']>;
   related?: Maybe<Scalars['Boolean']>;
+  wrapperStyle?: Maybe<Scalars['String']>;
   maxWidth?: Maybe<Scalars['Int']>;
   linkImagesToOriginal?: Maybe<Scalars['Boolean']>;
-  wrapperStyle?: Maybe<Scalars['String']>;
   pathPrefix?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   showCaptions?: Maybe<Scalars['Boolean']>;
@@ -3317,9 +3321,9 @@ export type SitePluginPluginOptionsPluginsPluginOptions = {
 export type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
   width?: Maybe<IntQueryOperatorInput>;
   related?: Maybe<BooleanQueryOperatorInput>;
+  wrapperStyle?: Maybe<StringQueryOperatorInput>;
   maxWidth?: Maybe<IntQueryOperatorInput>;
   linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>;
-  wrapperStyle?: Maybe<StringQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
   backgroundColor?: Maybe<StringQueryOperatorInput>;
   showCaptions?: Maybe<BooleanQueryOperatorInput>;
@@ -3398,7 +3402,7 @@ export type BlogListQueryQueryVariables = Exact<{
 
 export type BlogListQueryQuery = { site?: Maybe<{ meta?: Maybe<Pick<SiteSiteMetadata, 'title' | 'description'>> }>, remark: { posts: Array<{ post: (
         Pick<MarkdownRemark, 'html'>
-        & { frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'path' | 'tags' | 'date'>> }
+        & { frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'path' | 'previewImg' | 'tags' | 'date'>> }
       ) }> } };
 
 export type PostByPathQueryVariables = Exact<{
@@ -3408,7 +3412,7 @@ export type PostByPathQueryVariables = Exact<{
 
 export type PostByPathQuery = { site?: Maybe<{ meta?: Maybe<Pick<SiteSiteMetadata, 'title' | 'description'>> }>, post?: Maybe<(
     Pick<MarkdownRemark, 'id' | 'html'>
-    & { frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'path' | 'tags' | 'date'>> }
+    & { frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'title' | 'path' | 'previewImg' | 'tags' | 'date'>> }
   )> };
 
 export type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;

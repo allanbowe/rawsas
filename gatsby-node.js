@@ -150,10 +150,8 @@ exports.createPages = ({ graphql, actions }) => {
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions
 
-  console.log(page.path)
   if (page.path == '/search/') {
     deletePage(page)
-    // You can access the variable "house" in your page queries now
     createPage({
       ...page,
       context: {

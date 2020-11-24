@@ -17,7 +17,18 @@ jobs:
         run: npm run lint
 
       - uses: enriikke/gatsby-gh-pages-action@v2
+        env:
+          PATH_PREFIX: ${{secrets.PATH_PREFIX}}
+        if: env.PATH_PREFIX != null
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
+
+      - uses: enriikke/gatsby-gh-pages-action@v2
+        env:
+          PATH_PREFIX: ${{secrets.PATH_PREFIX}}
+        if: env.PATH_PREFIX == null
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          deploy-branch: gh-pages

@@ -89,7 +89,7 @@ export const pageQuery = graphql`
       }
     }
     remark: allMarkdownRemark(
-      filter: {frontmatter: {previewImg: {ne: ""}}}
+      filter: $filter
       limit: $limit
       skip: $skip
       sort: { fields: [frontmatter___date], order: DESC }
@@ -102,7 +102,7 @@ export const pageQuery = graphql`
             path
             previewImg {
               childImageSharp {
-                fluid(maxWidth: 500) {
+                fluid(maxWidth: 800) {
                   ...GatsbyImageSharpFluid
                 }
               }

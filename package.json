@@ -65,6 +65,7 @@
     "develop": "gatsby develop",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "lint": "eslint --ext .js,.jsx,.tsx --ignore-path .gitignore . && prettier --check \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore",
-    "lint:fix": "eslint --fix --ext .js,.jsx,.tsx --ignore-path .gitignore . && prettier --check \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore"
+    "lint:fix": "eslint --fix --ext .js,.jsx,.tsx --ignore-path .gitignore . && prettier --write \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore",
+    "format": "npx prettier --write \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore"
   }
 }

@@ -1980,7 +1980,6 @@ export type QuerySiteArgs = {
   port?: Maybe<IntQueryOperatorInput>;
   host?: Maybe<StringQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
-  polyfill?: Maybe<BooleanQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
@@ -2140,7 +2139,6 @@ export type Site = Node & {
   port?: Maybe<Scalars['Int']>;
   host?: Maybe<Scalars['String']>;
   pathPrefix?: Maybe<Scalars['String']>;
-  polyfill?: Maybe<Scalars['Boolean']>;
   id: Scalars['ID'];
   parent?: Maybe<Node>;
   children: Array<Node>;
@@ -2350,7 +2348,6 @@ export type SiteFieldsEnum =
   | 'port'
   | 'host'
   | 'pathPrefix'
-  | 'polyfill'
   | 'id'
   | 'parent___id'
   | 'parent___parent___id'
@@ -2444,7 +2441,6 @@ export type SiteFilterInput = {
   port?: Maybe<IntQueryOperatorInput>;
   host?: Maybe<StringQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
-  polyfill?: Maybe<BooleanQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
@@ -2659,9 +2655,11 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___index'
   | 'pluginCreator___pluginOptions___width'
   | 'pluginCreator___pluginOptions___related'
-  | 'pluginCreator___pluginOptions___wrapperStyle'
+  | 'pluginCreator___pluginOptions___urlOverrides'
+  | 'pluginCreator___pluginOptions___urlOverrides___id'
   | 'pluginCreator___pluginOptions___maxWidth'
   | 'pluginCreator___pluginOptions___linkImagesToOriginal'
+  | 'pluginCreator___pluginOptions___wrapperStyle'
   | 'pluginCreator___pluginOptions___pathPrefix'
   | 'pluginCreator___pluginOptions___backgroundColor'
   | 'pluginCreator___pluginOptions___showCaptions'
@@ -2983,9 +2981,10 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___plugins___version'
   | 'pluginOptions___plugins___pluginOptions___width'
   | 'pluginOptions___plugins___pluginOptions___related'
-  | 'pluginOptions___plugins___pluginOptions___wrapperStyle'
+  | 'pluginOptions___plugins___pluginOptions___urlOverrides'
   | 'pluginOptions___plugins___pluginOptions___maxWidth'
   | 'pluginOptions___plugins___pluginOptions___linkImagesToOriginal'
+  | 'pluginOptions___plugins___pluginOptions___wrapperStyle'
   | 'pluginOptions___plugins___pluginOptions___pathPrefix'
   | 'pluginOptions___plugins___pluginOptions___backgroundColor'
   | 'pluginOptions___plugins___pluginOptions___showCaptions'
@@ -3006,9 +3005,11 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___index'
   | 'pluginOptions___width'
   | 'pluginOptions___related'
-  | 'pluginOptions___wrapperStyle'
+  | 'pluginOptions___urlOverrides'
+  | 'pluginOptions___urlOverrides___id'
   | 'pluginOptions___maxWidth'
   | 'pluginOptions___linkImagesToOriginal'
+  | 'pluginOptions___wrapperStyle'
   | 'pluginOptions___pathPrefix'
   | 'pluginOptions___backgroundColor'
   | 'pluginOptions___showCaptions'
@@ -3172,9 +3173,10 @@ export type SitePluginPluginOptions = {
   index?: Maybe<Array<Maybe<Scalars['String']>>>;
   width?: Maybe<Scalars['Int']>;
   related?: Maybe<Scalars['Boolean']>;
-  wrapperStyle?: Maybe<Scalars['String']>;
+  urlOverrides?: Maybe<Array<Maybe<SitePluginPluginOptionsUrlOverrides>>>;
   maxWidth?: Maybe<Scalars['Int']>;
   linkImagesToOriginal?: Maybe<Scalars['Boolean']>;
+  wrapperStyle?: Maybe<Scalars['String']>;
   pathPrefix?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   showCaptions?: Maybe<Scalars['Boolean']>;
@@ -3229,9 +3231,10 @@ export type SitePluginPluginOptionsFilterInput = {
   index?: Maybe<StringQueryOperatorInput>;
   width?: Maybe<IntQueryOperatorInput>;
   related?: Maybe<BooleanQueryOperatorInput>;
-  wrapperStyle?: Maybe<StringQueryOperatorInput>;
+  urlOverrides?: Maybe<SitePluginPluginOptionsUrlOverridesFilterListInput>;
   maxWidth?: Maybe<IntQueryOperatorInput>;
   linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>;
+  wrapperStyle?: Maybe<StringQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
   backgroundColor?: Maybe<StringQueryOperatorInput>;
   showCaptions?: Maybe<BooleanQueryOperatorInput>;
@@ -3303,9 +3306,10 @@ export type SitePluginPluginOptionsPluginsFilterListInput = {
 export type SitePluginPluginOptionsPluginsPluginOptions = {
   width?: Maybe<Scalars['Int']>;
   related?: Maybe<Scalars['Boolean']>;
-  wrapperStyle?: Maybe<Scalars['String']>;
+  urlOverrides?: Maybe<Array<Maybe<SitePluginPluginOptionsPluginsPluginOptionsUrlOverrides>>>;
   maxWidth?: Maybe<Scalars['Int']>;
   linkImagesToOriginal?: Maybe<Scalars['Boolean']>;
+  wrapperStyle?: Maybe<Scalars['String']>;
   pathPrefix?: Maybe<Scalars['String']>;
   backgroundColor?: Maybe<Scalars['String']>;
   showCaptions?: Maybe<Scalars['Boolean']>;
@@ -3321,9 +3325,10 @@ export type SitePluginPluginOptionsPluginsPluginOptions = {
 export type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
   width?: Maybe<IntQueryOperatorInput>;
   related?: Maybe<BooleanQueryOperatorInput>;
-  wrapperStyle?: Maybe<StringQueryOperatorInput>;
+  urlOverrides?: Maybe<SitePluginPluginOptionsPluginsPluginOptionsUrlOverridesFilterListInput>;
   maxWidth?: Maybe<IntQueryOperatorInput>;
   linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>;
+  wrapperStyle?: Maybe<StringQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
   backgroundColor?: Maybe<StringQueryOperatorInput>;
   showCaptions?: Maybe<BooleanQueryOperatorInput>;
@@ -3334,6 +3339,30 @@ export type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
   disableBgImageOnAlpha?: Maybe<BooleanQueryOperatorInput>;
   disableBgImage?: Maybe<BooleanQueryOperatorInput>;
   ignoreFileExtensions?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsPluginsPluginOptionsUrlOverrides = {
+  id?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsPluginsPluginOptionsUrlOverridesFilterInput = {
+  id?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsPluginsPluginOptionsUrlOverridesFilterListInput = {
+  elemMatch?: Maybe<SitePluginPluginOptionsPluginsPluginOptionsUrlOverridesFilterInput>;
+};
+
+export type SitePluginPluginOptionsUrlOverrides = {
+  id?: Maybe<Scalars['String']>;
+};
+
+export type SitePluginPluginOptionsUrlOverridesFilterInput = {
+  id?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsUrlOverridesFilterListInput = {
+  elemMatch?: Maybe<SitePluginPluginOptionsUrlOverridesFilterInput>;
 };
 
 export type SitePluginSortInput = {

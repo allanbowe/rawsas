@@ -11,7 +11,7 @@ module.exports = {
     linkedin: '',
     adsense: '',
   },
-  pathPrefix: '/rawsas/',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',

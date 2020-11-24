@@ -2,6 +2,7 @@
 title: 'About the SAS London Users Group (SLUG)'
 date: '2017-10-27 22:17:51'
 path: '/sas-london-users-group-slug/'
+previewImg: ''
 tags:
   - communities
 ---

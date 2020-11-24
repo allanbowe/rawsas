@@ -2,6 +2,7 @@
 title: 'ERROR: Expected a comment or processing instruction.'
 date: '2019-05-04 18:05:06'
 path: '/error-expected-a-comment-or-processing-instruction/'
+previewImg: ''
 tags:
   - SQL
 ---

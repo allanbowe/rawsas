@@ -2,6 +2,7 @@
 title: 'Running EG or other client tools as SASSRV'
 date: '2015-12-18 17:33:00'
 path: '/running-eg-or-other-client-tools-as-sassrv/'
+previewImg: ''
 tags:
   - SQL
 ---

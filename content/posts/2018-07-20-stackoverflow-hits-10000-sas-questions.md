@@ -2,6 +2,7 @@
 title: 'Stackoverflow hits 10,000 SAS questions!'
 date: '2018-07-20 14:05:57'
 path: '/stackoverflow-hits-10000-sas-questions/'
+previewImg: '../images/frontmatter5.png'
 tags:
   - SQL
 ---

@@ -2,6 +2,7 @@
 title: 'The native implementation module for the security package could not be found in the path.'
 date: '2016-10-05 11:27:00'
 path: '/the-native-implementation-module-for-the-security-package-could-not-be-found-in-the-path/'
+previewImg: '../images/frontmatter19.png'
 tags:
   - SQL
 ---

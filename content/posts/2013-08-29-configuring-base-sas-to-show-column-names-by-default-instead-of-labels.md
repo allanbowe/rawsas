@@ -2,6 +2,7 @@
 title: 'Configuring Base SAS to show column NAMES by default (instead of labels)'
 date: '2013-08-29 14:04:00'
 path: '/configuring-base-sas-to-show-column-names-by-default-instead-of-labels/'
+previewImg: ''
 tags:
   - SQL
 ---

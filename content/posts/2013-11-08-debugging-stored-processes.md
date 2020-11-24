@@ -2,6 +2,7 @@
 title: 'Debugging Stored Processes'
 date: '2013-11-08 11:49:00'
 path: '/debugging-stored-processes/'
+previewImg: ''
 tags:
   - SQL
 ---

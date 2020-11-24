@@ -2,6 +2,7 @@
 title: 'Dictionary of Dictionaries'
 date: '2020-02-27 11:18:29'
 path: '/dictionary-of-dictionaries/'
+previewImg: ''
 tags:
   - SQL
 ---
@@ -15,7 +16,7 @@ tags:
 <!-- /wp:paragraph -->
 
 <!-- wp:table {"className":"is-style-stripes"} -->
-<div class="table table-striped">
+<div class="table table-striped table-responsive">
 <table ><tbody><tr><td>
 <strong>memname</strong>
 </td><td>
@@ -157,7 +158,7 @@ Extended Attributes
 <!-- /wp:paragraph -->
 
 <!-- wp:table -->
-<div class="table">
+<div class="table  table-responsive">
 <table><tbody><tr><td>
 <strong>memname</strong>
 </td><td>

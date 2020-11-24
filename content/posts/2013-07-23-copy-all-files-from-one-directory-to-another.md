@@ -2,6 +2,7 @@
 title: 'Copy All Files From One Directory To Another'
 date: '2013-07-23 17:39:00'
 path: '/copy-all-files-from-one-directory-to-another/'
+previewImg: ''
 tags:
   - SQL
 ---

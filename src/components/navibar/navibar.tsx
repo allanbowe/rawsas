@@ -46,7 +46,11 @@ const Navibar: React.FC<Props> = ({ location }: Props) => {
   return (
     <div className="top-section">
       <div className="text-center">
-        <Link to="/" className="site-name display-4 font-weight-bold">
+        <Link
+          to="/"
+          className="site-name display-4 font-weight-bold"
+          style={{ color: 'black' }}
+        >
           Raw Sas
         </Link>
       </div>

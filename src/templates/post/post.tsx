@@ -1,5 +1,6 @@
 import { Link } from 'gatsby'
 import React from 'react'
+import Img from 'gatsby-image'
 import kebabCase from 'lodash/kebabCase'
 
 import { PostByPathQuery } from '../../../types/graphql-types'
@@ -30,11 +31,15 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
   const path = frontmatter?.path || ''
   const { isIndex } = options
   const html = data.post?.html || ''
+  const previewImg = frontmatter?.previewImg?.childImageSharp
 
   return (
     <div className="article" key={path}>
+      {previewImg && isIndex && <Img fluid={previewImg.fluid} />}
       <h2 className="heading">
-        <Link to={path}>{frontmatter?.title}</Link>
+        <Link to={path} style={{ color: 'black' }}>
+          {frontmatter?.title}
+        </Link>
       </h2>
       <p className="post-meta">
         by
@@ -55,6 +60,7 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
           ))}
         </span>
       </p>
+      {previewImg && !isIndex && <Img fluid={previewImg.fluid} />}
       <div
         className="content"
         dangerouslySetInnerHTML={{

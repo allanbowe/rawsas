@@ -2,6 +2,7 @@
 title: 'Building SAS Apps Locally'
 date: '2016-10-21 08:19:00'
 path: '/building-sas-apps-locally/'
+previewImg: ''
 tags:
   - Boemska
   - Data Adapter

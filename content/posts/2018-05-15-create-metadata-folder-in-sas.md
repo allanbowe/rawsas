@@ -2,6 +2,7 @@
 title: 'Create a Metadata Folder in SAS -Programmatically'
 date: '2018-05-15 15:00:13'
 path: '/create-metadata-folder-in-sas/'
+previewImg: ''
 tags:
   - Movable Type
 ---

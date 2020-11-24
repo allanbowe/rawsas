@@ -2,6 +2,7 @@
 title: 'proc fcmp - file log put % bug'
 date: '2017-08-06 13:47:00'
 path: '/proc-fcmp-file-log-put-bug/'
+previewImg: ''
 tags:
   - SQL
 ---

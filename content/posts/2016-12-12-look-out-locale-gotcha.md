@@ -2,6 +2,7 @@
 title: 'Look out - Locale Gotcha'
 date: '2016-12-12 09:06:00'
 path: '/look-out-locale-gotcha/'
+previewImg: '../images/frontmatter16.png'
 tags:
   - sas
   - SAS Stored Process Web Application

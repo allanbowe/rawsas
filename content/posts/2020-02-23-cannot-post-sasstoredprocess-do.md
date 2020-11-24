@@ -2,6 +2,7 @@
 title: 'Cannot POST /SASStoredProcess/do/'
 date: '2020-02-23 23:20:26'
 path: '/cannot-post-sasstoredprocess-do/'
+previewImg: ''
 tags:
   - SQL
 ---

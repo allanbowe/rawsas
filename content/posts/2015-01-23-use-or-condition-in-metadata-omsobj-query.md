@@ -2,6 +2,7 @@
 title: 'Use OR condition in metadata OMSOBJ query'
 date: '2015-01-23 18:32:00'
 path: '/use-or-condition-in-metadata-omsobj-query/'
+previewImg: ''
 tags:
   - SQL
 ---

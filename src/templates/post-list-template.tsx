@@ -100,6 +100,13 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
+            previewImg {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             tags
             date(formatString: "MMM DD, YYYY")
           }

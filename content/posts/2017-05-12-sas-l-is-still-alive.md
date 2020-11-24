@@ -2,6 +2,7 @@
 title: 'SAS L is StiLL aLive'
 date: '2017-05-12 11:00:00'
 path: '/sas-l-is-still-alive/'
+previewImg: '../images/frontmatter14.png'
 tags:
   - SQL
 ---

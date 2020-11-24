@@ -2,6 +2,7 @@
 title: 'Finding MIN (or even MAX) of character variables in SQL'
 date: '2016-11-08 19:27:00'
 path: '/finding-min-or-even-max-of-character-variables-in-sql/'
+previewImg: ''
 tags:
   - SQL
 ---

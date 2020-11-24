@@ -2,6 +2,7 @@
 title: 'Reading UTF-8 in Filename Pipe'
 date: '2016-09-06 13:27:00'
 path: '/reading-utf-8-in-filename-pipe/'
+previewImg: ''
 tags:
   - SQL
 ---

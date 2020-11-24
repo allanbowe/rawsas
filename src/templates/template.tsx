@@ -5,7 +5,7 @@ import Post from './post/post'
 import Meta from '../components/meta/meta'
 import Layout from '../components/layout/layout'
 import Page from './page/page'
-import { PostByPathQuery } from '../../types/graphql-types'
+import { PostByPath } from '../../types/graphql-types'
 
 const extractContent = (s: string): string => {
   if (typeof document !== `undefined`) {
@@ -20,7 +20,7 @@ const getDescription = (content: string): string => {
 }
 
 interface Props {
-  data: PostByPathQuery
+  data: PostByPath
   location: Location
   pageContext: {
     page: string
@@ -37,7 +37,7 @@ const Template: React.FC<Props> = ({ data, location, pageContext }: Props) => {
     ...data.site?.meta,
     location,
   }
-  const isPage = data.post?.frontmatter?.layout != 'page'
+
   return (
     <div>
       <Layout archives={pageContext.archives}>
@@ -46,16 +46,12 @@ const Template: React.FC<Props> = ({ data, location, pageContext }: Props) => {
           site={meta}
           customDescription={getDescription(data.post?.html || '')}
         />
-        {isPage ? (
-          <Post
-            data={data}
-            options={{
-              isIndex: false,
-            }}
-          />
-        ) : (
-          <Page data={data} location={location} />
-        )}
+        <Post
+          data={data}
+          options={{
+            isIndex: false,
+          }}
+        />
       </Layout>
     </div>
   )
@@ -77,6 +73,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         path
+        previewImg {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         tags
         date(formatString: "MMM DD, YYYY")
       }

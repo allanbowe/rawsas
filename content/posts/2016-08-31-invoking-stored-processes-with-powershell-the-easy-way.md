@@ -2,6 +2,7 @@
 title: 'Invoking Stored Processes with Powershell - the easy way'
 date: '2016-08-31 17:16:00'
 path: '/invoking-stored-processes-with-powershell-the-easy-way/'
+previewImg: ''
 tags:
   - SQL
 ---

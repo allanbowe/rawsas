@@ -2,6 +2,7 @@
 title: 'Get Physical Path From Metadata Libref'
 date: '2015-03-17 13:16:00'
 path: '/get-physical-path-from-metadata-libref/'
+previewImg: ''
 tags:
   - SQL
 ---

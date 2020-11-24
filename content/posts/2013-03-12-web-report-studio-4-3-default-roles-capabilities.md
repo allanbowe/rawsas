@@ -2,6 +2,7 @@
 title: 'Web Report Studio 4.3 - Default Roles / Capabilities'
 date: '2013-03-12 12:27:00'
 path: '/web-report-studio-4-3-default-roles-capabilities/'
+previewImg: ''
 tags:
   - SQL
 ---

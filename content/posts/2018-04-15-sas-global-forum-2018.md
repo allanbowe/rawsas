@@ -4,7 +4,6 @@ date: '2018-04-15 10:32:44'
 path: '/sas-global-forum-2018/'
 previewImg: '../images/frontmatter7.jpeg'
 tags:
-  - Boemska
   - sasensei
   - SGF
 ---

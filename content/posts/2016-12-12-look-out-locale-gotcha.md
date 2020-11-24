@@ -20,7 +20,7 @@ One of our STP applications can be triggered from either Excel or a browser.  I
 
 Yet one session had <span style="font-family: 'courier new' , 'courier' , monospace;">\_USERLOCALE=en_US</span> and the other had <span style="font-family: 'courier new' , 'courier' , monospace;">\_USERLOCALE=en_GB</span>!!
 
-As it turns out, the locale for a Stored Process session <i>can change according to the context of the client</i> - as described in this <a href="http://support.sas.com/kb/45/414.html" target="_blank" rel="noopener">usage note</a>.
+As it turns out, the locale for a Stored Process session <i>can change according to the context of the client</i> - as described in this <a href="https://support.sas.com/kb/45/414.html" target="_blank" rel="noopener">usage note</a>.
 
 So the fix is simply to add the following code (as per your desired locale):
 

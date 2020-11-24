@@ -30,10 +30,10 @@ If it is not there, the chances are that it is not installed.  To install it, y
 <div style="clear: both; text-align: center;"><img class="alignnone size-medium wp-image-106" src="../images/Capture-4-300x206.png" alt="" width="300" height="206" /></div>
 <div></div>
 <div>Useful resources (9.2):</div>
-<div> - SAS <a href="http://support.sas.com/kb/41/009.html" target="_blank" rel="noopener">Usage Note</a> 41009</div>
-<div> - Angela Hall <a href="http://blogs.sas.com/content/bi/2009/10/08/configuration-manager-plugin-for-sas-management-console-9-2/" target="_blank" rel="noopener">blog</a></div>
+<div> - SAS <a href="https://support.sas.com/kb/41/009.html" target="_blank" rel="noopener">Usage Note</a> 41009</div>
+<div> - Angela Hall <a href="https://blogs.sas.com/content/bi/2009/10/08/configuration-manager-plugin-for-sas-management-console-9-2/" target="_blank" rel="noopener">blog</a></div>
 <div></div>
 <div>Useful resources (9.3)</div>
-<div> - SAS <a href="http://support.sas.com/documentation/cdl/en/bimtag/65708/HTML/default/viewer.htm#n12pww56tafsy6n1tfggdgxjy1jl.htm" target="_blank" rel="noopener">documentation</a></div>
+<div> - SAS <a href="https://support.sas.com/documentation/cdl/en/bimtag/65708/HTML/default/viewer.htm#n12pww56tafsy6n1tfggdgxjy1jl.htm" target="_blank" rel="noopener">documentation</a></div>
 <div> - Paul Homes <a href="https://platformadmin.com/blogs/paul/2011/09/sas-management-console-93-configuration-manager/" target="_blank" rel="noopener">blog</a></div>
 <div></div>

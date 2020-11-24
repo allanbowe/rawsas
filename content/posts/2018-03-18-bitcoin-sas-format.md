@@ -9,11 +9,8 @@ tags:
   - SAS Programming
 ---
 
-<!-- For Bitcoin denominated reports, a Bitcoin SAS Format will align the decimal place and display the appropriate currency symbol.  Unicode <a href="http://www.unicode.org/versions/Unicode10.0.0/">released</a> the dedicated Bitcoin symbol ( <strong>&#8383;</strong> - u20BF) in June 2017. -->
+For Bitcoin denominated reports, a Bitcoin SAS Format will align the decimal place and display the appropriate currency symbol.  Unicode <a href="https://www.unicode.org/versions/Unicode10.0.0/">released</a> the dedicated Bitcoin symbol ( <strong>&#8383;</strong> - u20BF) in June 2017.
 
-For Bitcoin denominated reports, a Bitcoin SAS Format will align the decimal place and display the appropriate currency symbol.  Unicode <a href="http://www.unicode.org/versions/Unicode10.0.0/">released</a> the dedicated Bitcoin symbol ( <strong>&#8383;</strong> - u20BF) in June 2017.
-
-<!-- For Bitcoin denominated reports, a Bitcoin SAS Format will align the decimal place and display the appropriate currency symbol.  Unicode <a href="http://www.unicode.org/versions/Unicode10.0.0/">released</a> the dedicated Bitcoin symbol ( <strong>&#8383;</strong> - u20BF) in June 2017. -->
 
 [<img class="aligncenter size-medium wp-image-316" src="../images/Btc-unicode.png" alt="" width="142" height="196" />](/bitcoin-sas-format)
 

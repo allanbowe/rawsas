@@ -11,7 +11,7 @@ If you are getting the following message when importing a package containing a F
 
 <div>
 <blockquote style="line-height: normal; margin-bottom: 0cm; text-autospace: none;"><span style="font-size: 10pt;"><span style="font-family: 'courier new' , 'courier' , monospace;">ERROR - An error occurred trying to connect the responsible parties for the imported objects.  Reason: Can't find resource for bundle java.util.PropertyResourceBundle, key ResponsiblePartyHandler.InvalidSearchAttrib.txt</span></span></blockquote>
-Then as per this <a href="http://support.sas.com/kb/48/429.html" target="_blank" rel="noopener">usage note</a>, and as I just verified locally, it is because the <b>Responsibilities </b>metadata is not imported.  So if you set your flow properties as follows:
+Then as per this <a href="https://support.sas.com/kb/48/429.html" target="_blank" rel="noopener">usage note</a>, and as I just verified locally, it is because the <b>Responsibilities </b>metadata is not imported.  So if you set your flow properties as follows:
 <img class="size-medium wp-image-83 aligncenter" src="../images/Capture-300x31.png" alt="" width="300" height="31" />
 <div style="clear: both; text-align: center;"></div>
 You will see that after export / import the metadata is gone:

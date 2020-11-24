@@ -17,4 +17,4 @@ My favourites:<br />
 <div style="margin-bottom: 0.0001pt;"><span style="font-family: Courier New; font-size: x-small;">20121117T150358&nbsp;</span></div>
 <div style="margin-bottom: 0.0001pt;"><span style="font-family: Courier New; font-size: x-small;">2012-11-17T15:03:58</span></div>
 <br />
-Full list: &nbsp;http://support.sas.com/documentation/cdl/en/lrdict/64316/HTML/default/viewer.htm#a001263753.htm
+Full list: &nbsp;https://support.sas.com/documentation/cdl/en/lrdict/64316/HTML/default/viewer.htm#a001263753.htm

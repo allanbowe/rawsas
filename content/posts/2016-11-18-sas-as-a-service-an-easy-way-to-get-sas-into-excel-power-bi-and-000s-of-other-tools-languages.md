@@ -51,7 +51,7 @@ The 'trick' here is simply to set up a web query to call the STP above.  The op
 <div style="clear: both; text-align: center;"><img class="alignnone size-medium wp-image-86" src="../images/Capture-1-300x174.png" alt="" width="300" height="174" /></div>
 <div style="clear: both; text-align: center;"></div>
 Next step is to add the (appropriately formatted) URL, eg below.  Note that I called my STP "SAAS" and placed it in a metadata root folder called Web.
-<blockquote><span style="font-family: 'courier new' , 'courier' , monospace;">http://YOURSASMID:8080/SASStoredProcess/do?_PROGRAM=/Web/SAAS&amp;libds=sashelp.class&amp;type=tab</span></blockquote>
+<blockquote><span style="font-family: 'courier new' , 'courier' , monospace;">https://YOURSASMID:8080/SASStoredProcess/do?_PROGRAM=/Web/SAAS&amp;libds=sashelp.class&amp;type=tab</span></blockquote>
 We are asking for the sashelp.class dataset, and for it to be TAB delimited.  This gets pasted into the web query box, and gives results as follows:
 
 <img class="size-full wp-image-87 aligncenter" src="../images/Capture-2.png" alt="" width="244" height="209" />
@@ -65,7 +65,7 @@ Now that our STP is configured, it is gobsmackingly straightforward to get the p
 <div style="clear: both; text-align: center;"></div>
 <div><img class="size-medium wp-image-89 aligncenter" src="../images/Capture-4-269x300.png" alt="" width="269" height="300" /></div>
 Enter an appropriately formatted URL, using type=CSV in the parameters:
-<blockquote><span style="font-family: 'courier new' , 'courier' , monospace;">http://YOURSASMID:8080/SASStoredProcess/do?_PROGRAM=/Web/SAAS&amp;libds=sashelp.class&amp;type=CSV</span></blockquote>
+<blockquote><span style="font-family: 'courier new' , 'courier' , monospace;">https://YOURSASMID:8080/SASStoredProcess/do?_PROGRAM=/Web/SAAS&amp;libds=sashelp.class&amp;type=CSV</span></blockquote>
 You may then need to select the appropriate credentials with which to connect (eg windows authentication for IWA, or use Basic if you normally enter passwords for SAS).
 
 In the final screen simply mark the type of your input:
@@ -80,10 +80,10 @@ and - voila!
 <div style="clear: both; text-align: center;"></div>
 Of course this is a very simple example, but using the above template you can start to add more parameters on the SAS side - enabling where clauses, drop statements, business logic etc.
 
-The same approach can be used to get data into Powershell, Python, R, uncountable client applications, and of course - javascript (see <a href="http://rawsas.blogspot.co.uk/2015/12/building-web-apps-with-sas.html" target="_blank" rel="noopener">building web apps with SAS</a>).
+The same approach can be used to get data into Powershell, Python, R, uncountable client applications, and of course - javascript (see <a href="/building-web-apps-with-sas/" target="_blank" rel="noopener">building web apps with SAS</a>).
 
 Got any other tips?  Please share in the comments below..
 
 <b>References:</b>
-<span style="font-size: x-small;">¹ Vincent DelGobbo discusses web queries with SAS/IntrNet in this SUGI27 (2002) <a href="http://www2.sas.com/proceedings/sugi27/p174-27.pdf" target="_blank" rel="noopener">paper</a> </span>
-<span style="font-size: xx-small;">2</span><span style="font-size: x-small;"> Stig Eide also discusses this approach in this <a href="http://bi-notes.com/2013/02/sas-stored-processes-querying-a-stored-process-from-excel-without-the-add-in/" target="_blank" rel="noopener">blog post </a>from 2013</span>
+<span style="font-size: x-small;">¹ Vincent DelGobbo discusses web queries with SAS/IntrNet in this SUGI27 (2002) <a href="https://support.sas.com/resources/papers/proceedings/proceedings/sugi27/p174-27.pdf" target="_blank" rel="noopener">paper</a> </span>
+<span style="font-size: xx-small;">2</span><span style="font-size: x-small;"> Stig Eide also discusses this approach in this <a href="https://bi-notes.com/2013/02/sas-stored-processes-querying-a-stored-process-from-excel-without-the-add-in/" target="_blank" rel="noopener">blog post </a>from 2013</span>

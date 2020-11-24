@@ -44,4 +44,4 @@ To make this even easier to deal with, I've knocked together a simple Javascript
 
 If this post was useful, then do also check out [How To Build Web Apps With SAS](/building-web-apps-with-sas).
 
-And in case you were wondering - datetime <span style="font-family: 'courier new' , 'courier' , monospace; font-size: x-small;">1776743820 </span>(GMT) was when Dr Goodnight officially <a href="http://www.linkedin.com/hp/update/6128386230842384384" target="_blank" rel="noopener">announced </a>SAS Viya!
+And in case you were wondering - datetime <span style="font-family: 'courier new' , 'courier' , monospace; font-size: x-small;">1776743820 </span>(GMT) was when Dr Goodnight officially <a href="https://www.linkedin.com/hp/update/6128386230842384384" target="_blank" rel="noopener">announced </a>SAS Viya!

@@ -16,7 +16,7 @@ You can speed up the performance of your DI Studio client by increasing memory v
 </div>
 <div style="clear: both; text-align: center;"><br /></div>
 <div style="clear: both; text-align: left;">
-  This is further documented in usage note <a href="http://support.sas.com/kb/41/571.html">41571</a>. &nbsp;A similar update can be made to SMC (useful when importing / exporting large packages).
+  This is further documented in usage note <a href="https://support.sas.com/kb/41/571.html">41571</a>. &nbsp;A similar update can be made to SMC (useful when importing / exporting large packages).
 </div>
 <br />
 Note that the max memory that will go in JavaArgs is typcially 1536.

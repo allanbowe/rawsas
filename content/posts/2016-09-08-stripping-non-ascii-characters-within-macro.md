@@ -16,10 +16,10 @@ tags:
 ---
 
 Hit
-<a href="http://rawsas.blogspot.co.uk/2016/09/reading-utf-8-in-filename-pipe.html" target="_blank">once more</a>
+<a href="/reading-utf-8-in-filename-pipe" target="_blank">once more</a>
 with a pesky en-dash issue (likely related to the transcoding between SAS &amp; SQL Server) I discovered today there was no 'in-built' way to remove non-ascii (or extended-ascii) characters within SAS.<br />
 <br />
-There is a great SUGI paper about this topic (<a href="http://www.lexjansen.com/pharmasug/2010/CC/CC13.pdf" target="_blank">here</a>) but the approach required the use of a data step. &nbsp;Let me save you some fiddling around if you need
+There is a great SUGI paper about this topic (<a href="https://www.lexjansen.com/pharmasug/2010/CC/CC13.pdf" target="_blank">here</a>) but the approach required the use of a data step. &nbsp;Let me save you some fiddling around if you need
 this as a macro capability, with the extract below.<br />
 <br />
 
@@ -117,7 +117,7 @@ The main gotchas were as follows:<br />
   </li>
   <li>
     It is not advisable to reference rank() above 127 as this extended set
-    <a href="http://support.sas.com/documentation/cdl/en/hostwin/67962/HTML/default/viewer.htm#n1s18z766s30ddn1taghd7crnhsc.htm" target="_blank">can vary</a>
+    <a href="https://support.sas.com/documentation/cdl/en/hostwin/67962/HTML/default/viewer.htm#n1s18z766s30ddn1taghd7crnhsc.htm" target="_blank">can vary</a>
     country to country (the byte # may not be the same as the rank #)
   </li>
   <li>

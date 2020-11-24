@@ -7,10 +7,10 @@ tags:
   - SQL
 ---
 
-Noticed today that our UAT 9.3 environment was failing to execute the SAS <span style="font-family: Courier New, Courier, monospace;">ExportPackage</span> <a href="http://support.sas.com/documentation/cdl/en/bisag/64088/HTML/default/viewer.htm#a003261084.htm" target="_blank" rel="noopener">utility</a>, with the following error returned:
+Noticed today that our UAT 9.3 environment was failing to execute the SAS <span style="font-family: Courier New, Courier, monospace;">ExportPackage</span> <a href="https://support.sas.com/documentation/cdl/en/bisag/64088/HTML/default/viewer.htm#a003261084.htm" target="_blank" rel="noopener">utility</a>, with the following error returned:
 
 <blockquote><span style="font-family: Courier New, Courier, monospace;">The export process has failed.  The native implementation module for the security package could not be found in the path.</span></blockquote>
-I'd come across this issue <a href="http://stackoverflow.com/questions/29901224/using-iwa-with-sas-exportpackage-utility" target="_blank" rel="noopener">before</a>, and this was (effectively) the same piece of code.  So what gives?  I launched a shell session locally, using the system account (sassrvuat), and reran the command.
+I'd come across this issue <a href="https://stackoverflow.com/questions/29901224/using-iwa-with-sas-exportpackage-utility" target="_blank" rel="noopener">before</a>, and this was (effectively) the same piece of code.  So what gives?  I launched a shell session locally, using the system account (sassrvuat), and reran the command.
 
 <i>It worked.</i>
 

@@ -89,7 +89,7 @@ export const pageQuery = graphql`
       }
     }
     remark: allMarkdownRemark(
-      filter: $filter
+      filter: {frontmatter: {previewImg: {ne: ""}}}
       limit: $limit
       skip: $skip
       sort: { fields: [frontmatter___date], order: DESC }
@@ -100,7 +100,13 @@ export const pageQuery = graphql`
           frontmatter {
             title
             path
-            previewImg
+            previewImg {
+              childImageSharp {
+                fluid(maxWidth: 500) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             tags
             date(formatString: "MMM DD, YYYY")
           }

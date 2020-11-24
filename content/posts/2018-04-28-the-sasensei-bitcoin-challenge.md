@@ -2,7 +2,7 @@
 title: 'The Sasensei Bitcoin Challenge'
 date: '2018-04-28 14:52:05'
 path: '/the-sasensei-bitcoin-challenge/'
-previewImg: 'frontmatter6.jpg'
+previewImg: '../images/frontmatter6.jpg'
 tags:
   - bitcoin
   - sasensei

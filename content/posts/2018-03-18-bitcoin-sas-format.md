@@ -2,7 +2,7 @@
 title: '₿ Bitcoin SAS Format - $bitcoin.'
 date: '2018-03-18 22:10:12'
 path: '/bitcoin-sas-format/'
-previewImg: 'frontmatter8.png'
+previewImg: '../images/frontmatter8.png'
 tags:
   - bitcoin
   - Formats

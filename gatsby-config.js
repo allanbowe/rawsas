@@ -11,7 +11,7 @@ module.exports = {
     linkedin: '',
     adsense: '',
   },
-  pathPrefix: '/tetrahex-rawsas/',
+  pathPrefix: process.env.PATH_PREFIX || '/',
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',

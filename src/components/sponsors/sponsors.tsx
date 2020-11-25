@@ -4,7 +4,7 @@ import DC from '../../images/data-controller.png'
 import Sasensei from '../../images/SASensei.jpg'
 import Sugukiglassesorangenobg from '../../images/sugukiglassesorangenobg-01.png'
 import SasApi from '../../images/sas9api_240x120.png'
-import SasApp from '../../images/sasapp.svg'
+import SasApp from 'https://i.imgur.com/t0Ur0UF.png'
 import BuildApps from '../../images/buildapps240x400.png'
 
 import './styles.scss'

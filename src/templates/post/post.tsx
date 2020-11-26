@@ -35,7 +35,11 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
 
   return (
     <div className="article" key={path}>
-      {previewImg && isIndex && <Img fluid={previewImg.fluid} />}
+      {previewImg && isIndex && (
+        <Link to={path}>
+          <Img fluid={previewImg.fluid} />
+        </Link>
+      )}
       <h2 className="heading">
         <Link to={path} style={{ color: 'black' }}>
           {frontmatter?.title}
@@ -43,12 +47,8 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
       </h2>
       <p className="post-meta">
         by
-        <span className="author">
-          <a title="Posts by Allan" rel="author">
-            {'Allan'}
-          </a>
-        </span>
-        |<span className="published">{frontmatter?.date}</span>|
+        <span className="author">Allan</span>|
+        <span className="published">{frontmatter?.date}</span>|
         <span>
           {(frontmatter?.tags || []).map((tag, index) => (
             <span key={index}>

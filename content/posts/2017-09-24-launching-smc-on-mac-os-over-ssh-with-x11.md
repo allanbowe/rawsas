@@ -5,6 +5,56 @@ path: '/launching-smc-on-mac-os-over-ssh-with-x11/'
 previewImg: '../images/frontmatter11.png'
 tags:
   - SQL
+  - X11
+  - Mac
 ---
 
-As an avid developer of SAS Stored Process Web Applications, the Macbook Pro is my development machine of choice.&nbsp; Since building a <a href="https://github.com/macropeople/macrocore/blob/master/meta/mm_createstp.sas" target="_blank">macro to programmatically create STPs</a>, I've had few reasons to launch a VM to use client tools - but today I actually did need to use SAS Management Console (SMC).<br /><br />Still - who says a client tool has to be run from a client?&nbsp; It's actually possible to launch SMC from your SAS Server, and here are the steps you need to make:<br /><br /><h3>1 - Enable X11 forwarding</h3>Open <span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">/private/etc/ssh/ssh_config</span> and uncomment / change the following values:<br /><blockquote><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">#&nbsp;&nbsp; ForwardAgent no<br />#&nbsp;&nbsp; ForwardX11 no</span></blockquote>to:<br /><blockquote><div style="-webkit-text-stroke-width: 0px; background-color: white; border: 0px; clear: both; color: #242729; font-family: Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif; font-size: 15px; font-stretch: inherit; font-style: normal; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; font-weight: normal; letter-spacing: normal; line-height: inherit; margin: 0px 0px 1em; orphans: 2; padding: 0px; text-align: left; text-decoration-color: initial; text-decoration-style: initial; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: 2; word-spacing: 0px;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">&nbsp;&nbsp; ForwardAgent yes<br />&nbsp;&nbsp; ForwardX11 yes </span></div></blockquote>Next, open <span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">/private/etc/ssh/sshd_config</span> and uncomment / change the following value from:<br /><blockquote><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">#&nbsp; X11Forwarding no</span></blockquote>to:<br /><blockquote><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">&nbsp;&nbsp; X11Forwarding yes</span></blockquote><h3>2 - Download Xquartz</h3>This can be downloaded directly from <a href="https://www.xquartz.org/" target="_blank">here</a>, or via the following command in terminal:<br /><blockquote><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">brew cask install xquartz</span> </blockquote><h3>3 - Launch Management Console</h3>If it does not work immediately, try opening a new shell or performing a restart.&nbsp; The commands will be along the lines of:<br /><blockquote><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">ssh -Y youruser@yourserver.com</span><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">cd /pub/sas/SASManagementConsole/9.4<br />./sasmc_console</span></blockquote>and - voila:<br /><br /><div style="clear: both; text-align: center;"><a href="../images/Screen%2BShot%2B2017-09-24%2Bat%2B16.51.13.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="843" data-original-width="1154" height="233" src="../images/Screen Shot 2017-09-24 at 16.51.13.png" width="320" /></a></div><br />If building web applications with SAS is something you'd like to try, then check out this quick [guide](/building-web-apps-with-sas) (or in depth <a href="https://support.sas.com/resources/papers/proceedings17/1091-2017.pdf" target="_blank">paper</a>).&nbsp;<br /><br />Alternatively, if you're just the type of person who loves to learn about all things SAS, then come visit <a href="https://sasensei.com/">sasensei.com</a>!<br /><br />Chat soon..<br /><br />/Allan
+As an avid developer of SAS Stored Process Web Applications, the Macbook Pro is my development machine of choice.&nbsp; Since building a <a href="https://github.com/sasjs/core/blob/main/meta/mm_createstp.sas" target="_blank">macro to programmatically create STPs</a>, I've had few reasons to launch a VM to use client tools - but today I actually did need to use SAS Management Console (SMC).
+
+Still - who says a client tool has to be run from a client?&nbsp; It's actually possible to launch SMC from your SAS Server, and here are the steps you need to make:
+
+### 1 - Enable X11 forwarding
+
+Open `/private/etc/ssh/ssh_config` and uncomment / change the following values:
+
+```sh
+   ForwardAgent no
+   ForwardX11 no
+```
+to:
+```sh
+  ForwardAgent yes
+  ForwardX11 yes
+```
+Next, open `/private/etc/ssh/sshd_config` and uncomment / change the following value from:
+```sh
+  X11Forwarding no
+```
+to:
+```
+  X11Forwarding yes
+```
+### 2 - Download Xquartz
+This can be downloaded directly from <a href="https://www.xquartz.org/" target="_blank">here</a>, or via the following command in terminal:
+```sh
+brew cask install xquartz
+```
+
+### 3 - Launch Management Console
+If it does not work immediately, try opening a new shell or performing a restart. The commands will be along the lines of:
+```sh
+ssh -Y youruser@yourserver.com
+cd /pub/sas/SASManagementConsole/9.4
+./sasmc_console
+```
+and - voila:
+
+![](../images/Screen Shot 2017-09-24 at 16.51.13.png)
+
+If building web applications with SAS is something you'd like to try, then check out [SASjs](https://sasjs.io).
+
+Alternatively, if you're just the type of person who loves to learn about all things SAS, then come visit <a href="https://sasensei.com/">sasensei.com</a>!
+
+Chat soon..
+
+/Allan

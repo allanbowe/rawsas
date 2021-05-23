@@ -13,45 +13,18 @@ As an avid developer of SAS Stored Process Web Applications, the Macbook Pro is 
 
 Still - who says a client tool has to be run from a client?&nbsp; It's actually possible to launch SMC from your SAS Server, and here are the steps you need to make:
 
-### 1 - Enable X11 forwarding
+## Macbook with Latest xQuartz
 
-Open `/private/etc/ssh/ssh_config` and uncomment / change the following values:
+1. Install xquartz:  [https://www.xquartz.org/releases/index.html](https://www.xquartz.org/releases/index.html)
+2. Log out and back in
+3. Open _xquartz_ terminal and run: `ssh -Y yourSSHuser@yourSASserver`
+4. Execute the following file: `./opt/sas/sas9/SASHome/SASManagementConsole/9.4/sasmc`
 
-```sh
-   ForwardAgent no
-   ForwardX11 no
-```
-to:
-```sh
-  ForwardAgent yes
-  ForwardX11 yes
-```
-Next, open `/private/etc/ssh/sshd_config` and uncomment / change the following value from:
-```sh
-  X11Forwarding no
-```
-to:
-```
-  X11Forwarding yes
-```
-### 2 - Download Xquartz
-This can be downloaded directly from <a href="https://www.xquartz.org/" target="_blank">here</a>, or via the following command in terminal:
-```sh
-brew cask install xquartz
-```
-
-### 3 - Launch Management Console
-If it does not work immediately, try opening a new shell or performing a restart. The commands will be along the lines of:
-```sh
-ssh -Y youruser@yourserver.com
-cd /pub/sas/SASManagementConsole/9.4
-./sasmc_console
-```
-and - voila:
+The process is FAR easier (and SMC over x11 is much faster) since the latest release of xquartz.  There is NO need to update the ssh_config file and change `ForwardAgent` or `ForwardX11` settings.
 
 ![](../images/Screen Shot 2017-09-24 at 16.51.13.png)
 
-If building web applications with SAS is something you'd like to try, then check out [SASjs](https://sasjs.io).
+If building web applications with SAS is something you'd like to try, then check out [SASjs](https://sasjs.io) and the SASjs [cli](https://cli.sasjs.io).
 
 Alternatively, if you're just the type of person who loves to learn about all things SAS, then come visit <a href="https://sasensei.com/">sasensei.com</a>!
 

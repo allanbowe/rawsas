@@ -18,4 +18,4 @@ proc metadata in=in out=outmeta verbose;run;</pre>
 
 Tip - whatever you do, don't try adding the <code>recfm=n</code> option!!  This will send your proc metadata into an infinite loop.  Killing your session from SAS Studio (or Enterprise Guide) may not prevent the session from remaining on the remote SAS application server and maxing out CPU indefinitely.
 
-Safe coding!  If you are working a lot with metadata management, you may want to check out the macros in the <a href="https://github.com/macropeople/macrocore">macrocore</a> library.
+Safe coding!  If you are working a lot with metadata management, you may want to check out the macros in the <a href="https://github.com/sasjs/core">SASjs/core</a> library.

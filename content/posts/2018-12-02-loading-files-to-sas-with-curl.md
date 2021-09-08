@@ -58,9 +58,9 @@ The above variables are actually macro variable arrays - so _WEBIN_FILENAME1 wil
 <h3>Further resources</h3>
 If you want more background on building web applications with SAS, check out the following resources!
 <ul>
- 	<li><a href="https://github.com/macropeople/macrocore">MacroCore</a> - library for SAS Application Development</li>
- 	<li><a href="https://github.com/macropeople/sasjs">SASjs</a> - Adapter for SAS-JS communication</li>
- 	<li><a href="https://github.com/macropeople/sasjs-cli">sasjs-cli</a> - utility for building SAS Apps</li>
+ 	<li><a href="https://github.com/sasjs/core">MacroCore</a> - library for SAS Application Development</li>
+ 	<li><a href="https://github.com/sasjs/adapter">SASjs</a> - Adapter for SAS-JS communication</li>
+ 	<li><a href="https://github.com/sasjs/cli">sasjs-cli</a> - utility for building SAS Apps</li>
  	<li>https://sasjs.io - guide to building web apps on SAS</li>
 </ul>
 <a href="https://datacontroller.io">Data Controller</a> is also a super useful tool for SAS data capture and <a href="https://www.linkedin.com/pulse/zen-art-data-quality-allan-bowe/">data quality</a>, as well as <a href="https://datacontroller.io/euc-management-system/">EUC</a> / Power BI integration and is available as a free 30 day demo version.

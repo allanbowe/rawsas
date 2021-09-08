@@ -58,6 +58,6 @@ The authoritative discussion of named entities for XML is available here, but in
   when ('0D'x) put '&amp;#x0d;';
   when ('</pre>
 
-If you need to update your metadata, you can find a range of useful macros in the MacroPeople <a href="https://github.com/macropeople/macrocore">MacroCore</a> library.
+If you need to update your metadata, you can find a range of useful macros in the SASjs<a href="https://github.com/sasjs/core">Core</a> library.
 
 <pre></pre>

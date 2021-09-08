@@ -8,9 +8,7 @@ tags:
 ---
 
 <!-- wp:paragraph -->
-<p>Whilst creating a new macro for the macrocore library (<a href="https://github.com/macropeople/macrocore/blob/master/meta/mm_adduser2group.sas">mm_adduser2group</a>) I received in my log:  ERROR: Expected a comment or processing instruction.  </p>
-<!-- <p>Whilst creating a new macro for the macrocore library (<a href="https://github.com/macropeople/macrocore/blob/master/meta/mm_adduser2group.sas">mm_adduser2group</a>) I received in my log:  ERROR: Expected a comment or processing instruction.  </p> -->
-<!-- <p>Whilst creating a new macro for the macrocore library (<a href="https://github.com/macropeople/macrocore/blob/master/meta/mm_adduser2group.sas">mm_adduser2group</a>) I received in my log:  ERROR: Expected a comment or processing instruction.  </p> -->
+<p>Whilst creating a new macro for the macrocore library (<a href="https://github.com/sasjs/core/blob/main/meta/mm_adduser2group.sas">mm_adduser2group</a>) I received in my log:  ERROR: Expected a comment or processing instruction.  </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":442} -->

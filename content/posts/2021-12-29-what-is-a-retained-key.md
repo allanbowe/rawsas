@@ -2,7 +2,7 @@
 title: 'Retained Keys'
 date: '2021-12-29 22:22:22'
 path: '/retained-key/'
-previewImg: ''
+previewImg: '../images/key.png'
 tags:
   - ddl
   - macros

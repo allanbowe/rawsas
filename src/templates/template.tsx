@@ -4,7 +4,6 @@ import React from 'react'
 import Post from './post/post'
 import Meta from '../components/meta/meta'
 import Layout from '../components/layout/layout'
-import Page from './page/page'
 import { PostByPath } from '../../types/graphql-types'
 
 const extractContent = (s: string): string => {

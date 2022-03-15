@@ -3,6 +3,14 @@
   "description": "Tips n Tricks and other SAS Titbits from around 10 years of SAS projects and tinkering about with SAS",
   "version": "0.1.0",
   "author": "",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "lint": "eslint --ext .js,.jsx,.tsx --ignore-path .gitignore . && prettier --check \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore",
+    "lint:fix": "eslint --fix --ext .js,.jsx,.tsx --ignore-path .gitignore . && prettier --write \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore",
+    "format": "npx prettier --write \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
@@ -59,13 +67,5 @@
     "starter"
   ],
   "license": "MIT",
-  "main": "n/a",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "lint": "eslint --ext .js,.jsx,.tsx --ignore-path .gitignore . && prettier --check \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore",
-    "lint:fix": "eslint --fix --ext .js,.jsx,.tsx --ignore-path .gitignore . && prettier --write \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore",
-    "format": "npx prettier --write \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore"
-  }
+  "main": "n/a"
 }

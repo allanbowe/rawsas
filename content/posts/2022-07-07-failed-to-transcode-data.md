@@ -1,6 +1,6 @@
 ---
 title: 'Failed to Transcode Data'
-date: '2022-07-097 09:00:00'
+date: '2022-07-07 09:00:00'
 path: '/failed-to-transcode-data/'
 tags:
   - EG

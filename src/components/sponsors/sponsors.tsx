@@ -3,7 +3,6 @@ import React from 'react'
 import DC from '../../images/data-controller.png'
 import Sasensei from '../../images/SASensei.jpg'
 import Sugukiglassesorangenobg from '../../images/sugukiglassesorangenobg-01.png'
-import SasApi from '../../images/sas9api_240x120.png'
 import SasApp from '../../images/sasapp.png'
 import BuildApps from '../../images/buildapps240x400.png'
 
@@ -27,18 +26,13 @@ const Sponsors: React.FC = () => {
       img: Sugukiglassesorangenobg,
     },
     {
-      title: 'SAS 9 REST API',
-      href: 'https://sas9api.io/',
-      img: SasApi,
-    },
-    {
       title: 'SAS Apps',
       href: 'https://sasapps.io',
       img: SasApp,
     },
     {
-      title: 'Build HTML5 SAS Apps',
-      href: 'https://sasjs.io"',
+      title: 'SASjs - DevOps for SAS',
+      href: 'https://github.com/sasjs"',
       img: BuildApps,
     },
   ]

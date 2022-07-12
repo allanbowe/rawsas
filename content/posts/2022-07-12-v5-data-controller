@@ -2,7 +2,7 @@
 title: 'Data Controller v5'
 date: '2022-07-12 09:00:00'
 path: '/v5-data-controller/'
-previewImg: 'https://docs.datacontroller.io/img/cls_example.png'
+previewImg: '../images/cls_example.png'
 tags:
   - Data Controller
 ---

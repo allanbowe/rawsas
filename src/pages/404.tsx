@@ -19,7 +19,7 @@ const NotFound: React.FC<Props> = ({ data, location }: Props) => {
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
       <p>
         Please let us know, by raising an issue
-        <a href="https://github.com/allanbowe/rawsas/issues">here</a>!
+        <a href="https://github.com/allanbowe/rawsas/issues"> here</a>!
       </p>
     </Layout>
   )

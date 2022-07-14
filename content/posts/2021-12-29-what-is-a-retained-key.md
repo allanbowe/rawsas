@@ -5,6 +5,7 @@ path: '/retained-key/'
 previewImg: '../images/key.png'
 tags:
   - ddl
+  - sasjs-core
   - macros
   - data-modelling
 ---

@@ -4,7 +4,8 @@ date: '2022-07-14 09:00:00'
 path: '/sasjs-core/'
 previewImg: '../images/core.png'
 tags:
-  - Macros
+  - sasjs-core
+  - macros
 ---
 
 # SASjs Core - Macros for SAS Application Developers

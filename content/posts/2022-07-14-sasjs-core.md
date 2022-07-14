@@ -14,15 +14,15 @@ How often have you needed a macro and thought "surely someone has done this befo
 
 There's no need to re-invent the wheel!  The SASjs Core library is a collection of 228 (and counting) fully documented macros, split between:
 
-• BASE (macro functions & procedures)
-• DDL (for table creation
-• FCMP (functions)
-• LUA (functions)
-• META (macros for metadata)
-• METAX (metadata macros with XCMD)
-• SERVER (macros for SASjs Server)
-• VIYA (macros for SPRE)
-• XPLATFORM (for all flavours of SAS)
+* BASE (macro functions & procedures)
+* DDL (for table creation
+* FCMP (functions)
+* LUA (functions)
+* META (macros for metadata)
+* METAX (metadata macros with XCMD)
+* SERVER (macros for SASjs Server)
+* VIYA (macros for SPRE)
+* XPLATFORM (for all flavours of SAS)
 
 The relevant components can be added to your SASAUTOS as follows:
 
@@ -59,4 +59,6 @@ More links:
 * [Quality rules](https://github.com/sasjs/core/blob/main/.sasjslint) (using [sasjs lint](https://cli.sasjs.io/lint/))
 * [Communities article](https://blogs.sas.com/content/sgf/2022/02/16/sas-open-source-treasures-from-around-the-world-sasjs/) on SASjs
 
-We currently have [82 stars](https://github.com/sasjs/core#star-gazing), which puts us #10 in the top 10 of [SAS-tagged repos](https://github.com/sasjs/core). All macros are MIT open source, and free for commercial use.
+SASjs Core currently has [82 stars](https://github.com/sasjs/core#star-gazing), which puts the project at #10 in the top 10 of [SAS-tagged repos](https://github.com/sasjs/core).
+
+All macros are MIT open source, and free for commercial use.

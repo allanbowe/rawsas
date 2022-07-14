@@ -73,8 +73,7 @@ const Navibar: React.FC<Props> = ({ location }: Props) => {
                   </NavItem>
 
                   <NavItem>
-                    <NavLink href="https://github.com/sasjs">SASjs
-                    </NavLink>
+                    <NavLink href="https://github.com/sasjs">SASjs</NavLink>
                   </NavItem>
 
                   <NavItem>

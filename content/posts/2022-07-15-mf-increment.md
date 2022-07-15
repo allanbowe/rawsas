@@ -2,7 +2,7 @@
 title: 'mf_increment'
 date: '2022-07-15 09:00:00'
 path: '/mf_increment/'
-previewImg: '../images/core.png'
+previewImg: '../images/mf_increment3.png'
 tags:
   - sasjs-core
   - macros

@@ -53,7 +53,7 @@ What about incrementing _outside_ a macro?  There's the option of `%eval(x+1)`. 
 This works fine, although it is quite verbose as we need to re-assign the variable each time:
 ![](../images/mf_increment2.png)
 
-An alternative approach would be a simple macro to update the variable each time AND return the incremented value.  This is the purpose of the [mf_increment()](https://core.sasjs.io/mf__increment_8sas.html) macro.  The definition is basic enough:
+An alternative approach would be a simple macro to update the variable each time AND return the incremented value.  This is the purpose of the [mf_increment()](https://core.sasjs.io/mf__increment_8sas.html) macro, which works in a very similar way to the SAS monotonic() function.  The definition is basic enough:
 
 ```sas
 %macro mf_increment(macro_name,incr=1);

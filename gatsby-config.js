@@ -162,6 +162,14 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: 8,
+        matomoUrl: 'https://analytics.4gl.io/',
+        siteUrl: 'https://rawsas.com/',
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

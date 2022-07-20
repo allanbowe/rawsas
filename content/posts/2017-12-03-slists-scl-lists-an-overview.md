@@ -96,6 +96,8 @@ tags:
 <p>For more info, do reach out on <a href="https://www.linkedin.com/feed/">Linkedin</a>.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list -->
-<ul><li>AF slides:  <a href="https://slides.com/allanbowe/sasaf">https://slides.com/allanbowe/sasaf</a></li><li>Article: <a href="https://www.linkedin.com/pulse/easy-af-scl-modernisation-html5-sas-allan-bowe/">https://www.linkedin.com/pulse/easy-af-scl-modernisation-html5-sas-allan-bowe/</a></li><li>UK Forum slides: <a href="https://drive.google.com/file/d/1RMLxFccaXYh35IGnbcFjISFmZUIdetUO/view">https://drive.google.com/file/d/1RMLxFccaXYh35IGnbcFjISFmZUIdetUO/view</a></li></ul>
-<!-- /wp:list -->
+
+* AF [slides](https://slides.sasjs.io/af-scl)
+* LinkedIn [Article](https://www.linkedin.com/pulse/easy-af-scl-modernisation-html5-sas-allan-bowe)
+* UK Forum [slides](https://drive.google.com/file/d/1RMLxFccaXYh35IGnbcFjISFmZUIdetUO/view)
+

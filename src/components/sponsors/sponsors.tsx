@@ -16,6 +16,16 @@ const Sponsors: React.FC = () => {
       img: DC,
     },
     {
+      title: 'SAS Apps',
+      href: 'https://sasapps.io',
+      img: SasApp,
+    },
+    {
+      title: 'SASjs - DevOps for SAS',
+      href: 'https://github.com/sasjs',
+      img: BuildApps,
+    },
+    {
       title: 'Think you know SAS?  Take the Sasensei Challenge!',
       href: 'https://sasensei.com',
       img: Sasensei,
@@ -24,17 +34,7 @@ const Sponsors: React.FC = () => {
       title: 'SAS User Group UK &amp; Ireland',
       href: 'https://www.meetup.com/SUGUKI/',
       img: Sugukiglassesorangenobg,
-    },
-    {
-      title: 'SAS Apps',
-      href: 'https://sasapps.io',
-      img: SasApp,
-    },
-    {
-      title: 'SASjs - DevOps for SAS',
-      href: 'https://github.com/sasjs"',
-      img: BuildApps,
-    },
+    }
   ]
   return (
     <div className="sponsors">

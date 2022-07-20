@@ -34,7 +34,7 @@ const Sponsors: React.FC = () => {
       title: 'SAS User Group UK &amp; Ireland',
       href: 'https://www.meetup.com/SUGUKI/',
       img: Sugukiglassesorangenobg,
-    }
+    },
   ]
   return (
     <div className="sponsors">

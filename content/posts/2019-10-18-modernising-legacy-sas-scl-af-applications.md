@@ -4,7 +4,7 @@ date: '2019-10-18 13:08:07'
 path: '/modernising-legacy-sas-scl-af-applications/'
 previewImg: ''
 tags:
-  - SQL
+  - AF/SCL
 ---
 
 <!-- wp:paragraph -->
@@ -65,6 +65,9 @@ tags:
 <p>Additional resources:</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:list -->
-<ul><li>Linkedin Article: <a href="https://www.linkedin.com/pulse/easy-af-scl-modernisation-html5-sas-allan-bowe/">https://www.linkedin.com/pulse/easy-af-scl-modernisation-html5-sas-allan-bowe/</a></li><li>Slides: <a href="https://slides.com/allanbowe/sasaf">https://slides.com/allanbowe/sasaf</a></li><li>SAS UK Forum <a href="https://drive.google.com/file/d/1RMLxFccaXYh35IGnbcFjISFmZUIdetUO/view">presentation</a></li><li>Info on SLISTS:  <a href="/slists-scl-lists-an-overview">slists scl lists an overview</a> </li></ul>
-<!-- /wp:list -->
+* AF [slides](https://slides.sasjs.io/af-scl)
+* LinkedIn [Article](https://www.linkedin.com/pulse/easy-af-scl-modernisation-html5-sas-allan-bowe)
+* UK Forum [presentation](https://drive.google.com/file/d/1RMLxFccaXYh35IGnbcFjISFmZUIdetUO/view)
+* Info on [SLISTS](/slists-scl-lists-an-overview)
+
+

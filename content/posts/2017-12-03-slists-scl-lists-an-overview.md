@@ -4,8 +4,7 @@ date: '2017-12-03 20:58:29'
 path: '/slists-scl-lists-an-overview/'
 previewImg: ''
 tags:
-  - AF
-  - SCL
+  - AF/SCL
 ---
 
 <!-- wp:heading -->
@@ -99,5 +98,5 @@ tags:
 
 * AF [slides](https://slides.sasjs.io/af-scl)
 * LinkedIn [Article](https://www.linkedin.com/pulse/easy-af-scl-modernisation-html5-sas-allan-bowe)
-* UK Forum [slides](https://drive.google.com/file/d/1RMLxFccaXYh35IGnbcFjISFmZUIdetUO/view)
-
+* UK Forum [presentation](https://drive.google.com/file/d/1RMLxFccaXYh35IGnbcFjISFmZUIdetUO/view)
+* RawSAS [post](https://rawsas.com/modernising-legacy-sas-scl-af-applications/)

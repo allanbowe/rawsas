@@ -22,7 +22,7 @@ Docs: [https://server.sasjs.io/settings/#log_location](https://server.sasjs.io/s
 
 SASjs Server itself provides MIT open-source middleware for SAS, which can be useful as a (very) low cost option for:
 
-* Migrating legacy SAS/Intrnet or AF/SCL
+* Migrating legacy SAS/Intrnet or [AF/SCL](https://www.linkedin.com/pulse/easy-af-scl-modernisation-html5-sas-allan-bowe/)
 * SAS App Development
 * 3rd Party Integrations
 

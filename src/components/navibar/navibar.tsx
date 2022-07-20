@@ -87,6 +87,10 @@ const Navibar: React.FC<Props> = ({ location }: Props) => {
               <Nav className="mx-auto" navbar>
                 <div className={`nav-links ${isSearchOpen ? 'hide' : ''}`}>
                   <NavItem>
+                    <NavLink href="https://sasjs.io">SASjs</NavLink>
+                  </NavItem>
+
+                  <NavItem>
                     <NavLink href="https://sasensei.com/">Sasensei</NavLink>
                   </NavItem>
 
@@ -97,8 +101,8 @@ const Navibar: React.FC<Props> = ({ location }: Props) => {
                   </NavItem>
 
                   <NavItem>
-                    <NavLink href="https://www.sasusergroups.org/">
-                      Sas User Groups
+                    <NavLink href="https://www.linkedin.com/pulse/easy-af-scl-modernisation-html5-sas-allan-bowe/">
+                      AF/SCL
                     </NavLink>
                   </NavItem>
 

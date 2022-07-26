@@ -4,7 +4,7 @@ date: '2017-05-19 12:51:00'
 path: '/create-compile-run-scl-in-enterprise-guide/'
 previewImg: '../images/frontmatter12.png'
 tags:
-  - batch scl EG
+  - AF
   - catalog
   - display
   - EG
@@ -24,7 +24,7 @@ Thankfully I did have access to a windows machine with Base SAS.  Taking inspir
 
 <h2>1 - Create an SCL Entry</h2>
 Unfortunately, it is absolutely necessary to create an SCL file manually.  The good news is that you can do this just once, and write an entry that will simply <span style="font-family: 'courier new' , 'courier' , monospace; font-size: x-small;">%include </span>any future SCL you send to it.  To create this file and corresponding catalog at the same time, use the build command:
-<div style="clear: both; text-align: center;"><a style="margin-left: 1em; margin-right: 1em;" href="../images/Capture.png"><img class="alignnone" src="../images/Capture_1.png" alt="" width="214" height="75" border="0" /></a></div>
+<div style="clear: both; text-align: center;"><a style="margin-left: 1em; margin-right: 1em;" href="../images/Capture_1.png"><img class="alignnone" src="../images/Capture_1.png" alt="" width="214" height="75" border="0" /></a></div>
 This should open a window with the SCL entry.  Now add a single line of code (<span style="font-family: 'courier new' , 'courier' , monospace; font-size: x-small;">%inc fref;</span>) and save the file.
 <div style="clear: both; text-align: center;"><a style="margin-left: 1em; margin-right: 1em;" href="../images/Capture2.png"><img src="../images/Capture2_1.png" border="0" /></a></div>
 What just happened?  We created an SCL entry in a catalog, which will run an %include statement from a fileref (fref) once compiled.

@@ -13,7 +13,7 @@ tags:
 
 # SASjs Artefacts
 
-What is a SAS program?
+_What is a SAS program?_
 
 In SAS Solution Development, a file with a ".sas" extension can be many different things. A macro, a program, a piece of DDL, a datalines file, an autoexec, an FCMP function.  Often this plurality of purpose comes without documentation, nor even an indication in the program header.
 

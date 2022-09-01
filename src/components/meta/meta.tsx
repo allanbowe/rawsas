@@ -38,7 +38,7 @@ const Meta: React.FC<Props> = ({
   const siteDescription =
     customDescription == '' ? site?.description || '' : customDescription
   const pageTitle = title ? title : siteTitle
-  const previewImgSrc = site?.previewImg?.src
+  const previewImgSrc = site?.previewImg?.fluid.src
   const image = {
     og: `${siteUrl}${previewImgSrc ?? '/img/icon.png'}`,
     twitter: `${siteUrl}${previewImgSrc ?? '/img/icon.png'}`,

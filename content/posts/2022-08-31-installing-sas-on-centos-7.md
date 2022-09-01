@@ -10,7 +10,7 @@ tags:
 
 # SAS on Centos 7.9
 
-Whilst CentOS is not an officially supported (by SAS) flavour of Linux, it's built from the same source code as RHEL (Red Hat Enterprise Linux), which IS supported.  This means:
+Whilst CentOS is not an [officially supported](https://support.sas.com/supportos/list?requestAction=summary&outputView=sasrelease&sasrelease=9.4&platformGroup=UNIX&platformName=all) (by SAS) flavour of Linux, it's built from the same source code as RHEL (Red Hat Enterprise Linux), which IS supported.  This means:
 
 * The upstream packages are the same
 * The libraries are the same
@@ -92,6 +92,50 @@ ERROR:  BRIDGE FAILURE - ERROR LOADING IMAGE
         MODULE: sasmotifsasvsub ਷��U SUBSYSTEM: 8 SLOT: 11
 ```
 
+This is due to a missing package (libXt).  There is another missing package too - the following will fix:
+
+Execute:
+
+```
+yum install libXt libXmu
+```
+
+The next error found is as follows:
+
+```
+WARNING: Display of UTF8 encoded data is not fully supported by the SAS Display Manager System.
+ERROR: The connection to the X display server could not be made. Verify that
+ERROR: the X display name is correct, and that you have access authorization.
+ERROR: See the online Help for more information about connecting to an X
+ERROR: display server.
+
+ERROR: Explorer failed to initialize.
+ERROR: The connection to the X display server could not be made. Verify that
+ERROR: the X display name is correct, and that you have access authorization.
+ERROR: See the online Help for more information about connecting to an X
+ERROR: display server.
+
+ERROR: The connection to the X display server could not be made. Verify that
+ERROR: the X display name is correct, and that you have access authorization.
+ERROR: See the online Help for more information about connecting to an X
+ERROR: display server.
+
+ERROR: Explorer failed to initialize.
+ERROR: Device does not support full-screen.
+ERROR: Device does not support full-screen.
+NOTE: SAH239999I DMS, State, stopped
+ERROR: Failed to attach to Java during SAS startup.
+```
+
 There is more info on the above in [this article](https://communities.sas.com/t5/Administration-and-Deployment/ERROR-Failed-to-attach-to-Java-during-SAS-startup-SAS-9-4-Ubuntu/td-p/526730) however if you are running your SAS using [SASjs Server](https://server.sasjs.io) then the error isn't a problem (as you won't be launching SAS interactively).
 
 You can also just launch sas with the `-nodms` option to avoid dealing with this issue.
+
+If you would actually like to run SAS interactively then you will need to set up X11.  On the server side, this involves:
+
+* Setting `#X11Forwarding no` to `X11Forwarding yes` in `/etc/ssh/sshd_config`
+* Running `yum install xauth`
+
+Now you can exit and log back in, eg with `ssh -X user@server`, and your SAS will (eventually) load!
+
+![](../images/centossas.png)

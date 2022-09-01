@@ -39,7 +39,7 @@ groupadd sasinst
 # create a general SAS group (will have read access to system files)
 groupadd sas
 
-# create install user as system user (no home dir) and add to SAS group
+# create install user and add to SAS group
 useradd sasinstaller -G sasinst
 
 # give sudo rights to enable smooth setup.sh
@@ -92,9 +92,7 @@ ERROR:  BRIDGE FAILURE - ERROR LOADING IMAGE
         MODULE: sasmotifsasvsub ਷��U SUBSYSTEM: 8 SLOT: 11
 ```
 
-This is due to a missing package (libXt).  There is another missing package too - the following will fix:
-
-Execute:
+This is due to a missing package (libXt).  There is another missing package too.  Run the following to fix:
 
 ```
 yum install libXt libXmu

@@ -35,7 +35,7 @@ const Template: React.FC<Props> = ({ data, location, pageContext }: Props) => {
   const meta = {
     ...data.site?.meta,
     location,
-    previewImgURL: data.post.frontmatter.previewImg?.publicURL,
+    previewImg: data.post.frontmatter.previewImg?.childImageSharp,
   }
 
   return (
@@ -74,7 +74,6 @@ export const pageQuery = graphql`
         title
         path
         previewImg {
-          publicURL
           childImageSharp {
             fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid

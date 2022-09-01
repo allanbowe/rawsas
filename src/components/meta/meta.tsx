@@ -18,6 +18,7 @@ interface Props {
         | 'adsense'
         | 'siteUrl'
         | 'location'
+        | 'previewImgURL'
       >
     | null
     | undefined
@@ -37,9 +38,10 @@ const Meta: React.FC<Props> = ({
   const siteDescription =
     customDescription == '' ? site?.description || '' : customDescription
   const pageTitle = title ? title : siteTitle
+  const previewImgURL = site?.previewImgURL
   const image = {
-    og: `${siteUrl}/img/icon.png`,
-    twitter: `${siteUrl}/img/icon.png`,
+    og: `${siteUrl}${previewImgURL ?? '/img/icon.png'}`,
+    twitter: `${siteUrl}${previewImgURL ?? '/img/icon.png'}`,
   }
   return (
     <Helmet

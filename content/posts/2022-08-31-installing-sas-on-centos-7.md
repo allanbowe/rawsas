@@ -70,53 +70,7 @@ If you experience issues, you can check the logs in the `/home/sasinstaller/.SAS
 If you see `WARNING: The specified SID is invalid:` then try putting `/the/full/path/to/the.sid`.  Also, open the SID file in VS Codium, or another editor, to remove trailing spaces etc.  The file should have a new line at the end.
 
 
-Final result:
-
-```
-Additional Resources
-Below are links to additional resources for your deployment.
-
-This deployment is not complete until certain files within your SAS installation
-have setuid permissions and are owned by root.  In order to set the setuid
-permissions, run the following script as
-root:
-
-/opt/sas9/SASHome/SASFoundation/9.4/utilities/bin/setuid.sh
-
-Additional
-information can be found in the "Post-Installation Configuration for User
-Authentication and Identification" chapter of the Configuration Guide for SAS
-Foundation for UNIX Environments, located at the SAS Install Center link
-below.
-
-SAS Customer Support Center
-http://support.sas.com
-
-SAS Installed Software and Components
-report
-file:///opt/sas9/SASHome/InstallMisc/InstallLogs/DeploymentRegistry.html
-
-SAS
-Install Center
-http://support.sas.com/documentation/installcenter/
-
-SAS Technical Support
-http://support.sas.com/techsup
-
-Downloads and Hot Fixes
-http://support.sas.com/techsup/dwnload/
-
-SAS Training
-http://support.sas.com/training
-
-Administrative Services
-http://support.sas.com/adminservices
-
-
-Press Enter to finish:
-```
-
-Note - if you try launching SAS you will get the following error:
+Note - if you try launching SAS (without a windowing session) you will get the following error:
 
 ```
 ERROR:  BRIDGE FAILURE - ERROR LOADING IMAGE

@@ -18,7 +18,7 @@ interface Props {
         | 'adsense'
         | 'siteUrl'
         | 'location'
-        | 'previewImg'
+        | 'previewImgURL'
       >
     | null
     | undefined
@@ -31,6 +31,7 @@ const Meta: React.FC<Props> = ({
   title,
   customDescription = '',
 }: Props) => {
+  console.log(site)
   const siteTitle = site?.title || ''
   const siteUrl = site?.siteUrl || ''
   const author = site?.author || ''
@@ -38,10 +39,10 @@ const Meta: React.FC<Props> = ({
   const siteDescription =
     customDescription == '' ? site?.description || '' : customDescription
   const pageTitle = title ? title : siteTitle
-  const previewImgSrc = site?.previewImg?.fluid.src
+  const previewImgURL = site?.previewImgURL
   const image = {
-    og: `${siteUrl}${previewImgSrc ?? '/img/icon.png'}`,
-    twitter: `${siteUrl}${previewImgSrc ?? '/img/icon.png'}`,
+    og: `${siteUrl}${previewImgURL ?? '/img/icon.png'}`,
+    twitter: `${siteUrl}${previewImgURL ?? '/img/icon.png'}`,
   }
   return (
     <Helmet
@@ -91,6 +92,14 @@ const Meta: React.FC<Props> = ({
           name: 'image',
           property: 'og:image',
           content: image.og,
+        },
+        {
+          property: 'og:image:width',
+          content: 1200,
+        },
+        {
+          property: 'og:image:height',
+          content: 630,
         },
         {
           name: 'author',

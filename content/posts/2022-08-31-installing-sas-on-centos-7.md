@@ -1,13 +1,11 @@
 ---
 title: 'SAS on CentOS 7'
-date: '2022-09-31 09:00:00'
+date: '2022-08-31 09:00:00'
 path: '/sas-centos/'
 previewImg: '../images/centos.jpg'
 tags:
   - sas-admin
-  - sas-developer
-  - sasjs
-  - devops
+  - centos
 ---
 
 # SAS on Centos 7.9

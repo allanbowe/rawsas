@@ -4,8 +4,8 @@ date: '2017-05-16 09:07:00'
 path: '/sas-9-4-on-centos-error-bridge-failure-error-loading-image/'
 previewImg: '../images/frontmatter13.png'
 tags:
-  - Administration
-  - sas
+  - sas-admin
+  - centos
 ---
 
 The following came up when trying to launch sas on a recent Centos 7.3 install:

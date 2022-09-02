@@ -17,7 +17,7 @@ Whilst CentOS is not an [officially supported](https://support.sas.com/supportos
 * The kernels are the same
 * Both systems are binary compatible with each other
 
-The biggest difference is - CentOS is free.  RHEL is not!
+The biggest difference is - CentOS is free (FLOSS).  RHEL is not!
 
 This guide is for anyone looking to deploy SAS 9.4 M7 on CentOS 7.9.  Do not attempt CentOS Stream (8) - I tried that, couldn't get it to work! (Received `Error: The application cannot be run on this platform: lax.` on setup).  Your mileage may vary.
 

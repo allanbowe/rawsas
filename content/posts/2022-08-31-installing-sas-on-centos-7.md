@@ -125,9 +125,9 @@ NOTE: SAH239999I DMS, State, stopped
 ERROR: Failed to attach to Java during SAS startup.
 ```
 
-There is more info on the above in [this article](https://communities.sas.com/t5/Administration-and-Deployment/ERROR-Failed-to-attach-to-Java-during-SAS-startup-SAS-9-4-Ubuntu/td-p/526730) however if you are running your SAS using [SASjs Server](https://server.sasjs.io) then the error isn't a problem (as you won't be launching SAS interactively).
+There is more info on the above in [this article](https://communities.sas.com/t5/Administration-and-Deployment/ERROR-Failed-to-attach-to-Java-during-SAS-startup-SAS-9-4-Ubuntu/td-p/526730) however if you are running your SAS using [SASjs Server](https://server.sasjs.io) then the error isn't a problem (as you won't be launching SAS interactively).  A guide to running SASjs Server on CentOS is available [here](https://sasapps.io/sasjs-server-on-centos).
 
-You can also just launch sas with the `-nodms` option to avoid dealing with this issue.
+You can also launch sas direclty in the terminal with the `-nodms` option to avoid dealing with this issue.
 
 If you would actually like to run SAS interactively then you will need to set up X11.  On the server side, this involves:
 

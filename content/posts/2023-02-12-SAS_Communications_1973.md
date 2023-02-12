@@ -7,7 +7,7 @@ tags:
   - sas
 ---
 
-In December 1973 the first issue of "SAS Communications" was released to the SAS User Community. Below is the transcript of issue #1 - a unique and fascinating account of the early days of the SAS Project Group.  A PDF of the original is available <a href="../resources/SAS_Communications_issue_1.pdf" target="_blank">here</a>.  More issues to follow!
+In December 1973 the first issue of "SAS Communications" was released to the SAS User Community. Below is an extract of issue #1 - a unique and fascinating account of the early days of the SAS Project Group.  A PDF of the original is available <a href="../resources/SAS_Communications_issue_1.pdf" target="_blank">here</a>.  More issues to follow!
 
 <hr/>
 

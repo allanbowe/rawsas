@@ -71,7 +71,7 @@ Other members of the SAS project group are developing and modifying SAS Procedur
 
 The Directors of the Southern Regional Agricultural Experiment Stations approved in June, 1973, the project titled, "The Statistical Analysis System: Its Development and Maintenance."  This project prcvides a new source of funding for SAS, insuring its growth for the next five years. Participating in the project are:
 
-* the State Agricultural Experiment Stations of Alabama (at Auburn University)
+* The State Agricultural Experiment Stations of Alabama (at Auburn University)
 * Florida (at the University of Florida)
 * Georgia (at the University of Georgia)
 * Kentucky (at the University of Kentucky)
@@ -84,12 +84,12 @@ The Directors of the Southern Regional Agricultural Experiment Stations approved
 * Virginia (at Virginia Polytechnic Institute and State University)
 * The Agricultural Research Services of the United States Department of Agriculture
 
-A Technical Committee was formed, which includes a representative from each participating organization and has Clyde Y. Cramer of Virginia as chairman, Robert D. Morrision of Oklahoma as vice-chairmn, and Robert J. Monroe of North Carolina as secretary.  The subcommittee on price structure has set yearly fees for SAS installations.  Details about the charges and the services to which those who pay are entitled are available from J. H. Goodnight, institute of Statistics, Raleigh, N. C. 27607.
+A Technical Committee was formed, which includes a representative from each participating organization and has Clyde Y. Cramer of Virginia as chairman, Robert D. Morrision of Oklahoma as vice-chairmn, and Robert J. Monroe of North Carolina as secretary.  The subcommittee on price structure has set yearly fees for SAS installations.  Details about the charges and the services to which those who pay are entitled are available from J. H. Goodnight, Institute of Statistics, Raleigh, N. C. 27607.
 
 The initial development of SAS was supported in part by grant RR-00011 from the Biotechnology Resources Branch, Division of Research Resources, NIH.
 
 
-## SUPPLENENTARY PROCEDURES
+## SUPPLEMENTARY PROCEDURES
 
 This fall, we released the SAS supplementary procedure library, a collection of special-purpose routines. Some were contributed by SAS users; all are maint-ained by the project group. For those who have not yet seen the supplementary procedures guide, we list below the procedures presently documented.
 

@@ -287,5 +287,5 @@ _* For extremely large data sets of very slight imbalance, ANOVA's approximate r
 
 
 > We ask that the SAS installations copy and distribute this issue of SAS Communications.
-> Users wishing to receive further issues are encouraged to send us their naves and addresses.
+> Users wishing to receive further issues are encouraged to send us their names and addresses.
 

@@ -93,7 +93,7 @@ The initial development of SAS was supported in part by grant RR-00011 from the 
 
 This fall, we released the SAS supplementary procedure library, a collection of special-purpose routines. Some were contributed by SAS users; all are maint-ained by the project group. For those who have not yet seen the supplementary procedures guide, we list below the procedures presently documented.
 
-* PRTPCH: For punc'ning or printing SAS data sets in a format determined by a user-written FORTRAN IV specification.
+* PRTPCH: For punching or printing SAS data sets in a format determined by a user-written FORTRAN IV specification.
 * INBREED: For calculating inbreeding or covariance coefficients.
 * HARVEY: A SAS implementation of Dr. Walter Harvey's Least Squares and Maximum Likelihood General Purpose Program.
 * RENAME: For changing the names of variables in a SAS data set.

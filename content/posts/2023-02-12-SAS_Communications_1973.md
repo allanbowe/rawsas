@@ -59,11 +59,11 @@ The new SAS will include report-writing capabilities. A user will be able to mak
 
 Finally, Mr. Barr is making SAS statements more consistent and flexible.  For example, where a user would now write
 
-    Q2 Q3 Q4 Q5 Q6 Q7
+      Q2 Q3 Q4 Q5 Q6 Q7
 
 he will be able simply to write
 
-    Q2-Q7
+      Q2-Q7
 
 Other members of the SAS project group are developing and modifying SAS Procedures.  J. H. Goodnight is preparing a procedure to perform non-linear least-squares curve-fitting. Expanded capabilities are being added to DISCRIM, the discriminant analysis procedure. Carroll Perkins is working on a procedure for producing histograms.
 
@@ -141,7 +141,7 @@ A few facilities of the current version of SAS were omitted from the User's Guid
 
 1. A KEEP statement of the form
 
-       KEEP variable 1 < variable 2 ... variable n›;
+        KEEP variable 1 < variable 2 ... variable n›;
 
    can be used to retain only the listed variables in the data set being built.
 
@@ -151,15 +151,15 @@ A few facilities of the current version of SAS were omitted from the User's Guid
 
 4. Two comparision operators can surround a quantity. For example,
 
-       AGE > 12 AND AGE < 20
+        AGE > 12 AND AGE < 20
 
    can be abbreviated
 
-       12 < AGE < 20
+        12 < AGE < 20
 
 5. A STOP statment, written
 
-       STOP;
+        STOP;
 
    forces SAS to ignore the observation being processed and to cease altogether building the data set.
 
@@ -259,7 +259,7 @@ If one wished further stratification of the sampling -- by values of STATE and C
 
 everywhere
 
-    BY STATE
+     BY STATE
 
 appears above.
 

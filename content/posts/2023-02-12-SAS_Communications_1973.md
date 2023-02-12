@@ -7,7 +7,9 @@ tags:
   - sas
 ---
 
-In December 1973 the first issue of "SAS Communications" was released to the SAS User Community. Below is an extract of issue #1 - a unique and fascinating account of the early days (and members) of the SAS Project Group.  A PDF of the original is available <a href="../resources/SAS_Communications_issue_1.pdf" target="_blank">here</a>.  More issues to follow!
+In December 1973 the first issue of "SAS Communications" was released to the SAS User Community. Below is an extract of issue #1 - a unique and fascinating account of the early days (and members) of the SAS Project Group.  A PDF of the original is available <a href="../resources/SAS_Communications_issue_1.pdf" target="_blank">here</a>.
+
+More issues to follow!
 
 <hr/>
 
@@ -20,7 +22,9 @@ _INSTITUTE OF STATISTICS, NORTH CAROLINA STATE UNIVERSITY, RALEIGH, NORTH CAROLI
 
 The first versions of the Statistical Analysis System remained pretty much within the domain of North Carolina State University.  In the sixties, a typical SAS user worked at N.C.S.U. and had only to call or walk across campus to discuss the system with its developers.  The user had full opportunity to find out about the then-current capabilities of SAS, the plans that Messrs. Barr and Goodnight had for the system, some of the out-of-the-ordinary tasks to which SAS could be put, and so forth.
 
-Expanded and refined into what we believe to be the most powerful, flexible system extant for data management and analysis, SAS now boasts users at more than 100 installations across the United States and overseas. The informal network of communication is no longer adequate for serving the enlarged community of SAS users.  We of the SAS project group are therefore launching <span style="text-decoration: underline">SAS Communications</span>.  This newsletter will, we hope, involve users in the continuing development of SAS and aid them in their use of the current version. <span style="text-decoration: underline">SAS Communications</span> will be published at irregular intervals ia an informal format, for we value the contributions that easy, spontaneous interaction between users and developers have already made and assuredly will make to the system.
+Expanded and refined into what we believe to be the most powerful, flexible system extant for data management and analysis, SAS now boasts users at more than 100 installations across the United States and overseas. The informal network of communication is no longer adequate for serving the enlarged community of SAS users.  We of the SAS project group are therefore launching <span style="text-decoration: underline">SAS Communications</span>.  This newsletter will, we hope, involve users in the continuing development of SAS and aid them in their use of the current version.
+
+<span style="text-decoration: underline">SAS Communications</span> will be published at irregular intervals in an informal format, for we value the contributions that easy, spontaneous interaction between users and developers have already made and assuredly will make to the system.
 
 The newsletter will highlight SAS features that are commonly overlooked. It will outline the activities of the SAS project group and the goals that the group intends to meet. Application notes -- special ways of using SAS -- will be featured too, as will notes on the algorithms embodied in SAS. We shall describe additions to the Supplementary Procedures Library, the collection of special-purpose procedures written by the staff and by users.  Profiles of the people who make up the project group will be included.  Other publications about SAS will be listed. We also plan to initiate a users' forum, wherein a user can question or comment to the staff and other users. Finally, every few issues, we will include an up-to-date index of the articles in <span style="text-decoration: underline">SAS Communications</span>.
 

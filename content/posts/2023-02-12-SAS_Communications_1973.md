@@ -1,7 +1,7 @@
 ---
 title: 'SAS Communications 1973-1979'
 date: '2023-02-12 09:00:00'
-path: '/sas-centos/'
+path: '/sas-communications/'
 previewImg: ../images/sas_comms.png
 tags:
   - sas

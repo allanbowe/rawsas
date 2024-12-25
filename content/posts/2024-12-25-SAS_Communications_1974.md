@@ -180,25 +180,25 @@ The KSLTEST procedure first computes the sample mean and standard deviation for 
 
 The Fisher G-statistics are computed as measures of sample skewness and kurtosis (reference 2). These statistics may be used to test normality, but they have no power against some alternatives since they are based on the unbiased estimates of the first four cumulants. Also, a minimum of four observations from the input data set are needed to calculate these statistics.
 
-## OUTPUT
+### OUTPUT
 
 For each numeric variable, a table is output showing the number of observations, value of the Kolmogorov-Smirnov statistic, the Lilliefors significance level, the Fisher G-statistics, the standard errors of the G-statistics, the significance levels of the G-statistics, and the mean and standard deviation of the variable.
 
 A minimum of four observations is ne2ded to produce any statistics.
 
-## THE PROC KSLIESE STATEMENT
+### THE PROC KSLTEST STATEMENT
 
 ```
 PROC KSLTEST <DATA=data_set_name>;
 ```
 
-## PROCEDURE INFORMATION STATEMENTS
+### PROCEDURE INFORMATION STATEMENTS
 
 The VARIABLES or DROP statement can be used to restrict the procedure to specific numeric variables.
 
 The BY statement may be used to force KSLTEST to calculate test statistics for groups of observations. If a BY statement is included, the data set must already be sorted according to the variables in the BY statement.
 
-## TREATMENT OF MISSING VALUES
+### TREATMENT OF MISSING VALUES
 
 Missing values are omitted from the calculations.
 
@@ -211,7 +211,7 @@ DATA; INPUT X1 1-2 X2 4-6 1; CARDS;
 72 391
 28 829
 45 3h1
-“we 65 281
+65 281
 18 371
 5 328
 52 731
@@ -236,11 +236,11 @@ REFERENCES
 
 </hr>
 
-# The HIST Procedure
+## The HIST Procedure
 
 The HIST procedure will print one or more percentage frequency histograms. A histogram consists of vertical bars with class values printed below them, or horizontal bars with class values printed to the left. The percentage frequencies are printed perpendicular to the class values for all histograms. Optionally, the user may specify that a histogram's classes be broken down into subclassifications according to the value of one or more additional variables. Unless a VARTABLES statement is present, a histogram will be produced for every variable not appearing in a CLASSES, WEIGHT, BY, or DROP statement.
 
-## OUTPUT
+### OUTPUT
 
 The histogram for each variable is printed in the format that will fit best on the printer being used. If possible, a vertical histogram is printed; otherwise, a horizontal histogram is printed. For each numeric variable, the total frequency of all values, frequency of missing values, sum, arithmetic mean, uncorrected sum of squares, corrected sum of squares, variance, standard deviation, coefficient of variation, and standard error of the mean will also be printed.
 
@@ -252,7 +252,7 @@ A unique feature of the HIST procedure is the ability to sub-classify values wit
 
 </hr>
 
-# THE PROCEDURE HIST STATEMENT
+## THE PROCEDURE HIST STATEMENT
 
 ```sas
                   L=__       W=__      N=__
@@ -263,16 +263,16 @@ PROC HIST <LOWMIDPT=__> <WIDTH=__> <NINT=__>
 
 The parameters for the HIST procédure pertain only to numeric variables. In the specifications below, a numeric variable whose values are to be grouped into intervals is called "continuous".
 
-## Parameters
+### Parameters
 
 * LOWMIDPT (L)=__ The LOWMIDPT parameter, which may alsa be written L, specifies the midpoint for the lowest interval for continuous numeric variables.
 * WIDTH (W)= __ The WIDTH parameter, which may also be written W, on specifies the width of the intervals for continuous & numeric variables.
 * NINT (N)=__ The NINT parameter, which may also be written N, specifies the number of intervals for continuous numeric variables.
 * DISCRETE (D)=__ The DISCRETE parameter, which may also be written D, specifies the maximum number of distinct values a numeric variable may have before being considered continuous.
 
-## PROCEDURE INFORMATION STATEMENTS
+### PROCEDURE INFORMATION STATEMENTS
 
-### WEIGHT Statement
+#### WEIGHT Statement
 
 The WEIGHT statement is of the form
 

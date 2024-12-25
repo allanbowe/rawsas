@@ -11,19 +11,18 @@ In May 1974 the second issue of "SAS Communications" was published by the SAS Pr
 
 <hr/>
 
-![](../images/sas_comms2a.png)
+![](../images/sas_comms_2a.png)
 
 # INSTITUTE OF STATISTICS, NORTH CAROLINA STATE UNIVERSITY, RALEIGH, NORTH CAROLINA #2 MAY, 1974
 
 ## SAS SUBSYSTEM FOR PESTICIDE LICENSING
 
-Concerned about injuries and deaths due to misuse of pesticides, the North Carolina General Assembly enacted a law requiring vendors and appliers of pesticides to be licensed. Herbert J. Kirk, in cooperation with the Pest Control Division of the North Carolina Department of Agriculture, has developed a SAS~based system for handling most of the information-processing aspects of the licensing function.
+Concerned about injuries and deaths due to misuse of pesticides, the North Carolina General Assembly enacted a law requiring vendors and appliers of pesticides to be licensed. Herbert J. Kirk, in cooperation with the Pest Control Division of the North Carolina Department of Agriculture, has developed a SAS-based system for handling most of the information-processing aspects of the licensing function.
 
 Mr, Kirk utilizes SAS's data management facilities heavily. His subsystem grades the tests that prospective licensees must take (there are tests to correspond to each area of specialization a pesticide applier might choose).
 Records of licensees are maintained as SAS data sets and updated with the MERGE facility. A custom-designed SAS procedure prints the licenses. The sorting and printing capabilities of SAS are used to furnish inspectors lists of licensees by county, Mr. Kirk claims that the integration of the necessary special- purpose routines into the framework of SAS not only saved program development time, but also reduced the time and staff nee-ed to perform the licensing function day-to-day,
 
-Other SAS subsystems have been created and used with equal success. A
-user interested in developing such a sub-system should consult the SAS Programmer's Guide.
+Other SAS subsystems have been created and used with equal success. A user interested in developing such a sub-system should consult the SAS Programmer's Guide.
 
 
 # USERS' FORUM
@@ -38,7 +37,7 @@ This method of handling ties is reasonable if one is using the procedure to gene
 
 Sincerely yours,
 
-Harvey J. Gold |
+Harvey J. Gold 
 
 `----------------`
 
@@ -48,7 +47,7 @@ We are grateful to Dr. Gold for pointing out both our mistake and an alternative
 
 Jim Goodnight, co-developer of SAS, took a statistical programming course while an undergraduate at N. C. State University. In his work with SAS today, he is still exulting in the rewards of statistical programming that he discovered in that course. The satisfactions are direct, he claims. "You can see results, see programs grow and develop."
 
-A native of North Carolina, Dr. Goodnight focused his interest on quantitative studies early. All his formal higher education was conducted at N, C, State: he was awarded a Bachelor's degree in Applied Mathematics in 1965, a Master of Experimental Statistics degree in 1968, and a Ph.D. in Statistics in 1972. Between college and graduate school, he worked in G. E.'s Apollo Support Department, finst as an engineering programmer and later on information retrieval systems. Returning to N. C. State, he accepted a graduate research assistantship, then a faculty position as Assistant Statistician; he is now a Research Associate. He has been working on SAS since 1967 and doing additional consulting for corporate and university researchers. 
+A native of North Carolina, Dr. Goodnight focused his interest on quantitative studies early. All his formal higher education was conducted at N, C, State: he was awarded a Bachelor's degree in Applied Mathematics in 1965, a Master of Experimental Statistics degree in 1968, and a Ph.D. in Statistics in 1972. Between college and graduate school, he worked in G. E.'s Apollo Support Department, first as an engineering programmer and later on information retrieval systems. Returning to N. C. State, he accepted a graduate research assistantship, then a faculty position as Assistant Statistician; he is now a Research Associate. He has been working on SAS since 1967 and doing additional consulting for corporate and university researchers. 
 
 Dr. Goodnight's area of greatest competence within statistics is regression and least-squares methodology. He likes the matrix orientation of that field, for he finds the essential simplicity of matrices appealing. In programming, he admits to dwelling on "the aesthetics” of the printed results. "I like nice output," he smiles,
 
@@ -76,7 +75,7 @@ Though there has not been enough research done in this area, he feels, some impl
 
 The past few years have seen a sharp rise in interest in using computers for instructional purposes. In statistical methods courses, student use of data analysis programs has helped shift the courses' emphasis from calculation of numeric measures (the "cookbook" approach) to interpretation of data. Beyond this, computers have made it feasible to illustrate principles -- like laws of large numbers, sampling properties, and Central Limit Theorems -- that require rather sophisticated mathematics to prove. S. G. Carmer and F. B. Cady, among others, have propounded yet another approach;
 
-> In order to eliminate the often tedious search for 'real-life' research data meeting the specifications for a given teaching situation, a logical approach is to have a computer generate sets of data according to.a model whose structure and parameters (including magnitude and distribution of random error) are con-~ trolled by the teacher. In a given problem the selected param- eter values could be purely hypothetical in nature, and thus give rise to highly artificial data useful for illustrative pur- poses only. More realistic data could be generated by basing parameter values on research published in a subject matter (e.g., agriculture, biology, or engineering) journal or report where statistical summaries of real data, but not the data, appear ( _S. G. Carmer and F. B. Cady, "Computerized Data Generation for Teaching Statistics," American Statistician, Vol. 23, No. 5 (1969), pp. 33 ff._ )
+> In order to eliminate the often tedious search for 'real-life' research data meeting the specifications for a given teaching situation, a logical approach is to have a computer generate sets of data according to a model whose structure and parameters (including magnitude and distribution of random error) are controlled by the teacher. In a given problem the selected param- eter values could be purely hypothetical in nature, and thus give rise to highly artificial data useful for illustrative pur- poses only. More realistic data could be generated by basing parameter values on research published in a subject matter (e.g., agriculture, biology, or engineering) journal or report where statistical summaries of real data, but not the data, appear ( _S. G. Carmer and F. B. Cady, "Computerized Data Generation for Teaching Statistics," American Statistician, Vol. 23, No. 5 (1969), pp. 33 ff._ )
  
 Below we show one way of generating in SAS individualized data sets suitable for simple linear regression or correlation analysis,
 
@@ -163,7 +162,7 @@ Users of OPSCAN/100 equipment are invited to request further details from Mr. Pe
 
 Several users have asked how to obtain estimated regression coefficients ("b-values") from the REGR procedure for use in the same run. Since REGR ignores observations for which relevant values are missing, one can insert "dummy" observations (with missing dependent variable values) into the data set to be Analyzed. The OUTPUT statement can then pick out the b-values. In the example following, the first three observations are included in INFO for such a purpose. The data set FINAL will contain the b-values in every genuine observation along with X1, X2, Y and YHAT. A more realistic application would include using regression coefficients to generate "observations" for a plot of a regression line or surface. Such generation could be done by modifying slightly the program statements shown and adding statements like those shown in the User's Guide examples for the PLOT procedure.
 
-![](../images/sas_comms2a.png)
+![](../images/sas_comms_2a.png)
 
 </hr>
 

@@ -162,7 +162,7 @@ Users of OPSCAN/100 equipment are invited to request further details from Mr. Pe
 
 Several users have asked how to obtain estimated regression coefficients ("b-values") from the REGR procedure for use in the same run. Since REGR ignores observations for which relevant values are missing, one can insert "dummy" observations (with missing dependent variable values) into the data set to be Analyzed. The OUTPUT statement can then pick out the b-values. In the example following, the first three observations are included in INFO for such a purpose. The data set FINAL will contain the b-values in every genuine observation along with X1, X2, Y and YHAT. A more realistic application would include using regression coefficients to generate "observations" for a plot of a regression line or surface. Such generation could be done by modifying slightly the program statements shown and adding statements like those shown in the User's Guide examples for the PLOT procedure.
 
-![](../images/sas_comms_2a.png)
+![](../images/sas_comms_2b.png)
 
 </hr>
 

@@ -270,8 +270,9 @@ The parameters for the HIST procédure pertain only to numeric variables. In the
 * NINT (N)=__ The NINT parameter, which may also be written N, specifies the number of intervals for continuous numeric variables.
 * DISCRETE (D)=__ The DISCRETE parameter, which may also be written D, specifies the maximum number of distinct values a numeric variable may have before being considered continuous.
 
-# PROCEDURE INFORMATION STATEMENTS
-## WEIGHT Statement
+## PROCEDURE INFORMATION STATEMENTS
+
+### WEIGHT Statement
 
 The WEIGHT statement is of the form
 
@@ -281,9 +282,9 @@ The WEIGHT statement is used to assign a predetermined weight to an observation,
 
 If only one variable appears in the WEIGHT statement, its values will serve as weights for all the other variables. If more that one variable appears in the WEIGHT statement, a VARIABLES statement must appear also; these two statements must contain the same number of variables. The values of the first variable in the WEIGHT statement will be taken as weights for the first variable in the VARIABLES statement; the values of the second variable in the WEIGHT statement will be weights for the second variable in the VARIABLES statement, etc. All weighting variables must be numeric, and only the integer part of a weighting data element is used.
 
-## CLASSES Statement
+### CLASSES Statement
 
-The CLASSES statement is used to specify variables whose values will form subclassifications within each class. As with the WEIGHT statement, one sub- classification variable may be assigned for all variables, or a separate sub- classification variable may be assigned for each variable in the VARIABLES statement. The rules for specifying subclassification are directly analogous to the rules given above for specifying weighting variables. Subclassification variables may be numeric or character. Only the first character of a character CLASSES variable or the first digit of a numeric CLASSES variable is printed, even though the complete value of the variable is used in performing the sub- classification operation.
+The CLASSES statement is used to specify variables whose values will form subclassifications within each class. As with the WEIGHT statement, one sub- classification variable may be assigned for all variables, or a separate subclassification variable may be assigned for each variable in the VARIABLES statement. The rules for specifying subclassification are directly analogous to the rules given above for specifying weighting variables. Subclassification variables may be numeric or character. Only the first character of a character CLASSES variable or the first digit of a numeric CLASSES variable is printed, even though the complete value of the variable is used in performing the subclassification operation.
 
 ## TREATMENT OF MISSING VALUES
 

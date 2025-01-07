@@ -7,7 +7,7 @@ tags:
   - sas
 ---
 
-The third issue of "SAS Communications" was published in December 1974 by the SAS Project Group. Highlights of this issue include an interview with Tony Barr, the announcement of SAS-75 (to be released the following year), and a review of several new and modified procedures.  The original is available in pdf format <a href="../resources/SAS_Communications_issue_3.pdf" target="_blank">here</a>.
+The third issue of "SAS Communications" was published in December 1974 by the SAS Project Group. Highlights of this issue include an interview with [Tony Barr](https://www.linkedin.com/in/tonybarr1776/), the announcement of SAS-75 (to be released the following year), and a review of several new and modified procedures.  The original is available in pdf format <a href="../resources/SAS_Communications_issue_3.pdf" target="_blank">here</a>.
 
 <hr/>
 

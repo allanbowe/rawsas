@@ -1,6 +1,6 @@
 ---
 title: 'SAS Communications #3 Dec 1974'
-date: '2024-12-25 09:00:00'
+date: '2025-01-07 09:00:00'
 path: '/sas-communications-issue-3/'
 previewImg: ../images/sascomms3_barr.png
 tags:
@@ -11,9 +11,8 @@ The third issue of "SAS Communications" was published in December 1974 by the SA
 
 <hr/>
 
-![](../images/sascomms3_barr.png)
-
 **INSTITUTE OF STATISTICS, NORTH CAROLINA STATE UNIVERSITY, RALEIGH, NORTH CAROLINA #3 DECEMBER, 1974**
+
 
 # SAS USERS DESCRIBE APPLICATIONS TO COMPUTER SYSTEM MANAGEMENT
 
@@ -40,9 +39,9 @@ Gleaning and combining ideas from his work with command-and-control systems and 
 
 Mr. Barr claims: "People's problems with data are very similar, whether they are processing survey data, lab data, or the data that business or military installations accumulate."  His goal is "to have one consistent language" which people of widely varying professional backgrounds can learn and apply to solve their problems. His greatest concerns are making SAS handle large problems easily and making the system easy to extend to customized applications. "Our SAS language is a language for describing simple programming operations as well as complex processes to be performed," says Mr. Barr. "It's a more problem-orientated language than PL/1 or FORTRAN, which have been used on the same sort of file-processing problems. I feel that with SAS-75 we shall have a nearly complete system for processing and describing data sets which are organized as they are now in SAS."
 
-Mr. Barr dreams, though, of another "generation" of ???, which would introduce the concept of hierarchically organized data sets.  In such a data set, an observation could consist not only of data elements (values of individual variables) but of data sets as well. This structure, beleives Mr. Barr, would increase tremendously the flexibility of the data handling and the ease of producing and processing the output from procedures.
+Mr. Barr dreams, though, of another "generation" of SAS, which would introduce the concept of hierarchically organized data sets.  In such a data set, an observation could consist not only of data elements (values of individual variables) but of data sets as well. This structure, beleives Mr. Barr, would increase tremendously the flexibility of the data handling and the ease of producing and processing the output from procedures.
 
-# USER's FORUM
+# USER'S FORUM
 
 > Gentlemen,
 > 
@@ -91,6 +90,8 @@ The supplementary procedures guide describes special-purpose SAS procedures. The
 
 
 # SAS-75
+
+![](../images/sas_comms_3d.png)
 
 In our [first issue of SAS Communications](https://rawsas.com/sas-communications/), we described the SAS Project Group's activities, particularly the revision of the "systems" portion of SAS and the development of new and improved procedures. We stated several goals:
 
@@ -211,7 +212,6 @@ The PROC MEANS statement now has the following form:
 The NOPRINT and DATA options are described in the SAS User's Guide. The OUT option is expanded to include the options on the second line. Those options specify the type of items to be included in the output data set.
 
 
-|---|---|
 |Option|Type of statistic in observation|
 |---|---|
 |N   |            Number of observations.  |
@@ -262,7 +262,7 @@ PROC PRINT DATA=STATS;
 
 
 
-Note that the STATS data set has the same variables as EXAMPLE, plus OBS_TYPE. There is an observation created for each type of statistic selected in the option list. The value of OBS_TYPE identifies the type of statistic found in the observation, and the value of ID tells which BY group the observation belongs to. Missing values are deleted from computation.
+Note that the STATS data set has the same variables as EXAMPLE, plus `OBS_TYPE`. There is an observation created for each type of statistic selected in the option list. The value of `OBS_TYPE` identifies the type of statistic found in the observation, and the value of ID tells which BY group the observation belongs to. Missing values are deleted from computation.
 
 The following SAS statements produce a data set of totals or sums and print it out:
 

@@ -1,0 +1,8 @@
+{
+  "main.js": "render-page.js",
+  "main.js.map": "render-page.js.map",
+  "static/SASensei.jpg": "static/SASensei-e156d545f39df705b984174f65fb6ede.jpg",
+  "static/data-controller.png": "static/data-controller-5cab0352e0a1cd170b1beb7f58d1efb2.png",
+  "static/sasapp.png": "static/sasapp-1dcca96a6b19ce99eb9145d98e70d5bf.png",
+  "static/sugukiglassesorangenobg-01.png": "static/sugukiglassesorangenobg-01-7c35050e9432d6f943ee18c6ca5346d9.png"
+}

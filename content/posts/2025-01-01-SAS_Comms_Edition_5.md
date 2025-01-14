@@ -207,3 +207,7 @@ reads each value that it sees on the first record as a value of ID. When the fir
 Suggestions for SAS enhancements were circulated at the Regional SAS Users' Meeting in July.  Below are most of the suggestions on the list, along with our comments and the timetable for adding the features to SAS.
 
 ![](../images/sas_comms_5b.png)
+
+## TENTATIVE PROGRAM: INTERNATIONAL SAS USERS' MEETING
+
+_EDITORS NOTE: Unfortunately this section is missing from the document!!!_

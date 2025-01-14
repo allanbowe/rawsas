@@ -45,7 +45,7 @@ In October, SAS 75.2 was distributed to about 50 test sites. SAS 75.2 is a usabl
 
 - The LABEL statement lets you give variable labels.
 
-- TheLENGTH statement allows you to specify the number of characters used to store variables.
+- The LENGTH statement allows you to specify the number of characters used to store variables.
 
 - The MERGE statement has been renamed UPDATE and has some new capabilities.
 
@@ -202,11 +202,15 @@ INPUT ID 1-2 @; CARDS;
 
 reads each value that it sees on the first record as a value of ID. When the first record has been completely read, it continues on through the second and later records.
 
+--- 
+
 ## SAS ENHANCEMENT SUGGESTIONS
 
 Suggestions for SAS enhancements were circulated at the Regional SAS Users' Meeting in July.  Below are most of the suggestions on the list, along with our comments and the timetable for adding the features to SAS.
 
 ![](../images/sas_comms_5b.png)
+
+---
 
 ## TENTATIVE PROGRAM: INTERNATIONAL SAS USERS' MEETING
 

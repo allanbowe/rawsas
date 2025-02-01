@@ -48,4 +48,4 @@ Our new <code>ethereum.</code> format will display SAS output as follows:
 
 Of course, this format can easily be extended to any currency (such as Rupees, in the<a href="https://stackoverflow.com/questions/49346969/indian-currency-symbol-in-sas"> SO question</a> that inspired this post).
 
-Have fun with SAS formats. If you think you know your stuff - you can test your skills in the <strong>formats</strong> tag on <a href="https://sasensei.com/questions/filter?tags_any=[18]">Sasensei!</a>
+Have fun with SAS formats. 

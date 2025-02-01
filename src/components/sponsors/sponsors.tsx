@@ -25,16 +25,6 @@ const Sponsors: React.FC = () => {
       href: 'https://github.com/sasjs',
       img: BuildApps,
     },
-    {
-      title: 'Think you know SAS?  Take the Sasensei Challenge!',
-      href: 'https://sasensei.com',
-      img: Sasensei,
-    },
-    {
-      title: 'SAS User Group UK &amp; Ireland',
-      href: 'https://www.meetup.com/SUGUKI/',
-      img: Sugukiglassesorangenobg,
-    },
   ]
   return (
     <div className="sponsors">

@@ -145,6 +145,6 @@ For instance, to reference some examples of web apps I've built over the years:
  	<li>Using the Boemska connector ensures that the application logic can be built with jquery / javascript, whilst the actual data management part can be cleanly separated and managed with SAS.  Apart from tidy code, this also means that web developers and SAS developers can work alongside each other - <i>without having to know each other's craft.  </i></li>
  	<li>Serving html files direct from the web server means that functionality can be provided even when the SAS server is down, or slow</li>
 </ul>
-<div>Hopefully the above makes sense and is enough to get you started.  A far more detailed guide is available in my SGF paper<a href="https://support.sas.com/resources/papers/proceedings17/1091-2017.pdf"> Build Lightning Fast Web Apps with SAS</a>.  Also, check out the SPWA tag on <a href="https://sasensei.com">sasensei</a>!</div>
+<div>Hopefully the above makes sense and is enough to get you started.  A far more detailed guide is available in my SGF paper<a href="https://support.sas.com/resources/papers/proceedings17/1091-2017.pdf"> Build Lightning Fast Web Apps with SAS</a>.  </div>
 </div>
 <div></div>

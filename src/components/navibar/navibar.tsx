@@ -62,9 +62,6 @@ const Navibar: React.FC<Props> = ({ location }: Props) => {
               <NavbarToggler onClick={toggle} />
               <Collapse isOpen={isOpen} navbar>
                 <Nav className="mx-auto" navbar>
-                  <NavItem>
-                    <NavLink href="https://sasensei.com/">Sasensei</NavLink>
-                  </NavItem>
 
                   <NavItem>
                     <NavLink href="https://datacontroller.io/">
@@ -88,10 +85,6 @@ const Navibar: React.FC<Props> = ({ location }: Props) => {
                 <div className={`nav-links ${isSearchOpen ? 'hide' : ''}`}>
                   <NavItem>
                     <NavLink href="https://sasjs.io">SASjs</NavLink>
-                  </NavItem>
-
-                  <NavItem>
-                    <NavLink href="https://sasensei.com/">Sasensei</NavLink>
                   </NavItem>
 
                   <NavItem>

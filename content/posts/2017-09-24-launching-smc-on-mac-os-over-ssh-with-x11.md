@@ -24,9 +24,8 @@ The process is FAR easier (and SMC over x11 is much faster) since the latest rel
 
 ![](../images/Screen Shot 2017-09-24 at 16.51.13.png)
 
-If building web applications with SAS is something you'd like to try, then check out [SASjs](https://sasjs.io) and the SASjs [cli](https://cli.sasjs.io).
+If building web applications with SAS is something you'd like to try, then check out [SASjs](https://sasjs.io), [Data Controller](https://datacontroller.io) and the SASjs [cli](https://cli.sasjs.io).
 
-Alternatively, if you're just the type of person who loves to learn about all things SAS, then come visit <a href="https://sasensei.com/">sasensei.com</a>!
 
 Chat soon..
 

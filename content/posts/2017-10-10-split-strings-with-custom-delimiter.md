@@ -45,4 +45,3 @@ Which printed (in both instances):
 
 Job done!
 
-<em>One of the great things about the vastness of SAS is the never ending supply of problems to solve!  How do you think you compare?   Find out - at <a href="https://sasensei.com">sasensei.com</a></em>

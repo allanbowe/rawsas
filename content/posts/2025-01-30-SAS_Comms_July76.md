@@ -1,5 +1,5 @@
 ---
-title: 'SAS Comms Vol. II #1 Nov 1975'
+title: 'SAS Comms Vol. II #1 July 1976'
 date: '2025-01-30 09:00:00'
 path: '/sas-communications-vol2-issue1/'
 previewImg: ../images/sas_comms_6.png
@@ -7,7 +7,7 @@ tags:
   - sas
 ---
 
-The second volume of "SAS Communications" issued in July 1976, marked the formation of SAS Institute (now a private company, no longer a university team). Highlights of this issue include the official release of SAS 76, release of `PROC PRINTTO` and the `_INFILE_` fileref, an update regarding the first ever SUGI event, and an enhancement to the precision of numeric informats.  The original is <a href="../resources/SAS_Communications_issue_5.pdf" target="_blank">here</a>.
+The second volume of "SAS Communications" issued in July 1976, marked the formation of SAS Institute (now a private company, no longer a university initiative). Highlights of this issue include the official release of SAS 76, release of `PROC PRINTTO` and the `_INFILE_` fileref, an update regarding the first ever SUGI event, and an enhancement to the precision of numeric informats.  The original is <a href="../resources/SAS_Communications_issue_6.pdf" target="_blank">here</a>.
 
 <hr/>
 
@@ -69,7 +69,7 @@ Copies of "A User's Guide to SAS-76" may be ordered through your local bookstore
     Post Office Box 10066  
     Raleigh, North Carolina 27605 
 
-The cost is $6.95 each, plus shipping charges. For overseas orders, please specify **Air Freight** or **Surface Mail** when ordering.
+The cost is $6.95 each, plus shipping charges. For overseas orders, please specify Air Freight or Surface Mail when ordering.
 
     A User's Guide to SAS-76
     Anthony J. Barr, James H. Goodnight,
@@ -83,7 +83,7 @@ The cost is $6.95 each, plus shipping charges. For overseas orders, please speci
 
 The **SAS Programmer's Guide**, the manual for those who want to write their own SAS procedures, is now being revised.  
 
-We expect that copies will be available around **September 1**.
+We expect that copies will be available around September 1.
 
 ![](../images/sas_comms_6c.png)
 

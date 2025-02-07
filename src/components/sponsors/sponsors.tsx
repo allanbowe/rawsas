@@ -1,8 +1,6 @@
 import React from 'react'
 
 import DC from '../../images/data-controller.png'
-import Sasensei from '../../images/SASensei.jpg'
-import Sugukiglassesorangenobg from '../../images/sugukiglassesorangenobg-01.png'
 import SasApp from '../../images/sasapp.png'
 import BuildApps from '../../images/buildapps240x400.png'
 

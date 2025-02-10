@@ -12,9 +12,9 @@
     "format": "npx prettier --write \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.12",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "gatsby": "^4.0.0",
     "gatsby-image": "^3.11.0",
     "gatsby-link": "^4.0.0",

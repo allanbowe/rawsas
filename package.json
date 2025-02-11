@@ -15,7 +15,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
-    "gatsby": "^4.0.0",
+    "gatsby": "4.0.0",
     "gatsby-image": "^3.11.0",
     "gatsby-link": "^4.0.0",
     "gatsby-plugin-catch-links": "^4.0.0",
@@ -48,18 +48,18 @@
   },
   "devDependencies": {
     "bootstrap": "4.5.3",
-    "eslint": "7.12.1",
-    "eslint-config-prettier": "6.15.0",
-    "eslint-plugin-prettier": "3.1.4",
-    "eslint-plugin-react": "7.21.5",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "4.2.0",
     "gh-pages": "^3.1.0",
-    "prettier": "2.1.2",
+    "prettier": "2.4.1",
     "prismjs": "1.22.0",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-helmet": "6.1.0",
-    "typescript": "3.9.7"
+    "typescript": "^4.4.3"
   },
   "keywords": [
     "gatsby",

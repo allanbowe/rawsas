@@ -62,7 +62,6 @@ const Navibar: React.FC<Props> = ({ location }: Props) => {
               <NavbarToggler onClick={toggle} />
               <Collapse isOpen={isOpen} navbar>
                 <Nav className="mx-auto" navbar>
-
                   <NavItem>
                     <NavLink href="https://datacontroller.io/">
                       Data Controller

@@ -44,7 +44,8 @@
     "react-media": "^1.10.0",
     "react-use-flexsearch": "^0.1.1",
     "reactstrap": "^8.7.1",
-    "remark-grid-tables": "^2.1.1"
+    "remark-grid-tables": "^2.1.1",
+    "web-streams-polyfill": "^4.1.0"
   },
   "devDependencies": {
     "bootstrap": "4.5.3",

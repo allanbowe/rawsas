@@ -7,7 +7,7 @@ tags:
   - sas
 ---
 
-The second volume of "SAS Communications" issued in July 1976, marked the formation of SAS Institute (now a private company, no longer a university initiative). Highlights of this issue include the official release of SAS 76, release of `PROC PRINTTO` and the `_INFILE_` fileref, an update regarding the first ever SUGI event, and an enhancement to the precision of numeric informats.  The original is <a href="../resources/SAS_Communications_issue_6.pdf" target="_blank">here</a>.
+The second volume of "SAS Communications" issued in July 1976, marked the formation of SAS Institute (now a private company, no longer a university initiative). Highlights of this issue include the official release of SAS 76, release of `PROC PRINTTO` and the `_INFILE_` (automatic) variable, an update regarding the first ever SUGI event, and an enhancement to the precision of numeric informats.  The original is <a href="../resources/SAS_Communications_issue_6.pdf" target="_blank">here</a>.
 
 <hr/>
 

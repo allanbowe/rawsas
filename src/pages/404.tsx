@@ -1,20 +1,13 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { PageProps } from 'gatsby'
 
-import { NotFoundQuery } from '../../types/graphql-types'
 import Meta from '../components/meta/meta'
 import Layout from '../components/layout/layout'
 
-interface Props {
-  data: NotFoundQuery
-  location: Location
-}
-
-const NotFound: React.FC<Props> = ({ data, location }: Props) => {
-  const meta = { ...data.site?.meta, location }
+const NotFound = ({ location }: PageProps) => {
   return (
-    <Layout location={location}>
-      <Meta site={meta} title="404: Not Found" />
+    <Layout location={location} archives={{}}>
+      <Meta title="404: Not Found" location={location} />
       <h1>Not Found</h1>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
       <p>
@@ -26,13 +19,3 @@ const NotFound: React.FC<Props> = ({ data, location }: Props) => {
 }
 
 export default NotFound
-
-export const pageQuery = graphql`
-  query NotFoundQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

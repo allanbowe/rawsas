@@ -27,9 +27,11 @@ const Navibar: React.FC<Props> = ({ location }: Props) => {
   const queryUrl = params ? params.get('s') : ''
   const [isOpen, setIsOpen] = useState(false)
   const [query, setQuery] = useState(queryUrl)
+
   useEffect(() => {
     setQuery(queryUrl)
   }, [queryUrl])
+
   const [isSearchOpen, setIsSearchOpen] = useState(!!queryUrl)
   const toggle = (): void => setIsOpen(!isOpen)
   const toggleSearch = (): void => {

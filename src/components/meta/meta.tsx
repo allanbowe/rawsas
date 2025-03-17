@@ -1,113 +1,86 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-
-import { SiteMetadata } from '../../../types/graphql-types'
+import { graphql, useStaticQuery } from 'gatsby'
 
 interface Props {
-  site:
-    | Pick<
-        SiteMetadata,
-        | 'title'
-        | 'description'
-        | 'siteUrl'
-        | 'author'
-        | 'twitter'
-        | 'facebook'
-        | 'youtube'
-        | 'linkedin'
-        | 'adsense'
-        | 'siteUrl'
-        | 'location'
-        | 'previewImgURL'
-      >
-    | null
-    | undefined
   title?: string
   customDescription?: string
+  location?: Location
+  previewImgURL?: string
 }
 
 const Meta: React.FC<Props> = ({
-  site,
   title,
   customDescription = '',
-}: Props) => {
-  console.log(site)
-  const siteTitle = site?.title || ''
-  const siteUrl = site?.siteUrl || ''
-  const author = site?.author || ''
-  const location = site?.location | author | {}
-  const siteDescription =
-    customDescription == '' ? site?.description || '' : customDescription
-  const pageTitle = title ? title : siteTitle
-  const previewImgURL = site?.previewImgURL
+  location,
+  previewImgURL,
+}) => {
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          siteUrl
+          author
+          twitter
+          facebook
+          youtube
+          linkedin
+          adsense
+        }
+      }
+    }
+  `)
+
+  const {
+    title: siteTitle,
+    description: siteDescription,
+    siteUrl,
+    author,
+    twitter,
+    facebook,
+    youtube,
+    linkedin,
+  } = site.siteMetadata
+
+  const pageTitle = title || siteTitle
+  const metaDescription = customDescription || siteDescription
   const image = {
     og: `${siteUrl}${previewImgURL ?? '/img/icon.png'}`,
     twitter: `${siteUrl}${previewImgURL ?? '/img/icon.png'}`,
   }
+  const pageUrl = location
+    ? `${siteUrl}${location.pathname}${location.hash}`
+    : siteUrl
+
   return (
-    <Helmet
-      title={pageTitle}
-      meta={[
-        { name: 'twitter:card', content: 'summary' },
-        {
-          name: 'twitter:site',
-          content: `${site?.twitter}`,
-        },
-        {
-          name: 'twitter:image',
-          content: image.twitter,
-        },
-        {
-          name: 'twitter:title',
-          content: pageTitle,
-        },
-        {
-          name: 'twitter:description',
-          content: siteDescription,
-        },
-        {
-          name: 'facebook:site',
-          content: `${site?.facebook}`,
-        },
-        {
-          name: 'youtube:site',
-          content: `${site?.youtube}`,
-        },
-        {
-          name: 'linkedin:site',
-          content: `${site?.linkedin}`,
-        },
-        { property: 'og:title', content: pageTitle },
-        { property: 'og:type', content: 'website' },
-        {
-          name: 'description',
-          property: 'og:description',
-          content: siteDescription,
-        },
-        {
-          property: 'og:url',
-          content: `${siteUrl}${location.pathname}${location.hash}`,
-        },
-        {
-          name: 'image',
-          property: 'og:image',
-          content: image.og,
-        },
-        {
-          property: 'og:image:width',
-          content: 1200,
-        },
-        {
-          property: 'og:image:height',
-          content: 630,
-        },
-        {
-          name: 'author',
-          property: 'author',
-          content: author,
-        },
-      ]}
-    />
+    <Helmet title={pageTitle}>
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content={twitter} />
+      <meta name="twitter:image" content={image.twitter} />
+      <meta name="twitter:title" content={pageTitle} />
+      <meta name="twitter:description" content={metaDescription} />
+
+      <meta name="facebook:site" content={facebook} />
+      <meta name="youtube:site" content={youtube} />
+      <meta name="linkedin:site" content={linkedin} />
+
+      <meta property="og:title" content={pageTitle} />
+      <meta property="og:type" content="website" />
+      <meta
+        name="description"
+        property="og:description"
+        content={metaDescription}
+      />
+      <meta property="og:url" content={pageUrl} />
+      <meta property="og:image" content={image.og} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+
+      <meta name="author" property="author" content={author} />
+    </Helmet>
   )
 }
+
 export default Meta

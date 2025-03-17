@@ -1,9 +1,7 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import Img from 'gatsby-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import kebabCase from 'lodash/kebabCase'
-
-import { PostByPathQuery } from '../../../types/graphql-types'
 
 import './style.scss'
 
@@ -20,7 +18,7 @@ const getDescription = (content: string): string => {
 }
 
 interface Props {
-  data: PostByPathQuery
+  data: Queries.PostByPathQuery
   options: {
     isIndex: boolean
   }
@@ -31,13 +29,15 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
   const path = frontmatter?.path || ''
   const { isIndex } = options
   const html = data.post?.html || ''
-  const previewImg = frontmatter?.previewImg?.childImageSharp
+  const previewImg = frontmatter?.previewImg?.childImageSharp?.gatsbyImageData
+    ? getImage(frontmatter.previewImg.childImageSharp.gatsbyImageData)
+    : null
 
   return (
     <div className="article" key={path}>
       {previewImg && isIndex && (
         <Link to={path}>
-          <Img fluid={previewImg.fluid} />
+          <GatsbyImage image={previewImg} alt="" />
         </Link>
       )}
       <h2 className="heading">
@@ -60,7 +60,7 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
           ))}
         </span>
       </p>
-      {previewImg && !isIndex && <Img fluid={previewImg.fluid} />}
+      {previewImg && !isIndex && <GatsbyImage image={previewImg} alt="" />}
       <div
         className="content"
         dangerouslySetInnerHTML={{

@@ -11,6 +11,12 @@ module.exports = {
     linkedin: '',
     adsense: '',
   },
+  // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
+  // If you use VSCode you can also use the GraphQL plugin
+  // Learn more at: https://gatsby.dev/graphql-typegen
+  graphqlTypegen: {
+    typesOutputPath: `./src/types/gatsby-types.d.ts`,
+  },
   pathPrefix: '/',
   plugins: [
     {
@@ -131,29 +137,12 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-netlify',
-      options: {
-        mergeSecurityHeaders: true,
-        mergeLinkHeaders: true,
-        mergeCachingHeaders: true,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-graphql-codegen',
-      options: {
-        fileName: `types/graphql-types.d.ts`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Raw SAS - SAS Tips n Tricks',
         short_name: 'Raw SAS',
         description:
           'Tips n Tricks and other SAS Titbits from around 10 years of SAS projects and tinkering about with SAS',
-        siteUrl: 'https://rawsas.com/',
-        author: 'Allan Bowe',
-        homepage_url: 'https:/rawsas.com/',
         start_url: '/',
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -176,6 +165,7 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     'gatsby-transformer-sharp',

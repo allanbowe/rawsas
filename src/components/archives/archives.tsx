@@ -1,24 +1,24 @@
 import React from 'react'
 import './style.scss'
-import { pathPrefix } from '../../../gatsby-config.js'
+
+const config = require('../../../gatsby-config.js')
+const pathPrefix: string = config.pathPrefix || ''
 
 interface Props {
   data: { [key: string]: string }
 }
 
-const Archives: React.FC<Props> = ({ data }: Props) => {
-  const list = []
-  for (const year in data) {
-    list.unshift(
-      <a key={year} href={`${pathPrefix}${year}`}>
-        {year} ({data[year]})
-      </a>
-    )
-  }
+const Archives: React.FC<Props> = ({ data }) => {
   return (
     <div className="archives">
       <h3>Blog Archive</h3>
-      {list}
+      {Object.entries(data)
+        .reverse()
+        .map(([year, count]) => (
+          <a key={year} href={`${pathPrefix}${year}`}>
+            {year} ({count})
+          </a>
+        ))}
     </div>
   )
 }

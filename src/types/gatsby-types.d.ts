@@ -753,6 +753,25 @@ type GatsbyImageDataQueryOperatorInput = {
   readonly nin: InputMaybe<ReadonlyArray<InputMaybe<Scalars['GatsbyImageData']>>>;
 };
 
+type GatsbyImageFormat =
+  | 'auto'
+  | 'avif'
+  | 'jpg'
+  | ''
+  | 'png'
+  | 'webp';
+
+type GatsbyImageLayout =
+  | 'constrained'
+  | 'fixed'
+  | 'fullWidth';
+
+type GatsbyImagePlaceholder =
+  | 'blurred'
+  | 'dominantColor'
+  | 'none'
+  | 'tracedSVG';
+
 type ImageCropFocus =
   | 17
   | 0

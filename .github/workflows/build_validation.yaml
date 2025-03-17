@@ -1,4 +1,4 @@
-name: Gatsby Publish
+name: Gatsby Build Validation
 
 on:
   pull_request:
@@ -9,10 +9,10 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16]
+        node-version: [20]
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2

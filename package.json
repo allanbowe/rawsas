@@ -9,9 +9,9 @@
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "lint": "eslint --ext .js,.jsx,.tsx && prettier --check . --ignore-path .gitignore",
+    "lint": "eslint --ext .js,.jsx,.tsx && prettier --check .",
     "lint:fix": "eslint --fix --ext .js,.jsx,.tsx  && prettier --write \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore",
-    "format": "npx prettier --write \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore"
+    "format": "npx prettier --write \"**/*.+(js|jsx|tsx|json|css|scss)\""
   },
   "keywords": [
     "gatsby",

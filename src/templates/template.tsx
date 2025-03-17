@@ -1,10 +1,10 @@
-import { graphql } from 'gatsby'
+import { graphql, PageProps } from 'gatsby'
 import React from 'react'
 
 import Post from './post/post'
 import Meta from '../components/meta/meta'
 import Layout from '../components/layout/layout'
-import { PostByPath } from '../../types/graphql-types'
+import { PageContext } from '../types'
 
 const extractContent = (s: string): string => {
   if (typeof document !== `undefined`) {
@@ -18,33 +18,20 @@ const getDescription = (content: string): string => {
   return extractContent(content).substr(0, 250) + '...'
 }
 
-interface Props {
-  data: PostByPath
-  location: Location
-  pageContext: {
-    page: string
-    archives: { [key: string]: string }
-    numPages: number
-    currentPage: number
-    year?: string
-    tag?: string
-  }
-}
+const PostByPath = (props: PageProps<Queries.PostByPathQuery, PageContext>) => {
+  const { data, location, pageContext } = props
 
-const Template: React.FC<Props> = ({ data, location, pageContext }: Props) => {
-  const meta = {
-    ...data.site?.meta,
-    location,
-    previewImgURL: data.post.frontmatter.previewImg?.publicURL,
-  }
+  const previewImgURL =
+    data?.post?.frontmatter?.previewImg?.publicURL || undefined
 
   return (
     <div>
-      <Layout archives={pageContext.archives}>
+      <Layout archives={pageContext.archives} location={location}>
         <Meta
           title={data.post?.frontmatter?.title || ''}
-          site={meta}
           customDescription={getDescription(data.post?.html || '')}
+          previewImgURL={previewImgURL}
+          location={location}
         />
         <Post
           data={data}
@@ -57,16 +44,10 @@ const Template: React.FC<Props> = ({ data, location, pageContext }: Props) => {
   )
 }
 
-export default Template
+export default PostByPath
 
 export const pageQuery = graphql`
   query PostByPath($path: String!) {
-    site {
-      meta: siteMetadata {
-        title
-        description
-      }
-    }
     post: markdownRemark(frontmatter: { path: { eq: $path } }) {
       id
       html
@@ -76,9 +57,7 @@ export const pageQuery = graphql`
         previewImg {
           publicURL
           childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 800, layout: CONSTRAINED)
           }
         }
         tags

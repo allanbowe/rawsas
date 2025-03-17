@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
-/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable @typescript-eslint/no-require-imports */
 const path = require('path')
 const _ = require('lodash')
 const PostTemplate = path.resolve('./src/templates/template.tsx')
@@ -12,48 +11,46 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     resolve(
-      graphql(
-        `
-          {
-            allFile(
-              filter: { extension: { regex: "/md|tsx|html/" } }
-              limit: 1000
-            ) {
-              edges {
-                node {
+      graphql(`
+        {
+          allFile(
+            filter: { extension: { regex: "/md|tsx|html/" } }
+            limit: 1000
+          ) {
+            edges {
+              node {
+                id
+                name: sourceInstanceName
+                path: absolutePath
+                remark: childMarkdownRemark {
                   id
-                  name: sourceInstanceName
-                  path: absolutePath
-                  remark: childMarkdownRemark {
-                    id
-                    frontmatter {
-                      path
-                    }
-                  }
-                }
-              }
-            }
-            tagsGroup: allMarkdownRemark(limit: 1000) {
-              group(field: frontmatter___tags) {
-                fieldValue
-                totalCount
-              }
-            }
-            dateCounts: allMarkdownRemark(
-              limit: 1000
-              sort: { fields: [frontmatter___date], order: DESC }
-            ) {
-              edges {
-                node {
                   frontmatter {
-                    date(formatString: "YYYY")
+                    path
                   }
                 }
               }
             }
           }
-        `
-      ).then(({ errors, data }) => {
+          tagsGroup: allMarkdownRemark(limit: 1000) {
+            group(field: frontmatter___tags) {
+              fieldValue
+              totalCount
+            }
+          }
+          dateCounts: allMarkdownRemark(
+            limit: 1000
+            sort: { fields: [frontmatter___date], order: DESC }
+          ) {
+            edges {
+              node {
+                frontmatter {
+                  date(formatString: "YYYY")
+                }
+              }
+            }
+          }
+        }
+      `).then(({ errors, data }) => {
         if (errors) {
           console.log(errors)
           reject(errors)

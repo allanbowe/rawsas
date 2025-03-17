@@ -9,8 +9,8 @@
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "lint": "eslint --ext .js,.jsx,.tsx --ignore-path .gitignore . && prettier --check \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore",
-    "lint:fix": "eslint --fix --ext .js,.jsx,.tsx --ignore-path .gitignore . && prettier --write \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore",
+    "lint": "eslint --ext .js,.jsx,.tsx && prettier --check . --ignore-path .gitignore",
+    "lint:fix": "eslint --fix --ext .js,.jsx,.tsx  && prettier --write \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore",
     "format": "npx prettier --write \"**/*.+(js|jsx|tsx|json|css|scss)\" --ignore-path .gitignore"
   },
   "keywords": [
@@ -54,7 +54,11 @@
     "web-streams-polyfill": "4.1.0"
   },
   "devDependencies": {
+    "@eslint/compat": "^1.2.7",
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.22.0",
     "@types/react-helmet": "6.1.11",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
     "bootstrap": "5.3.3",
     "eslint": "9.22.0",
     "eslint-config-prettier": "10.1.1",
@@ -62,6 +66,7 @@
     "eslint-plugin-react": "7.37.4",
     "eslint-plugin-react-hooks": "5.2.0",
     "gh-pages": "6.3.0",
+    "globals": "^16.0.0",
     "prettier": "3.5.3",
     "prismjs": "1.30.0",
     "react": "18.3.1",

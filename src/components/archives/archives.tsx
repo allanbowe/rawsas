@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.scss'
 
+/* eslint-disable @typescript-eslint/no-require-imports */
 const config = require('../../../gatsby-config.js')
 const pathPrefix: string = config.pathPrefix || ''
 

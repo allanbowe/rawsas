@@ -6,7 +6,6 @@ import Meta from '../components/meta/meta'
 import Layout from '../components/layout/layout'
 import { PageContext } from '../types'
 
-
 const PostByPath = (props: PageProps<Queries.PostByPathQuery, PageContext>) => {
   const { data, location, pageContext } = props
 

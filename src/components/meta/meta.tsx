@@ -1,5 +1,4 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import { graphql, useStaticQuery } from 'gatsby'
 
 interface Props {
@@ -55,7 +54,8 @@ const Meta: React.FC<Props> = ({
     : siteUrl
 
   return (
-    <Helmet title={pageTitle}>
+    <>
+      <title>{pageTitle}</title>
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content={twitter} />
       <meta name="twitter:image" content={image.twitter} />
@@ -79,7 +79,7 @@ const Meta: React.FC<Props> = ({
       <meta property="og:image:height" content="630" />
 
       <meta name="author" property="author" content={author} />
-    </Helmet>
+    </>
   )
 }
 

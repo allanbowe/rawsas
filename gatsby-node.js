@@ -32,14 +32,14 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
           tagsGroup: allMarkdownRemark(limit: 1000) {
-            group(field: frontmatter___tags) {
+            group(field: { frontmatter: { tags: SELECT } }) {
               fieldValue
               totalCount
             }
           }
           dateCounts: allMarkdownRemark(
             limit: 1000
-            sort: { fields: [frontmatter___date], order: DESC }
+            sort: { frontmatter: { date: DESC } }
           ) {
             edges {
               node {

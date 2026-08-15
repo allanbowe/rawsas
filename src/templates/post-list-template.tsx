@@ -37,7 +37,6 @@ const BlogList = (props: PageProps<Queries.BlogListQuery, PageContext>) => {
 
   return (
     <Layout archives={pageContext.archives} location={location}>
-      <Meta location={location} />
       {posts.map((post, i) => (
         <Post
           data={post as Queries.PostByPathQuery}
@@ -62,6 +61,10 @@ const BlogList = (props: PageProps<Queries.BlogListQuery, PageContext>) => {
 }
 
 export default BlogList
+
+export const Head = (props: PageProps<Queries.BlogListQuery, PageContext>) => (
+  <Meta location={props.location} />
+)
 
 export const pageQuery = graphql`
   query BlogList(

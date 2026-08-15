@@ -21,18 +21,9 @@ const getDescription = (content: string): string => {
 const PostByPath = (props: PageProps<Queries.PostByPathQuery, PageContext>) => {
   const { data, location, pageContext } = props
 
-  const previewImgURL =
-    data?.post?.frontmatter?.previewImg?.publicURL || undefined
-
   return (
     <div>
       <Layout archives={pageContext.archives} location={location}>
-        <Meta
-          title={data.post?.frontmatter?.title || ''}
-          customDescription={getDescription(data.post?.html || '')}
-          previewImgURL={previewImgURL}
-          location={location}
-        />
         <Post
           data={data}
           options={{
@@ -45,6 +36,22 @@ const PostByPath = (props: PageProps<Queries.PostByPathQuery, PageContext>) => {
 }
 
 export default PostByPath
+
+export const Head = (props: PageProps<Queries.PostByPathQuery>) => {
+  const { data, location } = props
+
+  const previewImgURL =
+    data?.post?.frontmatter?.previewImg?.publicURL || undefined
+
+  return (
+    <Meta
+      title={data.post?.frontmatter?.title || ''}
+      customDescription={getDescription(data.post?.html || '')}
+      previewImgURL={previewImgURL}
+      location={location}
+    />
+  )
+}
 
 export const pageQuery = graphql`
   query PostByPath($path: String!) {

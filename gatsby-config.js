@@ -162,8 +162,18 @@ module.exports = {
     `gatsby-plugin-offline`,
     'gatsby-plugin-catch-links',
     'gatsby-plugin-offline',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        sassOptions: {
+          // Silence deprecation warnings coming from dependencies (Bootstrap)
+          quietDeps: true,
+          // sass-loader v10 uses the legacy JS API and our own SCSS still uses
+          // legacy @import; silence until upgraded/migrated
+          silenceDeprecations: ['legacy-js-api', 'import'],
+        },
+      },
+    },
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',

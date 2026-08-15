@@ -27,7 +27,6 @@ const SearchPage: React.FC<Props> = ({ location, pageContext }: Props) => {
 
   return (
     <Layout archives={pageContext.archives} location={location}>
-      <Meta location={location} />
       <h1>
         {query
           ? `${posts.length} results found related to "${query}"`
@@ -59,3 +58,5 @@ const SearchPage: React.FC<Props> = ({ location, pageContext }: Props) => {
 }
 
 export default SearchPage
+
+export const Head = ({ location }: Props) => <Meta location={location} />

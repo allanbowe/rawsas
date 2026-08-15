@@ -7,7 +7,6 @@ import Layout from '../components/layout/layout'
 const NotFound = ({ location }: PageProps) => {
   return (
     <Layout location={location} archives={{}}>
-      <Meta title="404: Not Found" location={location} />
       <h1>Not Found</h1>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
       <p>
@@ -19,3 +18,7 @@ const NotFound = ({ location }: PageProps) => {
 }
 
 export default NotFound
+
+export const Head = ({ location }: PageProps) => (
+  <Meta title="404: Not Found" location={location} />
+)

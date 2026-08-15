@@ -2,7 +2,7 @@
 title: 'SAS Comms Vol. II #2 October 1976'
 date: '2025-02-15 09:00:00'
 path: '/sas-communications-vol2-issue2/'
-previewImg: ../images/sas_comms_7.png
+previewImg: ../images/sas_comms7_og.jpeg
 tags:
   - sas
 ---

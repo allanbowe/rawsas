@@ -1,13 +1,13 @@
 ---
 title: 'SAS Comms Vol. II #2 October 1976'
-date: '2025-02-15 09:00:00'
+date: '2026-08-15 09:00:00'
 path: '/sas-communications-vol2-issue2/'
 previewImg: ../images/sas_comms7_og.jpeg
 tags:
   - sas
 ---
 
-The second issue of Volume II of "SAS Communications" was published in October 1976, shortly after the formation of SAS Institute. Highlights of this issue include the announcement of the second SUGI conference (New Orleans, January 1977), the new SAS autobatch supervisor, an INQUIRE database interface, several new formats (including DOLLAR and WORDS), a field report on SAS 76.2, and a fascinating letter from Cleveland Trust describing their (non statistical) uses of SAS. The original is <a href="../resources/SAS_Communications_issue_7.pdf" target="_blank">here</a>.
+The second issue of Volume II of "SAS Communications" was published in October 1976, shortly after the formation of SAS Institute. Highlights of this issue include the announcement of the second SUGI conference (New Orleans, January 1977), the new SAS autobatch supervisor, an INQUIRE database interface, several new formats (including $DOLLAR and $WORDS), a field report on SAS 76.2, and a fascinating letter from Cleveland Trust describing their (non statistical) uses of SAS. The original is <a href="../resources/SAS_Communications_issue_7.pdf" target="_blank">here</a>.
 
 <hr/>
 

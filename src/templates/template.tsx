@@ -6,17 +6,6 @@ import Meta from '../components/meta/meta'
 import Layout from '../components/layout/layout'
 import { PageContext } from '../types'
 
-const extractContent = (s: string): string => {
-  if (typeof document !== `undefined`) {
-    const span = document.createElement('span')
-    span.innerHTML = s
-    return span.textContent || span.innerText
-  }
-  return s
-}
-const getDescription = (content: string): string => {
-  return extractContent(content).substr(0, 250) + '...'
-}
 
 const PostByPath = (props: PageProps<Queries.PostByPathQuery, PageContext>) => {
   const { data, location, pageContext } = props
@@ -46,7 +35,7 @@ export const Head = (props: PageProps<Queries.PostByPathQuery>) => {
   return (
     <Meta
       title={data.post?.frontmatter?.title || ''}
-      customDescription={getDescription(data.post?.html || '')}
+      customDescription={data.post?.excerpt || ''}
       previewImgURL={previewImgURL}
       location={location}
     />
@@ -58,6 +47,7 @@ export const pageQuery = graphql`
     post: markdownRemark(frontmatter: { path: { eq: $path } }) {
       id
       html
+      excerpt(pruneLength: 250)
       frontmatter {
         title
         path

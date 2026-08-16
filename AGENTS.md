@@ -26,6 +26,11 @@ If lint fails, fix with `npx eslint --ext .js,.jsx,.tsx --fix` and
 | `npm run lint`  | Code style check (same as CI)      |
 | `npm run serve` | Serve the production build locally |
 
+## Guides
+
+- `.agents/docs/linkedin.md` — how to write LinkedIn posts promoting articles
+  (audience, formatting rules, attribution requirements for SAS content).
+
 ## Content conventions
 
 - Blog posts live in `content/posts/YYYY-MM-DD-slug.md` with frontmatter:

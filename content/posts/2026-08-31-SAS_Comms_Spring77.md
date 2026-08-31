@@ -2,7 +2,7 @@
 title: 'SAS Comms Vol. II #4 Spring 1977'
 date: '2026-08-31 09:00:00'
 path: '/sas-communications-vol2-issue4/'
-previewImg: ../images/sas_comms9_og.jpeg
+previewImg: ../images/sas_comms9_og.png
 tags:
   - sas
 ---
@@ -248,3 +248,19 @@ Susan King has also joined the staff as an administrative assistant.
 ---
 
 SAS Institute Inc. - Post Office Box 10066 - Raleigh, North Carolina 27605 - (919) 834-4381
+
+<!--
+Spring 1977 - SAS 76.5 is almost out, and this issue is the shipping manifest.
+
+The big news is the PL/I Optimizer version - SAS ships TWO libraries on the tape now, one compiled with PL/I (F) and one with the Optimizing Compiler. Half of SAS's 80,000 source statements are PL/I, so this is not a small change. But they didn't want to make the IBM Resident/Transient Libraries a prerequisite, hence the dual-library approach.
+
+PROC FORMAT arrives - define your own value labels for procedure output. PROC PDSCOPY ships too, and it turns out its blocking algorithm beats the linkage editor by 15-36% on track space. The SAS 76.4 library went from 330 tracks to 237 just by copying it.
+
+There's a neat GLM trick for testing treatments against a control group using nested effects (CONTROL TMT(CONTROL)), and a matrix transformation approach for non-orthogonal contrasts that involves inverting the contrast matrix before transforming the data.
+
+Bug round-up: CORR NOMISS can't tell zeros from missing, SYSREG third-stage standard errors are off by ((N-K)/N)², and MATRIX's GINV and SVD have tolerance problems. All fixed in 76.5.
+
+Bill Gjertsen joins the staff from UNC-Chapel Hill's biostatistics program. SUGI heads to Las Vegas in January.
+
+#sas #sugi #sas76 #pl1 #statisticalsoftware #techhistory #retrocomputing #sasinstitute
+-->

@@ -1,7 +1,25 @@
-.sponsors img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 200px;
+.sponsors {
+  .sponsor-item {
+    margin-bottom: 15px;
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-width: 200px;
+    }
+
+    .sponsor-article {
+      display: block;
+      text-align: center;
+      font-size: 0.8rem;
+      margin-top: 4px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import DC from '../../images/data-controller.png'
-import SasApp from '../../images/sasapp.png'
+import FourGLApps from '../../images/4gl-apps-ad.png'
 import BuildApps from '../../images/buildapps240x400.png'
 import MacroDash from '../../images/macro-dash-ad.png'
 
@@ -20,9 +20,9 @@ const Sponsors: React.FC = () => {
       img: DC,
     },
     {
-      title: 'SAS Apps',
-      href: 'https://sasapps.io',
-      img: SasApp,
+      title: '4GL Apps',
+      href: 'https://4gl.io',
+      img: FourGLApps,
     },
     {
       title: 'SASjs - DevOps for SAS',

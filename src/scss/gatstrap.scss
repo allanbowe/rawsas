@@ -32,11 +32,28 @@ img {
 img:hover {
   animation: pulse 0.5s;
 }
-table tbody tr,
-table thead tr th,
+table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
 table thead {
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
+  border-bottom: 2px solid $gray-300;
+}
+table thead tr th {
+  padding: 0.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+table tbody tr {
+  border-top: 1px solid $gray-200;
+  border-left: 1px solid $gray-200;
+  border-right: 1px solid $gray-200;
+}
+table tbody tr td {
+  padding: 0.5rem;
 }
 code {
   color: #666;

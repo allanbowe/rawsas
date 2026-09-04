@@ -3,7 +3,10 @@ import './style.scss'
 
 const Footer: React.FC = () => (
   <div className="row footer">
-    <p>© Copyright 2012-2025, RawSAS.com, All rights reserved</p>
+    <p>
+      © Copyright 2012-{new Date().getFullYear()}, RawSAS.com, All rights
+      reserved
+    </p>
   </div>
 )
 

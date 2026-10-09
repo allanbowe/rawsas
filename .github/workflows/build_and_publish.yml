@@ -27,6 +27,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Rebuild sharp
+        # .npmrc sets ignore-scripts=true; sharp 0.32 needs its install script
+        # to fetch the libvips prebuild, and `npm rebuild` inherits the setting.
+        run: npm rebuild sharp --ignore-scripts=false
+
+      - name: Audit dependencies
+        run: npm audit --audit-level=critical
+
       - name: Check code style
         run: npm run lint
 

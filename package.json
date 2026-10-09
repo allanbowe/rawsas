@@ -53,10 +53,10 @@
     "web-streams-polyfill": "4.1.0"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.2.7",
-    "@eslint/eslintrc": "^3.3.0",
-    "@eslint/js": "^9.22.0",
-    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@eslint/compat": "1.2.7",
+    "@eslint/eslintrc": "3.3.0",
+    "@eslint/js": "9.22.0",
+    "@typescript-eslint/eslint-plugin": "8.26.1",
     "bootstrap": "5.3.3",
     "eslint": "9.22.0",
     "eslint-config-prettier": "10.1.1",
@@ -64,11 +64,16 @@
     "eslint-plugin-react": "7.37.4",
     "eslint-plugin-react-hooks": "5.2.0",
     "gh-pages": "6.3.0",
-    "globals": "^16.0.0",
+    "globals": "16.0.0",
     "prettier": "3.5.3",
     "prismjs": "1.30.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "typescript": "5.8.2"
+  },
+  "overrides": {
+    "form-data": "4.0.6",
+    "proxy-addr": "2.0.8",
+    "shell-quote": "1.12.0"
   }
 }

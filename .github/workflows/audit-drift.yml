@@ -1,0 +1,99 @@
+name: Dependency audit drift
+
+# The pull-request gate (.github/workflows/build_validation.yaml) fails on
+# CRITICAL advisories only - the tree carries a long tail of Gatsby transitive
+# advisories with no non-breaking fix. This job keeps that tail visible: it
+# audits the lockfile weekly and opens (or updates) an issue when the count
+# grows past the committed baseline in .github/audit-baseline.json.
+
+on:
+  schedule:
+    # Mondays at 07:00 UTC
+    - cron: '0 7 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Audit the lockfile
+        run: npm audit --package-lock-only --json > audit.json || true
+
+      - name: Compare with the committed baseline
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            const baseline = JSON.parse(fs.readFileSync('.github/audit-baseline.json', 'utf8'));
+            const report = JSON.parse(fs.readFileSync('audit.json', 'utf8'));
+            const now = (report.metadata || {}).vulnerabilities;
+
+            if (!now) {
+              core.setFailed('npm audit did not return a vulnerability summary');
+              return;
+            }
+
+            const tracked = ['critical', 'high', 'moderate'];
+            const grew = tracked.filter((s) => (now[s] || 0) > (baseline[s] || 0));
+            core.info(`baseline ${JSON.stringify(baseline)} / now ${JSON.stringify(now)}`);
+
+            if (grew.length === 0) {
+              core.info('No drift past the baseline.');
+              return;
+            }
+
+            const title = 'Dependency audit drift';
+            const rows = ['critical', 'high', 'moderate', 'low'].map(
+              (s) => `| ${s} | ${baseline[s] || 0} | ${now[s] || 0} |`
+            );
+            const body = [
+              'The weekly dependency audit found more advisories than the committed baseline.',
+              '',
+              '| severity | baseline | now |',
+              '| --- | --- | --- |',
+              ...rows,
+              '',
+              `Increased: ${grew.join(', ')}.`,
+              '',
+              'Run `npm audit` locally. Fix what can be fixed inside the declared ranges, then lower the matching number in `.github/audit-baseline.json` in the same commit.',
+            ].join('\n');
+
+            const open = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100,
+            });
+            const existing = open.data.find((i) => i.title === title && !i.pull_request);
+
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body,
+              });
+              core.info(`Commented on issue #${existing.number}`);
+            } else {
+              const created = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+              });
+              core.info(`Opened issue #${created.data.number}`);
+            }

@@ -1,0 +1,8 @@
+{
+  "_comment": "Baseline for the weekly dependency-audit drift job (.github/workflows/audit-drift.yml). The PR gate blocks CRITICAL advisories only; this baseline makes non-critical drift visible without turning every pull request red. When the count drops, lower the number here in the same commit that fixes it.",
+  "critical": 0,
+  "high": 74,
+  "moderate": 38,
+  "low": 10,
+  "total": 122
+}

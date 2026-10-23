@@ -7,7 +7,7 @@ tags:
   - sas
 ---
 
-The fourth issue of Volume IV of "SAS Communications" was published in Spring 1979, weeks after SUGI '79 closed in Clearwater Beach. Highlights include a report on the conference (462 registrants against 241 the year before, fourteen invited and 70 contributed papers, and a best-presentation award for each of the six sessions), a survey of the technical environment at SAS sites - IMS, MVS, TSO, Tektronix tubes and Calcomp plotters - and the results of the SASware ballot, in which over 800 users each spent a notional $500 among 185 possible enhancements: a book of SAS examples came first, extended graphics second and the DO-WHILE statement third. Also in the issue: the performance-measurement and utility-industry user groups formed at the conference, the SUGI '80 call for papers in San Antonio, two worked examples of saving intermediate results - confidence intervals for means by region, and a normal probability plot of GLM residuals from PROC RANK - an iteratively reweighted least squares fit in PROC NLIN set against the LAV procedure, a consultant's corner on printing a "no observations" message for an empty data set, and four new SAS staff as Anthony J. Barr leaves to start Barr Systems. The original is <a href="../resources/SAS_Communications_issue_16.pdf" target="_blank">here</a>.
+The fourth issue of Volume IV of "SAS Communications" was published in Spring 1979, weeks after SUGI '79 closed in Clearwater Beach. This is the last issue in the series. Highlights include a report on the conference (462 registrants against 241 the year before, fourteen invited and 70 contributed papers, and a best-presentation award for each of the six sessions), a survey of the technical environment at SAS sites - IMS, MVS, TSO, Tektronix tubes and Calcomp plotters - and the results of the SASware ballot, in which over 800 users each spent a notional $500 among 185 possible enhancements: a book of SAS examples came first, extended graphics second and the DO-WHILE statement third. Also in the issue: the performance-measurement and utility-industry user groups formed at the conference, the SUGI '80 call for papers in San Antonio, two worked examples of saving intermediate results - confidence intervals for means by region, and a normal probability plot of GLM residuals from PROC RANK - an iteratively reweighted least squares fit in PROC NLIN set against the LAV procedure, a consultant's corner on printing a "no observations" message for an empty data set, and four new SAS staff as Anthony J. Barr leaves to start Barr Systems. The original is <a href="../resources/SAS_Communications_issue_16.pdf" target="_blank">here</a>.
 
 <hr/>
 
@@ -461,6 +461,8 @@ Address all correspondence to SAS Institute Inc., Post Office Box 10066, Raleigh
 ---
 
 SAS Institute Inc. - Post Office Box 10066 - Raleigh, North Carolina 27605 - (919) 834-4381
+
+SAS user-group conference papers - every SUGI/SGF year from 1976 to 2021 among them - are indexed at [SAS LEX.ICON](https://saslexicon.org/index.html), Lex Jansen's archive of SAS user-group proceedings.
 
 <!--
 Spring 1979 - the issue that closed the books on SUGI '79 and opened the call for SUGI '80 in San Antonio.

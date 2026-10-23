@@ -358,4 +358,4 @@ Address all correspondence to SAS Institute Inc. Post Office Box 10066, Raleigh,
 
 ![](../images/sas_comms_6b.png)
 
-SAS user-group conference papers - every SUGI/SGF year from 1976 to 2021 among them - are indexed at [SAS LEX.ICON](https://saslexicon.org/index.html), Lex Jansen's archive of SAS user-group proceedings.
+SAS user-group conference papers - every SUGI/SGF year from 1976 to 2021 among them - are indexed in [SAS Lexicon](https://saslexicon.org/index.html), Lex Jansen's archive of SAS user-group proceedings.

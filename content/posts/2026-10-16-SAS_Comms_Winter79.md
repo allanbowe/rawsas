@@ -73,23 +73,23 @@ Dal Kratzer, The Upjohn Company, Chairman
 **Invited Papers**
 
 S.R. Searle, Cornell University  
-*Relationships between the Estimable Functions of the SAS GLM Output for Unbalanced Data and the Hypothesis Tested by Traditional-style F-tests*
+*[Relationships between the Estimable Functions of the SAS GLM Output for Unbalanced Data and the Hypothesis Tested by Traditional-style F-tests](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-41%20Searle.pdf)*
 
 J.H. Goodnight, SAS Institute  
-*New Features in GLM and VARCOMP*
+*[New Features in GLM and VARCOMP](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-42%20Goodnight.pdf)*
 
 Discussants: William L. Sanders, University of Tennessee; F.M. Speed, Mississippi State University
 
 **Contributed Papers**
 
 Carlos A. Gonzalez, EMBRAPA  
-*SAS Macros for Analyzing Growth Curves*
+*[SAS Macros for Analyzing Growth Curves](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-40%20Gonzalez.pdf)*
 
 Jerome Busemeyer, University of South Carolina  
-*Coding Subjects for Analyzing Unbalanced Repeated Measures Designs in SAS*
+*[Coding Subjects for Analyzing Unbalanced Repeated Measures Designs in SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-39%20Busemeyer%20Laughlin.pdf)*
 
 Emilio A. Icaza and Kenneth L. Koonce, Louisiana State University  
-*Using U-Model Techniques to Test Hypotheses in the Linear Model*
+*[Using U-Model Techniques to Test Hypotheses in the Linear Model](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-43%20Icaza%20Koonce.pdf)*
 
 Ronald W. Helms and Imogene McCanless, University of North Carolina at Chapel Hill  
 *Using GLMM5 for General Linear Models Analysis*
@@ -98,22 +98,22 @@ David Christiansen and Ronald W. Helms, University of North Carolina at Chapel H
 *Plotting Confidence Bounds for Parameters for General Linear Models: A GLMM5 Case Study*
 
 James D. Hosking and Ronald W. Helms, University of North Carolina at Chapel Hill  
-*Analyzing Large Data Sets Using PROC SSCP and GLMM5*
+*[Analyzing Large Data Sets Using PROC SSCP and GLMM5](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-49%20Hosking%20Helms.pdf)*
 
 Agam N. Sinha and Kenneth Hardy, University of North Carolina at Chapel Hill  
-*A SAS Macro for Ridge Analysis of Multivariate General Linear Models*
+*[A SAS Macro for Ridge Analysis of Multivariate General Linear Models](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-45%20Sinha%20Hardy.pdf)*
 
 S.G. Carmer and W.T. Hsieh, University of Illinois  
-*Exploring Biased Regression with SAS*
+*[Exploring Biased Regression with SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-44%20Carmer%20Hsieh.pdf)*
 
 Shawki A. Salem, Smith Kline & French Laboratories  
-*SAS in the Analysis of Categorical Data*
+*[SAS in the Analysis of Categorical Data](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-38%20Salem.pdf)*
 
 James E. Dunn and Gloria Cappy, University of Arkansas  
-*A Class of Invertible Functions for Analysis of Categorical Response Using Linear Models*
+*[A Class of Invertible Functions for Analysis of Categorical Response Using Linear Models](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-37%20Dunn%20Cappy.pdf)*
 
 Keith Muller, James D. Hosking, and Ronald W. Helms, University of North Carolina at Chapel Hill  
-*Using GLMM5 as a Tool for Simultaneous Study of Structure of the Covariance Matrix and Experimental Design Effects*
+*[Using GLMM5 as a Tool for Simultaneous Study of Structure of the Covariance Matrix and Experimental Design Effects](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-50%20Muller%20Hosking%20Helms.pdf)*
 
 ---
 
@@ -123,7 +123,7 @@ Ronald W. Helms, David Christiansen, and James D. Hosking, University of North C
 *The GLMM5 Algorithms*
 
 Paul Stewart, Imogene McCanless, and Ronald W. Helms, University of North Carolina at Chapel Hill  
-*GLMM5 Analysis of Growth and Dose-Response Curves*
+*[GLMM5 Analysis of Growth and Dose-Response Curves](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-51%20Stewart%20Helms.pdf)*
 
 ### **Business Applications**
 
@@ -135,45 +135,45 @@ H.W. "Barry" Merrill, Sun Information Services
 *The Analysis of SMF and RMF Data with SAS*
 
 Robert L. Anderson, Milliken & Company  
-*Use of SAS for Corporate Operations Research*
+*[Use of SAS for Corporate Operations Research](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-02%20Anderson.pdf)*
 
 **Contributed Papers**
 
 Jan Curley and Douglas Garber, Ford Motor Company  
-*Analyzing and Reporting Employee Attitude Survey Findings in a Large Multi-Divisional Company*
+*[Analyzing and Reporting Employee Attitude Survey Findings in a Large Multi-Divisional Company](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-05%20Curley%20Garber.pdf)*
 
 Franklin Young, United Airlines  
-*Estimating Airline Passenger Demands from Truncated Samples*
+*[Estimating Airline Passenger Demands from Truncated Samples](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-06%20Young.pdf)*
 
 William Ingram, University of Florida  
-*PAMS: A Project Activity Management System Implemented in SAS*
+*[PAMS: A Project Activity Management System Implemented in SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-07%20Ingram.pdf)*
 
 Rodney H. Strand, Oak Ridge National Laboratory  
-*Cost Accounting of an RJE Station with SAS*
+*[Cost Accounting of an RJE Station with SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-08%20Strand.pdf)*
 
 William M. Parker, North Central Texas Council of Governments  
-*Providing Data Processing Support with SAS*
+*[Providing Data Processing Support with SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-09%20Parker.pdf)*
 
 Edward L. Spitznagel, Washington University  
-*Interfacing SAS with Mark IV*
+*[Interfacing SAS with Mark IV](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-10%20Spitznagel.pdf)*
 
 William R. Gjertsen, SAS Institute  
-*Graphic, Calendar, and U.S. Map Reports for Various CPE and Marketing Applications*
+*[Graphic, Calendar, and U.S. Map Reports for Various CPE and Marketing Applications](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-11%20Gjertsen.pdf)*
 
 Walter J. Guthrie, The Cleveland Trust Company  
-*A SAS Program to Graphically Schedule the Tasks Assigned to Each Employee*
+*[A SAS Program to Graphically Schedule the Tasks Assigned to Each Employee](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-12%20Guthrie%20Berno.pdf)*
 
 Steven R. Borbash and Arup K. Mallik, West Virginia University  
-*A SAS Procedure for Capital Investment Analysis*
+*[A SAS Procedure for Capital Investment Analysis](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-14%20Borbash%20Mallik.pdf)*
 
 Nancy Begin, Public Employment Relations Commission, and Barbara E. Kemmerer, Rutgers University  
 *Development and Implementation of a Computerized Case Management System*
 
 David J. Cowen and Sandra T. Cowen, University of South Carolina  
-*SAS-VSPC Interface for Handling Library Functions*
+*[SAS-VSPC Interface for Handling Library Functions](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-03%20Cowen%20Cowen.pdf)*
 
 Jean B. Holzer, University of Florida  
-*File Definition Macros for Census Public Use Samples*
+*[File Definition Macros for Census Public Use Samples](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-04%20Holzer.pdf)*
 
 ### **Statistics**
 
@@ -182,10 +182,10 @@ Irving K. Hwang, Merck Sharp & Dohme Research Labs, Chairman
 **Invited Papers**
 
 A. Lawrence Gould, Merck Sharp & Dohme Research Labs  
-*Multivariate Multiple Comparisons Using SAS*
+*[Multivariate Multiple Comparisons Using SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-69%20Gould.pdf)*
 
 Bernard F. McDonagh, 3M Company  
-*Statistical Applications Using SAS at 3M Company*
+*[Statistical Applications Using SAS at 3M Company](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-78%20McDonagh.pdf)*
 
 **Contributed Papers**
 
@@ -193,16 +193,16 @@ John P. Sall, SAS Institute
 *Procedures for Dynamic Nonlinear Simultaneous Equation Models*
 
 Karen Kral, Thomas P. Capizzi, and R.D. Small, Academy of Natural Sciences of Philadelphia  
-*Estimating the Parameters of Biological Models Using SAS*
+*[Estimating the Parameters of Biological Models Using SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-81%20Kral%20Capizzi%20Small.pdf)*
 
 Chandu M. Patel, CIBA-GEIGY Corporation  
 *Application of Stepwise MANOVA and MANCOV Using SAS*
 
 Donald Henderson, U.S. Department of Agriculture  
-*Trimmed Means, Medians, and Robust Tests of Homogeneity of Variance*
+*[Trimmed Means, Medians, and Robust Tests of Homogeneity of Variance](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-83%20Henderson.pdf)*
 
 William G. Jackson, Jr. and Richard C. McNee, USAF School of Aerospace Medicine  
-*PROC REPTIFMD - A SAS Procedure for Single Factor Repeated Measurements with Missing Data*
+*[PROC REPTIFMD - A SAS Procedure for Single Factor Repeated Measurements with Missing Data](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-71%20Jackson%20McNee.pdf)*
 
 Frederick W. Morgan, L. Andy Litteral, and Richard Nelson, Clemson University  
 *The LIFETEST Procedures for Analyzing Reliability Data*
@@ -211,25 +211,25 @@ Agam N. Sinha and Kenneth A. Hardy, University of North Carolina at Chapel Hill
 *A SAS Macro for Plotting Pair Charts and Obtaining Certain Two Sample Statistics*
 
 Mark McBride and R. Parks, Washington University  
-*The Procedure DURBIN*
+*[The Procedure DURBIN](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-72%20McBride%20Parks.pdf)*
 
 Charles McElrea, Academy of Natural Sciences of Philadelphia  
-*A SAS Macro for Robust Multiple Regression*
+*[A SAS Macro for Robust Multiple Regression](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-73%20McElrea.pdf)*
 
 Robert Rogers and Sandra Novinger, U.S. Department of Agriculture Forest Service  
-*A SAS Macro for a Distribution-Free Test for the Parallelism of Two Regression Lines*
+*[A SAS Macro for a Distribution-Free Test for the Parallelism of Two Regression Lines](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-74%20Rogers%20Novinger.pdf)*
 
 James P. Summe and R. Clifton Bailey, Naval Medical Research Institute  
-*SAS Procedures for Estimating the Parameters of the Makeham Survival Model*
+*[SAS Procedures for Estimating the Parameters of the Makeham Survival Model](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-79%20Summe%20Bailey.pdf)*
 
 Edward R. Jones, Chevron Research Co.  
-*DESIGN, a Macro for Constructing Optimum Experimental Designs*
+*[DESIGN, a Macro for Constructing Optimum Experimental Designs](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-75%20Jones.pdf)*
 
 W.S. Cash and K. Martin, Vick R&D  
-*A SAS Macro for Selecting A Random Sample of Data Points from a SAS Data Base*
+*[A SAS Macro for Selecting A Random Sample of Data Points from a SAS Data Base](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-80%20Cash%20Martin.pdf)*
 
 Richard E. Cooper, U.S. Department of Agriculture  
-*Responsibilities of a SAS User*
+*[Responsibilities of a SAS User](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-77%20Cooper.pdf)*
 
 Moacir Redroso, Jr., EMBRAPA  
 *The CLMEANS Procedure*
@@ -241,45 +241,45 @@ Robert J. Bronstein, USV Pharmaceutical Corporation, Chairman
 **Invited Papers**
 
 John F. Duffy, ICI Americas, Inc.  
-*The Critical Mass Concept*
+*[The Critical Mass Concept](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-53%20Duffy.pdf)*
 
 Herbert J. Kirk, North Carolina State University  
-*The Use of SAS in Administrative Computing at Both the University and Federal Levels*
+*[The Use of SAS in Administrative Computing at Both the University and Federal Levels](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-59%20Kirk%20Bragg.pdf)*
 
 Rodney H. Strand, Oak Ridge National Laboratory  
-*Environmental Data: Management and Analysis Considerations*
+*[Environmental Data: Management and Analysis Considerations](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-52%20Strand.pdf)*
 
 **Contributed Papers**
 
 Michael P. Farrell and A. Dale Magoun, Environmental Laboratory, U.S. Army Corps of Engineers  
-*Graphical Report Generation Using PROC VIVIPLOT*
+*[Graphical Report Generation Using PROC VIVIPLOT](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-54%20Farrell%20Magoun.pdf)*
 
 Michael P. Farrell and A. Dale Magoun, Environmental Laboratory, U.S. Army Corps of Engineers  
 *Management of Evolving Ecological Data Sets with SAS*
 
 Louis G. Partridge, Academy of Natural Sciences of Philadelphia  
-*Writing Simple SAS Procedures*
+*[Writing Simple SAS Procedures](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-55%20Partridge.pdf)*
 
 William Ingram, College of Medicine, University of Florida  
-*Implementing Relational Data Base Management Techniques in SAS*
+*[Implementing Relational Data Base Management Techniques in SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-56%20Ingram.pdf)*
 
 J. Philip Miller, Washington University  
-*The Role of SAS in the Support of Clinical Studies in Medicine*
+*[The Role of SAS in the Support of Clinical Studies in Medicine](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-57%20Miller.pdf)*
 
 John N. Hubbell, Jr., Asian Vegetable Research and Development Center  
-*Development of a SAS Data Management System for the Germplasm Collection at the Asian Vegetable Research and Development Center (AVRDC)*
+*[Development of a SAS Data Management System for the Germplasm Collection at the Asian Vegetable Research and Development Center (AVRDC)](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-60%20Hubbell.pdf)*
 
 Richard D. Langston and David H. Culver, University of North Carolina at Chapel Hill  
-*Retrieval of Value Labels from SAS Files for SAS Use and Creation and Maintenance of a SAS Format Library*
+*[Retrieval of Value Labels from SAS Files for SAS Use and Creation and Maintenance of a SAS Format Library](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-61%20Langston%20Culver.pdf)*
 
 Cynthia Deitz, Michael C. Choban, and C. William Cox, Jr., West Virginia University  
-*Use of SAS in the Development of a Management Information System in a Social Service Agency*
+*[Use of SAS in the Development of a Management Information System in a Social Service Agency](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-62%20Deitz%20Choban.pdf)*
 
 Marilyn Bodow, College of Medicine and Dentistry of New Jersey  
-*Correcting and Updating EBCDIC Files with SAS*
+*[Correcting and Updating EBCDIC Files with SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-63%20Bodow.pdf)*
 
 Tina Brezenoff, College of Medicine and Dentistry of New Jersey  
-*Building a Research Data Base through Clerical Staff Using SAS*
+*[Building a Research Data Base through Clerical Staff Using SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-64%20Brezenoff.pdf)*
 
 Dalton F. de Andrade, Custavo M. Pimentel, Enedino C. da Silva, and Cicero A. de Silva, EMBRAPA  
 *The Statistical Analysis System as Implemented at the Department of Quantitative Methods of EMBRAPA*
@@ -289,10 +289,10 @@ Dalton F. de Andrade, Custavo M. Pimentel, Enedino C. da Silva, and Cicero A. de
 ![](../images/sas_comms_15c.png)
 
 Robert J. Bronstein, USV Pharmaceutical Corporation  
-*Modular Report Writing in a Clinical Environment Using SAS*
+*[Modular Report Writing in a Clinical Environment Using SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-68%20Bronstein.pdf)*
 
 Robert J. Bronstein, USV Pharmaceutical Corporation  
-*Automatic Scheduling Using SAS*
+*[Automatic Scheduling Using SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-67%20Bronstein.pdf)*
 
 Peter Svensson, Mayo Foundation  
 *An Uncomplicated and Easy-to-use Edit/Update Program in Support of Research Data*
@@ -304,27 +304,27 @@ Jane Abel, Abbott Laboratories, Chairman
 **Invited Papers**
 
 Harji Patel, CIBA-GEIGY Corporation  
-*Analysis of Covariance of Incomplete Data in Experiments with Repeated Measures in Clinical Trials*
+*[Analysis of Covariance of Incomplete Data in Experiments with Repeated Measures in Clinical Trials](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-82%20Patel.pdf)*
 
 Daniel H. Freeman, Jr., Michael B. Bracken, and Robert F. Elia, Yale University  
-*A SAS-AUTO GRP Interface for the Analysis of Hospital Discharge Data*
+*[A SAS-AUTO GRP Interface for the Analysis of Hospital Discharge Data](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-15%20Freeman%20Bracken%20Elia%20Freeman.pdf)*
 
 Carl Metzler, The Upjohn Company  
-*An Evaluation of Nonlinear Regression Programs*
+*[An Evaluation of Nonlinear Regression Programs](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-16%20Metzler.pdf)*
 
 **Contributed Papers**
 
 M. Clinton Miller, III, Edmund Murphy, and Paul Underwood, Medical University of South Carolina  
-*The South Carolina Papmobile Program: A SAS Application*
+*[The South Carolina Papmobile Program: A SAS Application](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-22%20Dumas%20Miller%20Underwood%20Stramm%20Riggs.pdf)*
 
 David W. Johnson and R.L. Brunelle, Lilly Research Laboratories  
-*A Multivariate Approach to the Analysis of a Repeated Measures Experiment Using SAS*
+*[A Multivariate Approach to the Analysis of a Repeated Measures Experiment Using SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-24%20Johnson%20Brunelle.pdf)*
 
 Rodney H. Strand, Oak Ridge National Laboratory  
-*The Preparation and Publication of a Toxic Effects Document Using SAS and COM*
+*[The Preparation and Publication of a Toxic Effects Document Using SAS and COM](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-27%20Strand%20Cushman%20Hildebrand%20Anderson.pdf)*
 
 Terry M. Therneau, Mayo Clinic  
-*Procedures for the Analysis of Survival Data*
+*[Procedures for the Analysis of Survival Data](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-23%20Therneau.pdf)*
 
 Helen Wojnixisz, College of Medicine & Dentistry of New Jersey  
 *Use of SAS Procedures to Establish Criteria for Determining Misclassified Disease Cases*
@@ -336,13 +336,13 @@ John L. Stedl, ICI Americas, Inc.
 *The Production of Automatic Randomization Schedules via SAS*
 
 Chiao Yeh, ICI Americas, Inc.  
-*Testing for Trends in Drug Research Data Using SAS*
+*[Testing for Trends in Drug Research Data Using SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-21%20Yeh.pdf)*
 
 William Ingram, University of Florida  
-*A Tumor Registry Information System Application Developed in SAS*
+*[A Tumor Registry Information System Application Developed in SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-20%20Ingram.pdf)*
 
 William Ingram, Warren Curry, and Dennis Lezotte, University of Florida  
-*SAS Used for Data Management and Mathematical Analysis of a Flow Microflourometry Study*
+*[SAS Used for Data Management and Mathematical Analysis of a Flow Microflourometry Study](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-25%20Curry%20Ingram%20Lezotte.pdf)*
 
 William L. Landrum, Wayne State University, and Delores Higgins, Michigan Cancer Foundation Registry  
 *Maintenance of Cancer Patient Data with SAS*
@@ -354,10 +354,10 @@ Rudolph J. Freund, Texas A&M University, Chairman
 **Invited Papers**
 
 Thomas A. Bubolz and James E. Gentle, Iowa State University  
-*The Role of Package Programs in Statistical Methods Courses*
+*[The Role of Package Programs in Statistical Methods Courses](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-33%20Bubolz%20Gentle.pdf)*
 
 Kenneth L. Koonce and Emilio A. Icaza, Louisiana State University  
-*Applications of SAS at Educational Institutions*
+*[Applications of SAS at Educational Institutions](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-28%20Koonce%20Icaza.pdf)*
 
 **Contributed Papers**
 
@@ -365,22 +365,22 @@ Douglas Cockrell and Ione Cockrell, University of South Carolina
 *A Recode Facility for SAS*
 
 Edward L. Spitznagel, Jr., Washington University  
-*SAS as a Management Tool for Course Registration and Grading*
+*[SAS as a Management Tool for Course Registration and Grading](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-30%20Spitznagel.pdf)*
 
 Susan E. Bengtson, Byron C. Lewis, and Richard Nelson, Clemson University  
-*On-line System Report Generator*
+*[On-line System Report Generator](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-31%20Bengtson%20Lewis%20Nelson.pdf)*
 
 Susan E. Bengtson, Byron C. Lewis, and Richard Nelson, Clemson University  
-*Project Control System*
+*[Project Control System](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-32%20Bengtson%20Lewis%20Nelson.pdf)*
 
 Audi R. Brewton, University of Utah, and Douglas L. Anderton, Utah State Bureau of Health Statistics  
-*A Short Note on Discrete Event Simulation in SAS*
+*[A Short Note on Discrete Event Simulation in SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-35%20Brewton%20Anderton.pdf)*
 
 Phillip Gallagher, University of North Carolina at Chapel Hill  
-*SAS in a Course for Beginning Computer Users*
+*[SAS in a Course for Beginning Computer Users](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-34%20Gallagher.pdf)*
 
 Hoke S. Hill and Jeannie N. Currin, Clemson University  
-*Using SAS for Soil Test Reporting*
+*[Using SAS for Soil Test Reporting](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-29%20Hill%20Currin.pdf)*
 
 ## **SASware Index**
 

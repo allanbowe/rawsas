@@ -289,3 +289,4 @@ _* For extremely large data sets of very slight imbalance, ANOVA's approximate r
 > We ask that the SAS installations copy and distribute this issue of SAS Communications.
 > Users wishing to receive further issues are encouraged to send us their names and addresses.
 
+SAS user-group conference papers - every SUGI/SGF year from 1976 to 2021 among them - are indexed at [SAS LEX.ICON](https://saslexicon.org/index.html), Lex Jansen's archive of SAS user-group proceedings.

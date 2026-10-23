@@ -327,3 +327,5 @@ Again note that the variable Z was not used in the computation process, but does
 >Institute of Statistics  
 >North Carolina State University  
 >Raleigh, North Carolina 27607
+
+SAS user-group conference papers - every SUGI/SGF year from 1976 to 2021 among them - are indexed at [SAS LEX.ICON](https://saslexicon.org/index.html), Lex Jansen's archive of SAS user-group proceedings.

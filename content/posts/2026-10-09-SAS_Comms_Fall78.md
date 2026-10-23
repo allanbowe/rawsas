@@ -52,10 +52,10 @@ The invited speakers for SUGI '79 are given below. The titles of their papers gi
 **linear models**
 
 S.R. Searle, Ph.D., Cornell University  
-*Relationships between the estimable functions of the SAS GLM output for unbalanced data and the hypothesis tested by traditional F-tests*
+*[Relationships between the estimable functions of the SAS GLM output for unbalanced data and the hypothesis tested by traditional F-tests](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-41%20Searle.pdf)*
 
 J.H. Goodnight, Ph.D., SAS Institute  
-*New features in GLM and VARCOMP*
+*[New features in GLM and VARCOMP](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-42%20Goodnight.pdf)*
 
 Discussants: William L. Sanders, Ph.D., University of Tennessee; F. M. Speed, Ph.D., Mississippi State University
 
@@ -70,34 +70,34 @@ Daniel H. Freeman, Ph.D., Yale University School of Medicine
 *Spinal cord injuries in the hospital discharge survey 1971-1975: a SAS/AUTOGROUP/BMD interface*
 
 Harji I. Patel, Ph.D., CIBA-GEIGY  
-*Analysis of covariance of incomplete data in experiments with repeated measures in clinical trials*
+*[Analysis of covariance of incomplete data in experiments with repeated measures in clinical trials](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-82%20Patel.pdf)*
 
 Carl Metzler, Ph.D., The Upjohn Company  
-*An evaluation of nonlinear regression programs*
+*[An evaluation of nonlinear regression programs](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-16%20Metzler.pdf)*
 
 **statistics**
 
 A. Lawrence Gould, Ph.D., Merck Sharp & Dohme Research Labs  
-*Multivariate multiple comparisons using SAS*
+*[Multivariate multiple comparisons using SAS](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-69%20Gould.pdf)*
 
 Bernard F. McDonagh, Ph.D., 3M Company  
-*Statistical applications using SAS at 3M Company*
+*[Statistical applications using SAS at 3M Company](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-78%20McDonagh.pdf)*
 
 **research data management**
 
 Rodney H. Strand, Ph.D., Oak Ridge National Laboratories  
-*Environmental data: management and analysis considerations*
+*[Environmental data: management and analysis considerations](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-52%20Strand.pdf)*
 
 John Duffy, ICI Americas  
-*The "critical mass" concept*
+*[The "critical mass" concept](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-53%20Duffy.pdf)*
 
 Herbert Kirk, Ph.D., North Carolina State University  
-*The use of SAS in administrative computing: at both the university and federal levels*
+*[The use of SAS in administrative computing: at both the university and federal levels](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-59%20Kirk%20Bragg.pdf)*
 
 **SAS in the university**
 
 James E. Gentle, Ph.D., Iowa State University  
-*The role of packaged programs in statistical methods courses*
+*[The role of packaged programs in statistical methods courses](https://support.sas.com/resources/papers/proceedings-archive/SUGI79/Sugi-79-33%20Bubolz%20Gentle.pdf)*
 
 Kenneth L. Koonce, Ph.D., Louisiana State University  
 *The impact of SAS at the university*
@@ -475,6 +475,8 @@ Address all correspondence to SAS Institute Inc., Post Office Box 10066, Raleigh
 ---
 
 SAS Institute Inc. - Post Office Box 10066 - Raleigh, North Carolina 27605 - (919) 834-4381
+
+SAS user-group conference papers - every SUGI/SGF year from 1976 to 2021 among them - are indexed at [SAS LEX.ICON](https://saslexicon.org/index.html), Lex Jansen's archive of SAS user-group proceedings.
 
 <!--
 Fall 1978 - SAS 76.6 is out, SUGI '79 is coming, and the SAS Technical Report Series gets its first published index.

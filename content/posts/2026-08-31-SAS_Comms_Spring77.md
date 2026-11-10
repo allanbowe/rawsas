@@ -249,7 +249,7 @@ Susan King has also joined the staff as an administrative assistant.
 
 SAS Institute Inc. - Post Office Box 10066 - Raleigh, North Carolina 27605 - (919) 834-4381
 
-SAS user-group conference papers - every SUGI/SGF year from 1976 to 2021 among them - are indexed at [SAS LEX.ICON](https://saslexicon.org/index.html), Lex Jansen's archive of SAS user-group proceedings.
+SAS user-group conference papers - every SUGI/SGF year from 1976 to 2021 among them - are indexed in [SAS Lexicon](https://saslexicon.org/index.html), Lex Jansen's archive of SAS user-group proceedings.
 
 <!--
 Spring 1977 - SAS 76.5 is almost out, and this issue is the shipping manifest.
